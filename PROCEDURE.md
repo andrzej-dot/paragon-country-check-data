@@ -18,6 +18,12 @@ The one procedure for changing any data value on Country Check. Page wording and
 5. **Weekly summary** (Monday): what was published, what is held, what the weekly source check found.
 6. **Reverting**: reverting the merge commit on GitHub restores the previous file; the site follows within six hours, or at once with `?ppcc_refresh=1` when an administrator loads the page.
 
+## Page dates ("as of" and "last checked")
+The page's as-of lines and each view's "checked" date come from `meta.page` in the data file. A view shows "being updated" once its checked date is older than its maximum age (corruption 400 days, FATF 150, FTO 35, sanctions 35).
+- The proposer moves a view's `checked` date forward only after it has, in that same run, confirmed that view against its sources and found nothing to change (FTO: Federal Register and State Department FTO list; sanctions: every jurisdiction's regime list; FATF: the latest plenary outcome; corruption: World Bank release). If any source could not be reached, the date stays put.
+- Date-only changes touch `meta`, which the evidence check does not cover, so they publish once the structure check passes. The structure check rejects future dates and malformed text.
+- When a view is within seven days of going stale and cannot be confirmed, the proposer notifies Andrzej.
+
 ## Changes to the system itself
 Any pull request that touches anything other than `country-check-data.json` and `evidence/` (checks, workflows, this procedure, the website snippet) fails the sign-off check by design and never publishes automatically. Andrzej merges those himself, so no agent can weaken the controls on its own.
 

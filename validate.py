@@ -59,6 +59,18 @@ for k, o in C.items():
     if not o.get("iso2") and o.get("n") not in ("Ashmore and Cartier Is.",):
         WARN.append(f"{o.get('n')}: no iso2 code; EU Sanctions Map check cannot cover it")
 
+# Page dates and as-of text (meta.page): format checks only; 'checked' may never be in the future
+import datetime as _dt
+pg = m.get("page", {})
+for k in ("cpi", "fatf", "fto", "sanc"):
+    a, l = (pg.get("asof") or {}).get(k), (pg.get("layers") or {}).get(k) or {}
+    if not isinstance(a, str) or not a or len(a) > 200 or "<" in a: err(f"meta.page.asof.{k}: missing or invalid")
+    c = l.get("checked", "")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", c): err(f"meta.page.layers.{k}.checked: not a YYYY-MM-DD date")
+    elif c > _dt.date.today().isoformat(): err(f"meta.page.layers.{k}.checked: {c} is in the future")
+    w = l.get("when")
+    if not isinstance(w, str) or not w or len(w) > 120 or "<" in w: err(f"meta.page.layers.{k}.when: missing or invalid")
+
 for w in WARN: print("note:", w)
 if ERR:
     print("INVALID:\n- " + "\n- ".join(ERR)); sys.exit(1)

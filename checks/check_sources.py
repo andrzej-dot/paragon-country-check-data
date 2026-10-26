@@ -128,16 +128,26 @@ for o in C.values():
 for slug in set(D.get("crt_links", {}).values()):
     urls.add(f"https://www.state.gov/reports/country-reports-on-terrorism-2024/{slug}/")
 from concurrent.futures import ThreadPoolExecutor
-def chk(u):
+import time
+def chk1(u):
     try:
         with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=15) as r:
-            return u, r.status, None
-    except urllib.error.HTTPError as e: return u, e.code, None
-    except Exception as e: return u, None, type(e).__name__
+            return r.status, None
+    except urllib.error.HTTPError as e: return e.code, None
+    except Exception as e: return None, type(e).__name__
+def chk(u):
+    code, err = chk1(u)
+    if err or code >= 400:          # retry once after a pause: government sites often refuse bursts from servers
+        time.sleep(8); code, err = chk1(u)
+    return u, code, err
+# state.gov answers some automated requests with 404 even when the page exists (seen 26 Oct 2026 from GitHub's servers),
+# so a 404 there is a warning for the verifier to confirm in a browser, not an error.
+SOFT404 = ("www.state.gov",)
 if "--no-links" not in sys.argv:
-    with ThreadPoolExecutor(16) as ex:
+    with ThreadPoolExecutor(6) as ex:
         for u, code, err in ex.map(chk, sorted(urls)):
             if err: R["unreachable"].append(f"Link {u}: {err}")
+            elif code in (404, 410) and any(h in u for h in SOFT404): W(f"Link {u}: HTTP {code} from the server; verifier to open it in a browser to confirm whether it was removed")
             elif code in (404, 410): E_(f"Link {u}: HTTP {code} (page removed)")
             elif code >= 400: R["unreachable"].append(f"Link {u}: HTTP {code}")
     print("links checked", file=sys.stderr)

@@ -64,6 +64,16 @@ def page_text(url):
             break
         except Exception:
             continue
+    if txt is None and not url.startswith("https://web.archive.org/"):
+        # The site refuses servers and no archive copy exists yet: ask the Internet Archive to capture it, then read that copy.
+        try:
+            urllib.request.urlopen(urllib.request.Request("https://web.archive.org/save/" + url, headers=UA), timeout=120).read()
+            with urllib.request.urlopen(urllib.request.Request("https://web.archive.org/web/2id_/" + url, headers=UA), timeout=60) as r:
+                raw = r.read().decode("utf-8", "ignore")
+            raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
+            txt, src = norm(html.unescape(re.sub(r"<[^>]+>", " ", raw))), "archive (captured now)"
+        except Exception:
+            pass
     _cache[url] = (txt, src)
     return txt, src
 

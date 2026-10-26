@@ -1,0 +1,4732 @@
+{
+ "meta": {
+  "schema_version": 1,
+  "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
+  "updated": "2026-10-26",
+  "as_of": {
+   "cpi": "World Bank release of 25 September 2026 (2025 data)",
+   "fatf": "FATF Plenary, 17 to 19 June 2026",
+   "fto_designations": "2026-10-15",
+   "fto_presence_source": "State Department Country Reports on Terrorism 2024 (published 2026)",
+   "sanctions": "2026-10-25",
+   "fto_listing_labels": "2026-10-25",
+   "fatf_evaluations": "FATF consolidated tables: 2013 Methodology updated 24 August 2026; 2022 Methodology updated 25 September 2026",
+   "fto_listing_evidence": "2026-10-26"
+  },
+  "counts": {
+   "countries": 211,
+   "fatf_black": 3,
+   "fatf_grey": 22,
+   "fto_groups": 98
+  }
+ },
+ "countries": {
+  "Afghanistan": {
+   "n": "Afghanistan",
+   "fto": "y",
+   "ftog": [
+    "Islamic State's Khorasan Province (ISIS-K)",
+    "Tehrik-e Taliban Pakistan (TTP)",
+    "al-Qa'ida (AQ)",
+    "al-Qa'ida in the Indian Subcontinent (AQIS)",
+    "Haqqani Network (HQN)",
+    "Islamic Movement of Uzbekistan (IMU)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Afghanistan-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/afghanistan-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures imposed with respect to the Taliban"
+   ],
+   "un": [
+    "1988 Sanctions Committee (Taliban)"
+   ],
+   "cpi": 22,
+   "prev": 22,
+   "uk": [
+    [
+     "Afghanistan sanctions regime",
+     "https://www.gov.uk/government/publications/afghanistan-sanctions-guidance"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Certain Persons and Groups Associated with the Taliban",
+     "https://www.fedlex.admin.ch/eli/cc/2025/193/de"
+    ]
+   ],
+   "au": [
+    [
+     "Afghanistan sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/afghanistan-sanctions-framework"
+    ]
+   ],
+   "iso2": "AF",
+   "iso3": "AFG"
+  },
+  "Albania": {
+   "n": "Albania",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 42,
+   "prev": 41,
+   "iso2": "AL",
+   "iso3": "ALB"
+  },
+  "Algeria": {
+   "n": "Algeria",
+   "fto": "y",
+   "ftog": [
+    "al-Qa'ida in the Islamic Maghreb (AQIM)",
+    "ISIS"
+   ],
+   "cpi": 37,
+   "prev": 37,
+   "iso2": "DZ",
+   "iso3": "DZA"
+  },
+  "Angola": {
+   "n": "Angola",
+   "fatf": "grey",
+   "cpi": 34,
+   "prev": 35,
+   "iso2": "AO",
+   "iso3": "AGO"
+  },
+  "Argentina": {
+   "n": "Argentina",
+   "fto": "y",
+   "ftog": [
+    "Hizballah"
+   ],
+   "cpi": 40,
+   "prev": 41,
+   "iso2": "AR",
+   "iso3": "ARG"
+  },
+  "Armenia": {
+   "n": "Armenia",
+   "cpi": 50,
+   "prev": 52,
+   "iso2": "AM",
+   "iso3": "ARM"
+  },
+  "Australia": {
+   "n": "Australia",
+   "cpi": 85,
+   "prev": 85,
+   "iso2": "AU",
+   "iso3": "AUS"
+  },
+  "Denmark": {
+   "n": "Denmark",
+   "cpi": 94,
+   "prev": 94,
+   "iso2": "DK",
+   "iso3": "DNK"
+  },
+  "Azerbaijan": {
+   "n": "Azerbaijan",
+   "cpi": 32,
+   "prev": 31,
+   "iso2": "AZ",
+   "iso3": "AZE"
+  },
+  "Bahamas": {
+   "n": "Bahamas",
+   "cpi": 69,
+   "prev": 73,
+   "iso2": "BS",
+   "iso3": "BHS"
+  },
+  "Bahrain": {
+   "n": "Bahrain",
+   "fto": "y",
+   "ftog": [
+    "al-Ashtar Brigades"
+   ],
+   "cpi": 54,
+   "prev": 54,
+   "iso2": "BH",
+   "iso3": "BHR"
+  },
+  "Bangladesh": {
+   "n": "Bangladesh",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "ISIS-Bangladesh",
+    "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)"
+   ],
+   "cpi": 28,
+   "prev": 26,
+   "iso2": "BD",
+   "iso3": "BGD"
+  },
+  "Barbados": {
+   "n": "Barbados",
+   "cpi": 73,
+   "prev": 73,
+   "iso2": "BB",
+   "iso3": "BRB"
+  },
+  "Belarus": {
+   "n": "Belarus",
+   "us": "t",
+   "usp": [
+    [
+     "Belarus Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine"
+   ],
+   "cpi": 36,
+   "prev": 36,
+   "uk": [
+    [
+     "Republic of Belarus sanctions regime",
+     "https://www.gov.uk/government/publications/republic-of-belarus-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Belarus) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2020-214/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Belarus",
+     "https://www.fedlex.admin.ch/eli/cc/2022/172/de"
+    ]
+   ],
+   "iso2": "BY",
+   "iso3": "BLR"
+  },
+  "Finland": {
+   "n": "Finland",
+   "cpi": 91,
+   "prev": 92,
+   "iso2": "FI",
+   "iso3": "FIN"
+  },
+  "Benin": {
+   "n": "Benin",
+   "fto": "y",
+   "ftog": [
+    "ISIS in the Greater Sahara (ISIS-GS)",
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+   ],
+   "cpi": 44,
+   "prev": 43,
+   "iso2": "BJ",
+   "iso3": "BEN"
+  },
+  "Belize": {
+   "n": "Belize",
+   "cpi": 45,
+   "prev": 45,
+   "iso2": "BZ",
+   "iso3": "BLZ"
+  },
+  "Bhutan": {
+   "n": "Bhutan",
+   "cpi": 78,
+   "prev": 78,
+   "iso2": "BT",
+   "iso3": "BTN"
+  },
+  "Bolivia": {
+   "n": "Bolivia",
+   "fatf": "grey",
+   "cpi": 24,
+   "prev": 28,
+   "iso2": "BO",
+   "iso3": "BOL"
+  },
+  "Bosnia and Herz.": {
+   "n": "Bosnia and Herzegovina",
+   "fatf": "grey",
+   "fto": "n",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Bosnia and Herzegovina"
+   ],
+   "cpi": 38,
+   "prev": 38,
+   "uk": [
+    [
+     "Bosnia and Herzegovina sanctions regime",
+     "https://www.gov.uk/government/publications/bosnia-and-herzegovina-sanctions-guidance"
+    ]
+   ],
+   "iso2": "BA",
+   "iso3": "BIH"
+  },
+  "Botswana": {
+   "n": "Botswana",
+   "cpi": 60,
+   "prev": 61,
+   "iso2": "BW",
+   "iso3": "BWA"
+  },
+  "Brazil": {
+   "n": "Brazil",
+   "fto": "y",
+   "ftog": [
+    "Primeiro Comando da Capital",
+    "Comando Vermelho"
+   ],
+   "cpi": 40,
+   "prev": 40,
+   "iso2": "BR",
+   "iso3": "BRA"
+  },
+  "Brunei": {
+   "n": "Brunei",
+   "cpi": 68,
+   "prev": 72,
+   "iso2": "BN",
+   "iso3": "BRN"
+  },
+  "Luxembourg": {
+   "n": "Luxembourg",
+   "cpi": 87,
+   "prev": 88,
+   "iso2": "LU",
+   "iso3": "LUX"
+  },
+  "Burkina Faso": {
+   "n": "Burkina Faso",
+   "fto": "y",
+   "ftog": [
+    "ISIS in the Greater Sahara (ISIS-GS)",
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+    "Ansar al-Dine (AAD)"
+   ],
+   "cpi": 44,
+   "prev": 43,
+   "iso2": "BF",
+   "iso3": "BFA"
+  },
+  "Burundi": {
+   "n": "Burundi",
+   "eu": [
+    "Restrictive measures in view of the situation in Burundi"
+   ],
+   "cpi": 17,
+   "prev": 19,
+   "ch": [
+    [
+     "Ordinance on Measures against Burundi",
+     "https://www.fedlex.admin.ch/eli/cc/2015/849/de"
+    ]
+   ],
+   "iso2": "BI",
+   "iso3": "BDI"
+  },
+  "Cabo Verde": {
+   "n": "Cabo Verde",
+   "cpi": 66,
+   "prev": 67,
+   "iso2": "CV",
+   "iso3": "CPV"
+  },
+  "Cambodia": {
+   "n": "Cambodia",
+   "cpi": 23,
+   "prev": 23,
+   "iso2": "KH",
+   "iso3": "KHM"
+  },
+  "Cameroon": {
+   "n": "Cameroon",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "Boko Haram",
+    "ISIS-West Africa"
+   ],
+   "cpi": 24,
+   "prev": 24,
+   "iso2": "CM",
+   "iso3": "CMR"
+  },
+  "Canada": {
+   "n": "Canada",
+   "fto": "n",
+   "cpi": 80,
+   "prev": 81,
+   "iso2": "CA",
+   "iso3": "CAN"
+  },
+  "Central African Rep.": {
+   "n": "Central African Republic",
+   "fto": "a",
+   "us": "t",
+   "usp": [
+    [
+     "Central African Republic Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/central-african-republic-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in the Central African Republic"
+   ],
+   "un": [
+    "2745 Sanctions Committee (Central African Republic)"
+   ],
+   "cpi": 21,
+   "prev": 22,
+   "uk": [
+    [
+     "Central African Republic sanctions regime",
+     "https://www.gov.uk/government/publications/central-african-republic-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on the Central African Republic",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-163/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against the Central African Republic",
+     "https://www.fedlex.admin.ch/eli/cc/2014/150/de"
+    ]
+   ],
+   "au": [
+    [
+     "Central African Republic and Democratic Republic of the Congo sanctions frameworks",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/central-african-republic-and-democratic-republic-congo-frameworks"
+    ]
+   ],
+   "iso2": "CF",
+   "iso3": "CAF"
+  },
+  "Chad": {
+   "n": "Chad",
+   "fto": "y",
+   "ftog": [
+    "Boko Haram",
+    "ISIS-West Africa"
+   ],
+   "cpi": 21,
+   "prev": 20,
+   "iso2": "TD",
+   "iso3": "TCD"
+  },
+  "Chile": {
+   "n": "Chile",
+   "cpi": 70,
+   "prev": 71,
+   "iso2": "CL",
+   "iso3": "CHL"
+  },
+  "China": {
+   "n": "China",
+   "fto": "n",
+   "us": "t",
+   "usp": [
+    [
+     "Chinese Military Companies Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/chinese-military-companies-sanctions"
+    ]
+   ],
+   "eu": [
+    "Specific restrictive measures in relation to the events at the Tiananmen Square protests of 1989"
+   ],
+   "uk": [
+    [
+     "UK arms embargo on mainland China and Hong Kong",
+     "https://www.gov.uk/government/collections/uk-arms-embargo-on-mainland-china-and-hong-kong"
+    ]
+   ],
+   "cpi": 49,
+   "prev": 50,
+   "ca": [
+    [
+     "Special Economic Measures (People's Republic of China) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2021-49/"
+    ]
+   ],
+   "iso2": "CN",
+   "iso3": "CHN"
+  },
+  "Colombia": {
+   "n": "Colombia",
+   "fto": "y",
+   "ftog": [
+    "National Liberation Army (ELN)",
+    "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+    "Segunda Marquetalia",
+    "Clan del Golfo"
+   ],
+   "cpi": 42,
+   "prev": 42,
+   "iso2": "CO",
+   "iso3": "COL"
+  },
+  "Comoros": {
+   "n": "Comoros",
+   "cpi": 30,
+   "prev": 25,
+   "iso2": "KM",
+   "iso3": "COM"
+  },
+  "Congo": {
+   "n": "Republic of the Congo",
+   "cpi": 19,
+   "prev": 19,
+   "iso2": "CG",
+   "iso3": "COG"
+  },
+  "Costa Rica": {
+   "n": "Costa Rica",
+   "cpi": 62,
+   "prev": 62,
+   "iso2": "CR",
+   "iso3": "CRI"
+  },
+  "Côte d'Ivoire": {
+   "n": "Côte d'Ivoire",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+   ],
+   "cpi": 43,
+   "prev": 43,
+   "iso2": "CI",
+   "iso3": "CIV"
+  },
+  "Norway": {
+   "n": "Norway",
+   "fto": "n",
+   "cpi": 87,
+   "prev": 88,
+   "iso2": "NO",
+   "iso3": "NOR"
+  },
+  "Cuba": {
+   "n": "Cuba",
+   "fto": "y",
+   "ftog": [
+    "National Liberation Army (ELN)"
+   ],
+   "us": "c",
+   "usp": [
+    [
+     "Cuba Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions"
+    ]
+   ],
+   "cpi": 33,
+   "prev": 43,
+   "iso2": "CU",
+   "iso3": "CUB"
+  },
+  "Switzerland": {
+   "n": "Switzerland",
+   "cpi": 88,
+   "prev": 89,
+   "iso2": "CH",
+   "iso3": "CHE"
+  },
+  "Sweden": {
+   "n": "Sweden",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)"
+   ],
+   "cpi": 87,
+   "prev": 87,
+   "iso2": "SE",
+   "iso3": "SWE"
+  },
+  "Dem. Rep. Congo": {
+   "n": "Democratic Republic of the Congo",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "ISIS-DRC"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Democratic Republic of the Congo-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in the Democratic Republic of the Congo"
+   ],
+   "un": [
+    "1533 Sanctions Committee (Democratic Republic of the Congo)"
+   ],
+   "cpi": 18,
+   "prev": 17,
+   "uk": [
+    [
+     "Democratic Republic of the Congo sanctions regime",
+     "https://www.gov.uk/government/publications/the-democratic-republic-of-the-congo-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on the Democratic Republic of the Congo",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-222/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against the Democratic Republic of the Congo",
+     "https://www.fedlex.admin.ch/eli/cc/2005/442/de"
+    ]
+   ],
+   "au": [
+    [
+     "Central African Republic and Democratic Republic of the Congo sanctions frameworks",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/central-african-republic-and-democratic-republic-congo-frameworks"
+    ]
+   ],
+   "iso2": "CD",
+   "iso3": "COD"
+  },
+  "Netherlands": {
+   "n": "Netherlands",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 86,
+   "prev": 87,
+   "iso2": "NL",
+   "iso3": "NLD"
+  },
+  "Djibouti": {
+   "n": "Djibouti",
+   "fto": "n",
+   "cpi": 29,
+   "prev": 30,
+   "iso2": "DJ",
+   "iso3": "DJI"
+  },
+  "Dominica": {
+   "n": "Dominica",
+   "cpi": 59,
+   "prev": 59,
+   "iso2": "DM",
+   "iso3": "DMA"
+  },
+  "Dominican Rep.": {
+   "n": "Dominican Republic",
+   "cpi": 48,
+   "prev": 43,
+   "iso2": "DO",
+   "iso3": "DOM"
+  },
+  "Ecuador": {
+   "n": "Ecuador",
+   "fto": "y",
+   "ftog": [
+    "Los Lobos",
+    "Los Choneros",
+    "Chone Killers",
+    "Los Tiguerones"
+   ],
+   "cpi": 33,
+   "prev": 32,
+   "iso2": "EC",
+   "iso3": "ECU"
+  },
+  "Egypt": {
+   "n": "Egypt",
+   "fto": "y",
+   "ftog": [
+    "ISIS-Sinai Province",
+    "al-Qa'ida (AQ)",
+    "Harakat Sawa'd Misr (HASM)"
+   ],
+   "cpi": 34,
+   "prev": 32,
+   "iso2": "EG",
+   "iso3": "EGY"
+  },
+  "El Salvador": {
+   "n": "El Salvador",
+   "fto": "y",
+   "ftog": [
+    "Mara Salvatrucha (MS-13)",
+    "Barrio 18"
+   ],
+   "cpi": 37,
+   "prev": 37,
+   "iso2": "SV",
+   "iso3": "SLV"
+  },
+  "Eq. Guinea": {
+   "n": "Equatorial Guinea",
+   "cpi": 18,
+   "prev": 18,
+   "iso2": "GQ",
+   "iso3": "GNQ"
+  },
+  "Eritrea": {
+   "n": "Eritrea",
+   "cpi": 16,
+   "prev": 15,
+   "iso2": "ER",
+   "iso3": "ERI"
+  },
+  "Iceland": {
+   "n": "Iceland",
+   "cpi": 85,
+   "prev": 85,
+   "iso2": "IS",
+   "iso3": "ISL"
+  },
+  "eSwatini": {
+   "n": "Eswatini",
+   "cpi": 32,
+   "prev": 32,
+   "iso2": "SZ",
+   "iso3": "SWZ"
+  },
+  "Ethiopia": {
+   "n": "Ethiopia",
+   "fto": "y",
+   "ftog": [
+    "al-Shabaab"
+   ],
+   "cpi": 40,
+   "prev": 39,
+   "iso2": "ET",
+   "iso3": "ETH"
+  },
+  "Fiji": {
+   "n": "Fiji",
+   "cpi": 59,
+   "prev": 59,
+   "iso2": "FJ",
+   "iso3": "FJI"
+  },
+  "Ireland": {
+   "n": "Ireland",
+   "fto": "y",
+   "ftog": [
+    "Continuity Irish Republican Army (CIRA)",
+    "New Irish Republican Army"
+   ],
+   "cpi": 78,
+   "prev": 79,
+   "iso2": "IE",
+   "iso3": "IRL"
+  },
+  "Estonia": {
+   "n": "Estonia",
+   "cpi": 81,
+   "prev": 81,
+   "iso2": "EE",
+   "iso3": "EST"
+  },
+  "Gabon": {
+   "n": "Gabon",
+   "cpi": 32,
+   "prev": 30,
+   "iso2": "GA",
+   "iso3": "GAB"
+  },
+  "Gambia": {
+   "n": "Gambia",
+   "cpi": 38,
+   "prev": 42,
+   "iso2": "GM",
+   "iso3": "GMB"
+  },
+  "Georgia": {
+   "n": "Georgia",
+   "fto": "n",
+   "cpi": 45,
+   "prev": 56,
+   "iso2": "GE",
+   "iso3": "GEO"
+  },
+  "Germany": {
+   "n": "Germany",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Antifa Ost (Hammerbande)"
+   ],
+   "cpi": 82,
+   "prev": 84,
+   "iso2": "DE",
+   "iso3": "DEU"
+  },
+  "Ghana": {
+   "n": "Ghana",
+   "cpi": 46,
+   "prev": 44,
+   "iso2": "GH",
+   "iso3": "GHA"
+  },
+  "United Kingdom": {
+   "n": "United Kingdom",
+   "fto": "y",
+   "ftog": [
+    "Continuity Irish Republican Army (CIRA)",
+    "New Irish Republican Army",
+    "ISIS"
+   ],
+   "cpi": 79,
+   "prev": 78,
+   "iso2": "GB",
+   "iso3": "GBR"
+  },
+  "Grenada": {
+   "n": "Grenada",
+   "cpi": 58,
+   "prev": 58,
+   "iso2": "GD",
+   "iso3": "GRD"
+  },
+  "Guatemala": {
+   "n": "Guatemala",
+   "fto": "y",
+   "ftog": [
+    "Mara Salvatrucha (MS-13)",
+    "Barrio 18"
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Guatemala"
+   ],
+   "cpi": 29,
+   "prev": 29,
+   "ca": [
+    [
+     "Special Economic Measures (Guatemala) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2024-23/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures relating to Guatemala",
+     "https://www.fedlex.admin.ch/eli/cc/2024/148/de"
+    ]
+   ],
+   "iso2": "GT",
+   "iso3": "GTM"
+  },
+  "Guinea": {
+   "n": "Guinea",
+   "eu": [
+    "Restrictive measures in view of the situation in Guinea"
+   ],
+   "cpi": 27,
+   "prev": 24,
+   "uk": [
+    [
+     "Guinea sanctions regime",
+     "https://www.gov.uk/government/publications/guinea-sanctions-guidance"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Guinea",
+     "https://www.fedlex.admin.ch/eli/cc/2010/117/de"
+    ]
+   ],
+   "iso2": "GN",
+   "iso3": "GIN"
+  },
+  "Guinea-Bissau": {
+   "n": "Guinea-Bissau",
+   "eu": [
+    "Restrictive measures in view of the situation in Guinea-Bissau"
+   ],
+   "un": [
+    "2048 Sanctions Committee (Guinea-Bissau)"
+   ],
+   "cpi": 20,
+   "prev": 21,
+   "uk": [
+    [
+     "Republic of Guinea-Bissau sanctions regime",
+     "https://www.gov.uk/government/publications/guinea-bissau-sanctions-guidance"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Guinea-Bissau",
+     "https://www.fedlex.admin.ch/eli/cc/2012/374/de"
+    ]
+   ],
+   "au": [
+    [
+     "Guinea-Bissau sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/guinea-bissau-sanctions-framework"
+    ]
+   ],
+   "iso2": "GW",
+   "iso3": "GNB"
+  },
+  "Guyana": {
+   "n": "Guyana",
+   "cpi": 40,
+   "prev": 41,
+   "iso2": "GY",
+   "iso3": "GUY"
+  },
+  "Haiti": {
+   "n": "Haiti",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "Viv Ansanm",
+    "Gran Grif"
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Haiti"
+   ],
+   "un": [
+    "2653 Sanctions Committee (Haiti)"
+   ],
+   "cpi": 17,
+   "prev": 17,
+   "uk": [
+    [
+     "Haiti sanctions regime",
+     "https://www.gov.uk/government/publications/haiti-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Haiti) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-226/"
+    ],
+    [
+     "Regulations Implementing the United Nations Resolutions on Haiti",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-237/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures relating to Haiti",
+     "https://www.fedlex.admin.ch/eli/cc/2022/823/de"
+    ]
+   ],
+   "au": [
+    [
+     "Haiti sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/haiti-sanctions-framework"
+    ]
+   ],
+   "iso2": "HT",
+   "iso3": "HTI"
+  },
+  "Honduras": {
+   "n": "Honduras",
+   "fto": "y",
+   "ftog": [
+    "Mara Salvatrucha (MS-13)",
+    "Barrio 18"
+   ],
+   "cpi": 23,
+   "prev": 23,
+   "iso2": "HN",
+   "iso3": "HND"
+  },
+  "Hong Kong": {
+   "n": "Hong Kong",
+   "us": "t",
+   "usp": [
+    [
+     "Hong Kong-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/hong-kong-related-sanctions"
+    ]
+   ],
+   "uk": [
+    [
+     "UK arms embargo on mainland China and Hong Kong",
+     "https://www.gov.uk/government/collections/uk-arms-embargo-on-mainland-china-and-hong-kong"
+    ]
+   ],
+   "cpi": 81,
+   "prev": 80,
+   "iso2": "HK",
+   "iso3": "HKG"
+  },
+  "Belgium": {
+   "n": "Belgium",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 76,
+   "prev": 77,
+   "iso2": "BE",
+   "iso3": "BEL"
+  },
+  "Austria": {
+   "n": "Austria",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 74,
+   "prev": 74,
+   "iso2": "AT",
+   "iso3": "AUT"
+  },
+  "India": {
+   "n": "India",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Lashkar-e-Tayyiba (LeT)",
+    "Jaish-e-Mohammed (JEM)",
+    "Hizbul Mujahideen (HM)",
+    "al-Qa'ida in the Indian Subcontinent (AQIS)",
+    "Islamic Jihad Union (IJU)",
+    "Harakat ul-Mujahidin (HUM)",
+    "Harakat ul-Jihad-i-Islami (HUJI)",
+    "Lashkar i Jhangvi (LJ)",
+    "Indian Mujahedeen (IM)"
+   ],
+   "cpi": 42,
+   "prev": 42,
+   "iso2": "IN",
+   "iso3": "IND"
+  },
+  "Indonesia": {
+   "n": "Indonesia",
+   "fto": "y",
+   "ftog": [
+    "Jemaah Anshorut Tauhid (JAT)",
+    "Jemaah Islamiya (JI)"
+   ],
+   "cpi": 38,
+   "prev": 37,
+   "iso2": "ID",
+   "iso3": "IDN"
+  },
+  "Iran": {
+   "n": "Iran",
+   "fatf": "black",
+   "fto": "y",
+   "ftog": [
+    "Islamic Revolutionary Guard Corps (IRGC)",
+    "Jaysh al-Adl (formerly Jundallah)"
+   ],
+   "us": "c",
+   "usp": [
+    [
+     "Iran Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in relation to serious human rights violations in Iran",
+    "Restrictive measures in relation to the non-proliferation of weapons of mass destruction",
+    "Restrictive measures in view of Iran’s military support to Russia’s war of aggression against Ukraine and to armed groups and entities in the Middle East and the Red Sea region"
+   ],
+   "un": [
+    "1737 Sanctions Committee (Iran)"
+   ],
+   "cpi": 25,
+   "prev": 25,
+   "uk": [
+    [
+     "Iran sanctions regime",
+     "https://www.gov.uk/government/publications/iran-sanctions-guidance"
+    ],
+    [
+     "Iran (Nuclear) sanctions regime",
+     "https://www.gov.uk/government/publications/iran-nuclear-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Iran) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2010-165/"
+    ],
+    [
+     "Regulations Implementing the United Nations Resolutions on Iran",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-44/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against the Islamic Republic of Iran",
+     "https://www.fedlex.admin.ch/eli/cc/2025/838/de"
+    ]
+   ],
+   "au": [
+    [
+     "Iran sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/iran-sanctions-framework"
+    ]
+   ],
+   "iso2": "IR",
+   "iso3": "IRN"
+  },
+  "Iraq": {
+   "n": "Iraq",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Kata'ib Hizballah (KH)",
+    "Asa'ib Ahl al-Haq (AAH)",
+    "Kurdistan Workers Party (PKK)",
+    "Ansar al-Islam (AAI)",
+    "Harakat al-Nujaba (HAN)",
+    "Kata'ib Sayyid al-Shuhada (KSS)",
+    "Harakat Ansar Allah al-Awfiya (HAAA)",
+    "Kata'ib al-Imam Ali (KIA)",
+    "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Iraq-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/iraq-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures on Iraq"
+   ],
+   "un": [
+    "1518 Sanctions Committee (Iraq)"
+   ],
+   "cpi": 23,
+   "prev": 23,
+   "uk": [
+    [
+     "Iraq sanctions regime",
+     "https://www.gov.uk/government/publications/iraq-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on Iraq",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-221/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Economic Measures against the Republic of Iraq",
+     "https://www.fedlex.admin.ch/eli/cc/1990/1316_1316_1316/de"
+    ]
+   ],
+   "au": [
+    [
+     "Iraq sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/iraq-sanctions-framework"
+    ]
+   ],
+   "iso2": "IQ",
+   "iso3": "IRQ"
+  },
+  "France": {
+   "n": "France",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)"
+   ],
+   "cpi": 73,
+   "prev": 73,
+   "iso2": "FR",
+   "iso3": "FRA"
+  },
+  "Israel": {
+   "n": "Israel",
+   "fto": "y",
+   "ftor": 1,
+   "ftog": [
+    "HAMAS",
+    "Palestine Islamic Jihad (PIJ)",
+    "Hizballah",
+    "Al-Aqsa Martyrs Brigade (AAMB)",
+    "Popular Front for the Liberation of Palestine (PFLP)",
+    "PFLP-General Command (PFLP-GC)",
+    "Army of Islam (AOI)"
+   ],
+   "cpi": 67,
+   "prev": 67,
+   "iso2": "IL",
+   "iso3": "ISR"
+  },
+  "Lithuania": {
+   "n": "Lithuania",
+   "cpi": 69,
+   "prev": 66,
+   "iso2": "LT",
+   "iso3": "LTU"
+  },
+  "Jamaica": {
+   "n": "Jamaica",
+   "cpi": 46,
+   "prev": 46,
+   "iso2": "JM",
+   "iso3": "JAM"
+  },
+  "Japan": {
+   "n": "Japan",
+   "cpi": 77,
+   "prev": 76,
+   "iso2": "JP",
+   "iso3": "JPN"
+  },
+  "Jordan": {
+   "n": "Jordan",
+   "fto": "y",
+   "ftog": [
+    "HAMAS"
+   ],
+   "cpi": 54,
+   "prev": 54,
+   "iso2": "JO",
+   "iso3": "JOR"
+  },
+  "Kazakhstan": {
+   "n": "Kazakhstan",
+   "fto": "n",
+   "cpi": 43,
+   "prev": 47,
+   "iso2": "KZ",
+   "iso3": "KAZ"
+  },
+  "Kenya": {
+   "n": "Kenya",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "al-Shabaab",
+    "ISIS"
+   ],
+   "cpi": 31,
+   "prev": 32,
+   "iso2": "KE",
+   "iso3": "KEN"
+  },
+  "North Korea": {
+   "n": "North Korea",
+   "fatf": "black",
+   "us": "c",
+   "usp": [
+    [
+     "North Korea Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/north-korea-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in relation to the non-proliferation of the weapons of mass destruction"
+   ],
+   "un": [
+    "1718 Sanctions Committee (DPRK)"
+   ],
+   "cpi": 17,
+   "prev": 17,
+   "uk": [
+    [
+     "Democratic People's Republic of Korea sanctions regime",
+     "https://www.gov.uk/government/publications/democratic-peoples-republic-of-korea-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Democratic People's Republic of Korea) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-167/"
+    ],
+    [
+     "Regulations Implementing the United Nations Resolutions on the Democratic People's Republic of Korea",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2006-287/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against the Democratic People's Republic of Korea",
+     "https://www.fedlex.admin.ch/eli/cc/2016/280/de"
+    ]
+   ],
+   "au": [
+    [
+     "Democratic People's Republic of Korea sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/democratic-peoples-republic-korea-sanctions-framework"
+    ]
+   ],
+   "iso2": "KP",
+   "iso3": "PRK"
+  },
+  "South Korea": {
+   "n": "South Korea",
+   "cpi": 67,
+   "prev": 66,
+   "iso2": "KR",
+   "iso3": "KOR"
+  },
+  "Kosovo": {
+   "n": "Kosovo",
+   "fto": "n",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 43,
+   "prev": 44,
+   "iso2": "XK",
+   "iso3": "XKX"
+  },
+  "Kuwait": {
+   "n": "Kuwait",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 54,
+   "prev": 52,
+   "iso2": "KW",
+   "iso3": "KWT"
+  },
+  "Kyrgyzstan": {
+   "n": "Kyrgyzstan",
+   "fto": "y",
+   "ftog": [
+    "Islamic State's Khorasan Province (ISIS-K)",
+    "Islamic Movement of Uzbekistan (IMU)"
+   ],
+   "cpi": 26,
+   "prev": 25,
+   "iso2": "KG",
+   "iso3": "KGZ"
+  },
+  "Laos": {
+   "n": "Laos",
+   "fatf": "grey",
+   "cpi": 28,
+   "prev": 28,
+   "iso2": "LA",
+   "iso3": "LAO"
+  },
+  "Slovenia": {
+   "n": "Slovenia",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 61,
+   "prev": 62,
+   "iso2": "SI",
+   "iso3": "SVN"
+  },
+  "Lebanon": {
+   "n": "Lebanon",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "Hizballah",
+    "HAMAS",
+    "Palestine Islamic Jihad (PIJ)",
+    "ISIS",
+    "Popular Front for the Liberation of Palestine (PFLP)",
+    "Asbat al-Ansar (AAA)",
+    "Lebanese Muslim Brotherhood",
+    "Abdallah Azzam Brigades"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Lebanon-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/lebanon-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Lebanon",
+    "Restrictive measures in relation to the UN Security Council Resolution 1701 (2006) on Lebanon",
+    "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon"
+   ],
+   "un": [
+    "1636 Sanctions Committee (14 February 2005 Beirut bombing)",
+    "Arms embargo under Resolution 1701 (2006)"
+   ],
+   "cpi": 23,
+   "prev": 22,
+   "uk": [
+    [
+     "Lebanon sanctions regime",
+     "https://www.gov.uk/government/publications/lebanon-sanctions-guidance"
+    ],
+    [
+     "Lebanon (Assassination of Rafiq Hariri and others) sanctions regime",
+     "https://www.gov.uk/government/publications/lebanon-assassination-of-rafiq-hariri-and-others-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on Lebanon",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-204/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures relating to Lebanon",
+     "https://www.fedlex.admin.ch/eli/cc/2006/659/de"
+    ],
+    [
+     "Ordinance on Measures against Certain Persons in Connection with the Assassination of Rafik Hariri",
+     "https://www.fedlex.admin.ch/eli/cc/2006/5/de"
+    ]
+   ],
+   "au": [
+    [
+     "Lebanon sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/lebanon-sanctions-framework"
+    ]
+   ],
+   "iso2": "LB",
+   "iso3": "LBN"
+  },
+  "Lesotho": {
+   "n": "Lesotho",
+   "cpi": 43,
+   "prev": 42,
+   "iso2": "LS",
+   "iso3": "LSO"
+  },
+  "Liberia": {
+   "n": "Liberia",
+   "cpi": 29,
+   "prev": 27,
+   "iso2": "LR",
+   "iso3": "LBR"
+  },
+  "Libya": {
+   "n": "Libya",
+   "fto": "y",
+   "ftog": [
+    "ISIS-Libya",
+    "al-Qa'ida in the Islamic Maghreb (AQIM)",
+    "Ansar al-Shari'a in Benghazi",
+    "Ansar al-Shari'a in Darnah"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Libya Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/libya-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Libya"
+   ],
+   "un": [
+    "1970 Sanctions Committee (Libya)"
+   ],
+   "cpi": 17,
+   "prev": 17,
+   "uk": [
+    [
+     "Libya sanctions regime",
+     "https://www.gov.uk/government/publications/libya-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions and Imposing Special Economic Measures on Libya",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-51/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Libya",
+     "https://www.fedlex.admin.ch/eli/cc/2011/203/de"
+    ]
+   ],
+   "au": [
+    [
+     "Libya sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/libya-sanctions-framework"
+    ]
+   ],
+   "iso2": "LY",
+   "iso3": "LBY"
+  },
+  "Latvia": {
+   "n": "Latvia",
+   "cpi": 64,
+   "prev": 64,
+   "iso2": "LV",
+   "iso3": "LVA"
+  },
+  "Portugal": {
+   "n": "Portugal",
+   "cpi": 64,
+   "prev": 65,
+   "iso2": "PT",
+   "iso3": "PRT"
+  },
+  "Madagascar": {
+   "n": "Madagascar",
+   "cpi": 27,
+   "prev": 27,
+   "iso2": "MG",
+   "iso3": "MDG"
+  },
+  "Malawi": {
+   "n": "Malawi",
+   "cpi": 35,
+   "prev": 35,
+   "iso2": "MW",
+   "iso3": "MWI"
+  },
+  "Malaysia": {
+   "n": "Malaysia",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Abu Sayyaf Group (ASG)",
+    "al-Qa'ida (AQ)",
+    "Jemaah Islamiya (JI)"
+   ],
+   "cpi": 59,
+   "prev": 57,
+   "iso2": "MY",
+   "iso3": "MYS"
+  },
+  "Maldives": {
+   "n": "Maldives",
+   "fto": "n",
+   "cpi": 41,
+   "prev": 41,
+   "iso2": "MV",
+   "iso3": "MDV"
+  },
+  "Mali": {
+   "n": "Mali",
+   "fto": "y",
+   "ftog": [
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+    "ISIS in the Greater Sahara (ISIS-GS)",
+    "al-Mulathamun Battalion (al-Murabitoun)",
+    "Ansar al-Dine (AAD)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Mali-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/mali-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Mali"
+   ],
+   "cpi": 29,
+   "prev": 29,
+   "uk": [
+    [
+     "Mali sanctions regime",
+     "https://www.gov.uk/government/publications/mali-sanctions-guidance"
+    ]
+   ],
+   "iso2": "ML",
+   "iso3": "MLI"
+  },
+  "Cyprus": {
+   "n": "Cyprus",
+   "fto": "n",
+   "cpi": 59,
+   "prev": 59,
+   "iso2": "CY",
+   "iso3": "CYP"
+  },
+  "Mauritania": {
+   "n": "Mauritania",
+   "fto": "n",
+   "cpi": 29,
+   "prev": 28,
+   "iso2": "MR",
+   "iso3": "MRT"
+  },
+  "Mauritius": {
+   "n": "Mauritius",
+   "cpi": 56,
+   "prev": 56,
+   "iso2": "MU",
+   "iso3": "MUS"
+  },
+  "Mexico": {
+   "n": "Mexico",
+   "fto": "y",
+   "ftog": [
+    "Cartel de Sinaloa",
+    "Cartel de Jalisco Nueva Generacion (CJNG)",
+    "Cartel del Noreste",
+    "La Nueva Familia Michoacana",
+    "Cartel del Golfo (Gulf Cartel)",
+    "Carteles Unidos",
+    "Mara Salvatrucha (MS-13)",
+    "Clan del Golfo",
+    "Cartel de los Soles",
+    "Juarez Cartel (La Linea)",
+    "Los Viagras",
+    "ISIS"
+   ],
+   "cpi": 29,
+   "prev": 29,
+   "iso2": "MX",
+   "iso3": "MEX"
+  },
+  "Moldova": {
+   "n": "Moldova",
+   "eu": [
+    "Restrictive measures in view of actions destabilising the Republic of Moldova",
+    "Restrictive measures in relation to the campaign against Latinscript schools in the Transnistrian region"
+   ],
+   "cpi": 43,
+   "prev": 42,
+   "ca": [
+    [
+     "Special Economic Measures (Moldova) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-109/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures relating to Moldova",
+     "https://www.fedlex.admin.ch/eli/cc/2023/335/de"
+    ]
+   ],
+   "iso2": "MD",
+   "iso3": "MDA"
+  },
+  "Mongolia": {
+   "n": "Mongolia",
+   "cpi": 39,
+   "prev": 38,
+   "iso2": "MN",
+   "iso3": "MNG"
+  },
+  "Montenegro": {
+   "n": "Montenegro",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 50,
+   "prev": 47,
+   "iso2": "ME",
+   "iso3": "MNE"
+  },
+  "Morocco": {
+   "n": "Morocco",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida in the Islamic Maghreb (AQIM)"
+   ],
+   "cpi": 38,
+   "prev": 38,
+   "iso2": "MA",
+   "iso3": "MAR"
+  },
+  "Mozambique": {
+   "n": "Mozambique",
+   "fto": "y",
+   "ftog": [
+    "ISIS-Mozambique"
+   ],
+   "cpi": 26,
+   "prev": 27,
+   "iso2": "MZ",
+   "iso3": "MOZ"
+  },
+  "Myanmar": {
+   "n": "Myanmar",
+   "fatf": "black",
+   "us": "t",
+   "usp": [
+    [
+     "Burma-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/burma"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Myanmar/Burma"
+   ],
+   "cpi": 22,
+   "prev": 23,
+   "uk": [
+    [
+     "Myanmar sanctions regime",
+     "https://www.gov.uk/government/publications/myanmar-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Myanmar) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2007-285/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Myanmar",
+     "https://www.fedlex.admin.ch/eli/cc/2018/560/de"
+    ]
+   ],
+   "au": [
+    [
+     "Myanmar sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/myanmar-sanctions-framework"
+    ]
+   ],
+   "iso2": "MM",
+   "iso3": "MMR"
+  },
+  "Namibia": {
+   "n": "Namibia",
+   "cpi": 51,
+   "prev": 51,
+   "iso2": "NA",
+   "iso3": "NAM"
+  },
+  "Nepal": {
+   "n": "Nepal",
+   "fatf": "grey",
+   "cpi": 32,
+   "prev": 35,
+   "iso2": "NP",
+   "iso3": "NPL"
+  },
+  "Czechia": {
+   "n": "Czechia",
+   "cpi": 64,
+   "prev": 66,
+   "iso2": "CZ",
+   "iso3": "CZE"
+  },
+  "New Zealand": {
+   "n": "New Zealand",
+   "cpi": 86,
+   "prev": 87,
+   "iso2": "NZ",
+   "iso3": "NZL"
+  },
+  "Nicaragua": {
+   "n": "Nicaragua",
+   "us": "t",
+   "usp": [
+    [
+     "Nicaragua-related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/nicaragua-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Nicaragua"
+   ],
+   "cpi": 20,
+   "prev": 19,
+   "uk": [
+    [
+     "Nicaragua sanctions regime",
+     "https://www.gov.uk/government/publications/nicaragua-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Nicaragua) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-232/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Nicaragua",
+     "https://www.fedlex.admin.ch/eli/cc/2020/470/de"
+    ]
+   ],
+   "iso2": "NI",
+   "iso3": "NIC"
+  },
+  "Niger": {
+   "n": "Niger",
+   "fto": "y",
+   "ftog": [
+    "ISIS in the Greater Sahara (ISIS-GS)",
+    "ISIS-West Africa",
+    "Boko Haram",
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Niger"
+   ],
+   "cpi": 33,
+   "prev": 35,
+   "iso2": "NE",
+   "iso3": "NER"
+  },
+  "Nigeria": {
+   "n": "Nigeria",
+   "fto": "y",
+   "ftog": [
+    "ISIS-West Africa",
+    "Boko Haram",
+    "Ansaru",
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+   ],
+   "cpi": 27,
+   "prev": 26,
+   "iso2": "NG",
+   "iso3": "NGA"
+  },
+  "Macedonia": {
+   "n": "North Macedonia",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 42,
+   "prev": 41,
+   "iso2": "MK",
+   "iso3": "MKD"
+  },
+  "Spain": {
+   "n": "Spain",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)"
+   ],
+   "cpi": 61,
+   "prev": 63,
+   "iso2": "ES",
+   "iso3": "ESP"
+  },
+  "Oman": {
+   "n": "Oman",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 58,
+   "prev": 58,
+   "iso2": "OM",
+   "iso3": "OMN"
+  },
+  "Pakistan": {
+   "n": "Pakistan",
+   "fto": "y",
+   "ftog": [
+    "Tehrik-e Taliban Pakistan (TTP)",
+    "Balochistan Liberation Army (BLA)",
+    "Islamic State's Khorasan Province (ISIS-K)",
+    "al-Qa'ida (AQ)",
+    "al-Qa'ida in the Indian Subcontinent (AQIS)",
+    "Lashkar-e-Tayyiba (LeT)",
+    "Jaish-e-Mohammed (JEM)",
+    "Lashkar i Jhangvi (LJ)",
+    "Islamic Jihad Union (IJU)",
+    "Harakat ul-Mujahidin (HUM)",
+    "Jaysh al-Adl (formerly Jundallah)"
+   ],
+   "cpi": 26,
+   "prev": 26,
+   "iso2": "PK",
+   "iso3": "PAK"
+  },
+  "Panama": {
+   "n": "Panama",
+   "fto": "n",
+   "cpi": 37,
+   "prev": 37,
+   "iso2": "PA",
+   "iso3": "PAN"
+  },
+  "Papua New Guinea": {
+   "n": "Papua New Guinea",
+   "fatf": "grey",
+   "cpi": 32,
+   "prev": 32,
+   "iso2": "PG",
+   "iso3": "PNG"
+  },
+  "Paraguay": {
+   "n": "Paraguay",
+   "fto": "y",
+   "ftog": [
+    "Hizballah"
+   ],
+   "cpi": 28,
+   "prev": 28,
+   "iso2": "PY",
+   "iso3": "PRY"
+  },
+  "Peru": {
+   "n": "Peru",
+   "fto": "y",
+   "ftog": [
+    "Shining Path (Sendero Luminoso, SL)"
+   ],
+   "cpi": 33,
+   "prev": 34,
+   "iso2": "PE",
+   "iso3": "PER"
+  },
+  "Philippines": {
+   "n": "Philippines",
+   "fto": "y",
+   "ftog": [
+    "Abu Sayyaf Group (ASG)",
+    "ISIS-Philippines",
+    "Communist Party of the Philippines/New People's Army (CPP/NPA)",
+    "Jemaah Islamiya (JI)"
+   ],
+   "cpi": 36,
+   "prev": 36,
+   "iso2": "PH",
+   "iso3": "PHL"
+  },
+  "Italy": {
+   "n": "Italy",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)",
+    "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+   ],
+   "cpi": 60,
+   "prev": 59,
+   "iso2": "IT",
+   "iso3": "ITA"
+  },
+  "Poland": {
+   "n": "Poland",
+   "cpi": 65,
+   "prev": 64,
+   "iso2": "PL",
+   "iso3": "POL"
+  },
+  "Qatar": {
+   "n": "Qatar",
+   "fto": "n",
+   "cpi": 66,
+   "prev": 63,
+   "iso2": "QA",
+   "iso3": "QAT"
+  },
+  "Greece": {
+   "n": "Greece",
+   "fto": "y",
+   "ftog": [
+    "Revolutionary Struggle (RS)",
+    "Revolutionary Class Self-Defense",
+    "Armed Proletarian Justice"
+   ],
+   "cpi": 53,
+   "prev": 54,
+   "iso2": "GR",
+   "iso3": "GRC"
+  },
+  "Russia": {
+   "n": "Russia",
+   "fto": "y",
+   "ftog": [
+    "Islamic State's Khorasan Province (ISIS-K)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Russian Harmful Foreign Activities Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+    ],
+    [
+     "Ukraine-/Russia-related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/ukraine-russia-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Russia",
+    "Restrictive measures in view of Russia's destabilising activities",
+    "Restrictive measures in view of Russia's actions destabilising the situation in Ukraine (sectoral restrictive measures)"
+   ],
+   "cpi": 28,
+   "prev": 30,
+   "uk": [
+    [
+     "Russia sanctions regime",
+     "https://www.gov.uk/government/publications/russia-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Russia) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-58/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures in connection with the Situation in Ukraine (aimed at Russia)",
+     "https://www.fedlex.admin.ch/eli/cc/2022/151/de"
+    ]
+   ],
+   "au": [
+    [
+     "Russia sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/russia-sanctions-framework"
+    ],
+    [
+     "Ukraine sanctions framework (aimed at Russia)",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/ukraine-sanctions-framework"
+    ]
+   ],
+   "iso2": "RU",
+   "iso3": "RUS"
+  },
+  "Rwanda": {
+   "n": "Rwanda",
+   "cpi": 61,
+   "prev": 60,
+   "iso2": "RW",
+   "iso3": "RWA"
+  },
+  "Saint Lucia": {
+   "n": "Saint Lucia",
+   "cpi": 58,
+   "prev": 57,
+   "iso2": "LC",
+   "iso3": "LCA"
+  },
+  "St. Vin. and Gren.": {
+   "n": "Saint Vincent and the Grenadines",
+   "cpi": 63,
+   "prev": 62,
+   "iso2": "VC",
+   "iso3": "VCT"
+  },
+  "São Tomé and Principe": {
+   "n": "Sao Tome and Principe",
+   "cpi": 51,
+   "prev": 50,
+   "iso2": "ST",
+   "iso3": "STP"
+  },
+  "Saudi Arabia": {
+   "n": "Saudi Arabia",
+   "fto": "n",
+   "cpi": 64,
+   "prev": 63,
+   "iso2": "SA",
+   "iso3": "SAU"
+  },
+  "Senegal": {
+   "n": "Senegal",
+   "fto": "n",
+   "cpi": 51,
+   "prev": 51,
+   "iso2": "SN",
+   "iso3": "SEN"
+  },
+  "Serbia": {
+   "n": "Serbia",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 36,
+   "prev": 37,
+   "iso2": "RS",
+   "iso3": "SRB"
+  },
+  "Seychelles": {
+   "n": "Seychelles",
+   "cpi": 73,
+   "prev": 73,
+   "iso2": "SC",
+   "iso3": "SYC"
+  },
+  "Sierra Leone": {
+   "n": "Sierra Leone",
+   "cpi": 32,
+   "prev": 34,
+   "iso2": "SL",
+   "iso3": "SLE"
+  },
+  "Singapore": {
+   "n": "Singapore",
+   "cpi": 88,
+   "prev": 88,
+   "iso2": "SG",
+   "iso3": "SGP"
+  },
+  "Slovakia": {
+   "n": "Slovakia",
+   "cpi": 49,
+   "prev": 50,
+   "iso2": "SK",
+   "iso3": "SVK"
+  },
+  "Croatia": {
+   "n": "Croatia",
+   "us": "t",
+   "usp": [
+    [
+     "Balkans-Related Sanctions (covers Albania and the former Yugoslavia)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions"
+    ]
+   ],
+   "cpi": 51,
+   "prev": 50,
+   "iso2": "HR",
+   "iso3": "HRV"
+  },
+  "Solomon Is.": {
+   "n": "Solomon Islands",
+   "cpi": 45,
+   "prev": 45,
+   "iso2": "SB",
+   "iso3": "SLB"
+  },
+  "Somalia": {
+   "n": "Somalia",
+   "fto": "y",
+   "ftog": [
+    "al-Shabaab",
+    "ISIS"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Somalia Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/somalia-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Somalia"
+   ],
+   "un": [
+    "2713 Sanctions Committee (Al-Shabaab)"
+   ],
+   "cpi": 14,
+   "prev": 12,
+   "uk": [
+    [
+     "Somalia sanctions regime",
+     "https://www.gov.uk/government/publications/somalia-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on Somalia",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2009-92/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Somalia",
+     "https://www.fedlex.admin.ch/eli/cc/2009/295/de"
+    ]
+   ],
+   "au": [
+    [
+     "Al-Shabaab sanctions framework (Somalia)",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/al-shabaab-sanctions-framework"
+    ]
+   ],
+   "iso2": "SO",
+   "iso3": "SOM"
+  },
+  "South Africa": {
+   "n": "South Africa",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 45,
+   "prev": 45,
+   "iso2": "ZA",
+   "iso3": "ZAF"
+  },
+  "S. Sudan": {
+   "n": "South Sudan",
+   "fatf": "grey",
+   "us": "t",
+   "usp": [
+    [
+     "South Sudan-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/south-sudan-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in South Sudan"
+   ],
+   "un": [
+    "2206 Sanctions Committee (South Sudan)"
+   ],
+   "cpi": 6,
+   "prev": 7,
+   "uk": [
+    [
+     "South Sudan sanctions regime",
+     "https://www.gov.uk/government/publications/south-sudan-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (South Sudan) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-235/"
+    ],
+    [
+     "Regulations Implementing the United Nations Resolution on South Sudan",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-165/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against the Republic of South Sudan",
+     "https://www.fedlex.admin.ch/eli/cc/2015/532/de"
+    ]
+   ],
+   "au": [
+    [
+     "Sudan and South Sudan sanctions frameworks",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/sudan-and-south-sudan-sanctions-framework"
+    ]
+   ],
+   "iso2": "SS",
+   "iso3": "SSD"
+  },
+  "Malta": {
+   "n": "Malta",
+   "cpi": 52,
+   "prev": 53,
+   "iso2": "MT",
+   "iso3": "MLT"
+  },
+  "Sri Lanka": {
+   "n": "Sri Lanka",
+   "fto": "n",
+   "cpi": 42,
+   "prev": 40,
+   "ca": [
+    [
+     "Special Economic Measures (Sri Lanka) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2023-2/"
+    ]
+   ],
+   "iso2": "LK",
+   "iso3": "LKA"
+  },
+  "Sudan": {
+   "n": "Sudan",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)",
+    "Sudanese Muslim Brotherhood"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Sudan and Darfur Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/sudan-and-darfur-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Sudan",
+    "Restrictive measures in view of activities undermining the stability and the political transition of Sudan"
+   ],
+   "un": [
+    "1591 Sanctions Committee (Sudan)"
+   ],
+   "cpi": 16,
+   "prev": 17,
+   "uk": [
+    [
+     "Sudan sanctions regime",
+     "https://www.gov.uk/government/publications/sudan-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Sudan) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2024-61/"
+    ],
+    [
+     "United Nations Sudan Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2004-197/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Sudan",
+     "https://www.fedlex.admin.ch/eli/cc/2005/371/de"
+    ]
+   ],
+   "au": [
+    [
+     "Sudan and South Sudan sanctions frameworks",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/sudan-and-south-sudan-sanctions-framework"
+    ]
+   ],
+   "iso2": "SD",
+   "iso3": "SDN"
+  },
+  "Suriname": {
+   "n": "Suriname",
+   "cpi": 40,
+   "prev": 40,
+   "iso2": "SR",
+   "iso3": "SUR"
+  },
+  "Romania": {
+   "n": "Romania",
+   "cpi": 48,
+   "prev": 48,
+   "iso2": "RO",
+   "iso3": "ROU"
+  },
+  "Bulgaria": {
+   "n": "Bulgaria",
+   "fatf": "grey",
+   "fto": "n",
+   "cpi": 42,
+   "prev": 42,
+   "iso2": "BG",
+   "iso3": "BGR"
+  },
+  "Syria": {
+   "n": "Syria",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "al-Qa'ida (AQ)",
+    "Hizballah",
+    "Kata'ib Hizballah (KH)",
+    "Harakat al-Nujaba (HAN)",
+    "Kata'ib Sayyid al-Shuhada (KSS)",
+    "Harakat Ansar Allah al-Awfiya (HAAA)",
+    "Asa'ib Ahl al-Haq (AAH)",
+    "Ansar al-Islam (AAI)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS)",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/paarss"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures against Syria",
+    "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon"
+   ],
+   "un": [
+    "1636 Sanctions Committee (14 February 2005 Beirut bombing)"
+   ],
+   "cpi": 15,
+   "prev": 14,
+   "uk": [
+    [
+     "Syria sanctions regime",
+     "https://www.gov.uk/government/publications/syria-sanctions-guidance"
+    ],
+    [
+     "Syria (Cultural Property) sanctions regime",
+     "https://www.gov.uk/government/publications/syria-cultural-property-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Syria) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-114/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Syria",
+     "https://www.fedlex.admin.ch/eli/cc/2012/394/de"
+    ]
+   ],
+   "au": [
+    [
+     "Syria sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/syria-sanctions-framework"
+    ]
+   ],
+   "iso2": "SY",
+   "iso3": "SYR"
+  },
+  "Taiwan": {
+   "n": "Taiwan",
+   "cpi": 72,
+   "prev": 73,
+   "iso2": "TW",
+   "iso3": "TWN"
+  },
+  "Tajikistan": {
+   "n": "Tajikistan",
+   "fto": "y",
+   "ftog": [
+    "Islamic State's Khorasan Province (ISIS-K)"
+   ],
+   "cpi": 23,
+   "prev": 23,
+   "iso2": "TJ",
+   "iso3": "TJK"
+  },
+  "Tanzania": {
+   "n": "Tanzania",
+   "fto": "y",
+   "ftog": [
+    "ISIS-DRC",
+    "ISIS-Mozambique",
+    "al-Shabaab"
+   ],
+   "cpi": 41,
+   "prev": 42,
+   "iso2": "TZ",
+   "iso3": "TZA"
+  },
+  "Thailand": {
+   "n": "Thailand",
+   "cpi": 38,
+   "prev": 37,
+   "iso2": "TH",
+   "iso3": "THA"
+  },
+  "Timor-Leste": {
+   "n": "Timor-Leste",
+   "cpi": 40,
+   "prev": 41,
+   "iso2": "TL",
+   "iso3": "TLS"
+  },
+  "Togo": {
+   "n": "Togo",
+   "fto": "y",
+   "ftog": [
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+   ],
+   "cpi": 34,
+   "prev": 35,
+   "iso2": "TG",
+   "iso3": "TGO"
+  },
+  "Trinidad and Tobago": {
+   "n": "Trinidad and Tobago",
+   "fto": "y",
+   "ftog": [
+    "ISIS"
+   ],
+   "cpi": 41,
+   "prev": 41,
+   "iso2": "TT",
+   "iso3": "TTO"
+  },
+  "Tunisia": {
+   "n": "Tunisia",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Ansar al-Shari'a in Tunisia",
+    "al-Qa'ida in the Islamic Maghreb (AQIM)"
+   ],
+   "eu": [
+    "Misappropriation of state funds of Tunisia"
+   ],
+   "cpi": 44,
+   "prev": 44,
+   "iso2": "TN",
+   "iso3": "TUN"
+  },
+  "Turkey": {
+   "n": "Turkey",
+   "fto": "y",
+   "ftog": [
+    "ISIS",
+    "Kurdistan Workers Party (PKK)",
+    "Revolutionary People's Liberation Party/Front (DHKP/C)"
+   ],
+   "eu": [
+    "Restrictive measures in view of Türkiye’s  unauthorised drilling activities in the Eastern Mediterranean"
+   ],
+   "cpi": 37,
+   "prev": 37,
+   "iso2": "TR",
+   "iso3": "TUR"
+  },
+  "Turkmenistan": {
+   "n": "Turkmenistan",
+   "fto": "n",
+   "cpi": 22,
+   "prev": 22,
+   "iso2": "TM",
+   "iso3": "TKM"
+  },
+  "Uganda": {
+   "n": "Uganda",
+   "fto": "y",
+   "ftog": [
+    "ISIS-DRC"
+   ],
+   "cpi": 26,
+   "prev": 25,
+   "iso2": "UG",
+   "iso3": "UGA"
+  },
+  "Ukraine": {
+   "n": "Ukraine",
+   "us": "t",
+   "usp": [
+    [
+     "Ukraine-/Russia-related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/ukraine-russia-related-sanctions"
+    ]
+   ],
+   "usn": "Includes a comprehensive embargo on the Crimea region and the so-called Donetsk and Luhansk People's Republic regions of Ukraine.",
+   "eu": [
+    "Restrictive measures in response to the illegal recognition, occupation or annexation by the Russian Federation of certain non-government controlled areas of Ukraine",
+    "Misappropriation of state funds of Ukraine",
+    "Restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
+    "Restrictive measures in response to the illegal annexation of Crimea and Sevastopol"
+   ],
+   "cpi": 34,
+   "prev": 34,
+   "uk": [
+    [
+     "Russia sanctions regime (covers Russian-controlled areas of Ukraine)",
+     "https://www.gov.uk/government/publications/russia-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Ukraine) Regulations (measures linked to Russia's violation of Ukraine's sovereignty)",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-60/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures in connection with the Situation in Ukraine (covers Crimea, Sevastopol and areas outside government control)",
+     "https://www.fedlex.admin.ch/eli/cc/2022/151/de"
+    ]
+   ],
+   "au": [
+    [
+     "Specified Ukraine regions sanctions framework (Crimea, Sevastopol, Donetsk, Luhansk)",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/specified-ukraine-regions-sanctions-framework"
+    ]
+   ],
+   "iso2": "UA",
+   "iso3": "UKR"
+  },
+  "United Arab Emirates": {
+   "n": "United Arab Emirates",
+   "fto": "n",
+   "cpi": 71,
+   "prev": 72,
+   "iso2": "AE",
+   "iso3": "ARE"
+  },
+  "Hungary": {
+   "n": "Hungary",
+   "cpi": 48,
+   "prev": 49,
+   "iso2": "HU",
+   "iso3": "HUN"
+  },
+  "United States of America": {
+   "n": "United States",
+   "cpi": 65,
+   "prev": 70,
+   "iso2": "US",
+   "iso3": "USA"
+  },
+  "Uruguay": {
+   "n": "Uruguay",
+   "cpi": 79,
+   "prev": 79,
+   "iso2": "UY",
+   "iso3": "URY"
+  },
+  "Uzbekistan": {
+   "n": "Uzbekistan",
+   "fto": "y",
+   "ftog": [
+    "Islamic Movement of Uzbekistan (IMU)",
+    "Islamic Jihad Union (IJU)"
+   ],
+   "cpi": 34,
+   "prev": 34,
+   "iso2": "UZ",
+   "iso3": "UZB"
+  },
+  "Vanuatu": {
+   "n": "Vanuatu",
+   "cpi": 44,
+   "prev": 45,
+   "iso2": "VU",
+   "iso3": "VUT"
+  },
+  "Venezuela": {
+   "n": "Venezuela",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "National Liberation Army (ELN)",
+    "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+    "Segunda Marquetalia",
+    "Tren de Aragua",
+    "Cartel de los Soles"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Venezuela-Related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Venezuela"
+   ],
+   "cpi": 17,
+   "prev": 16,
+   "uk": [
+    [
+     "Venezuela sanctions regime",
+     "https://www.gov.uk/government/publications/venezuela-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Venezuela) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2017-204/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Venezuela",
+     "https://www.fedlex.admin.ch/eli/cc/2018/191/de"
+    ]
+   ],
+   "iso2": "VE",
+   "iso3": "VEN"
+  },
+  "Vietnam": {
+   "n": "Vietnam",
+   "fatf": "grey",
+   "cpi": 46,
+   "prev": 43,
+   "iso2": "VN",
+   "iso3": "VNM"
+  },
+  "Yemen": {
+   "n": "Yemen",
+   "fatf": "grey",
+   "fto": "y",
+   "ftog": [
+    "al-Qa'ida in the Arabian Peninsula (AQAP)",
+    "ISIS",
+    "Ansarallah",
+    "Islamic Revolutionary Guard Corps (IRGC)"
+   ],
+   "us": "t",
+   "usp": [
+    [
+     "Yemen-related Sanctions",
+     "https://ofac.treasury.gov/sanctions-programs-and-country-information/yemen-related-sanctions"
+    ]
+   ],
+   "eu": [
+    "Restrictive measures in view of the situation in Yemen"
+   ],
+   "un": [
+    "2140 Sanctions Committee (Yemen)"
+   ],
+   "cpi": 14,
+   "prev": 15,
+   "uk": [
+    [
+     "Yemen sanctions regime",
+     "https://www.gov.uk/government/publications/yemen-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolution on Yemen",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2014-213/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Yemen",
+     "https://www.fedlex.admin.ch/eli/cc/2014/761/de"
+    ]
+   ],
+   "au": [
+    [
+     "Yemen sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/yemen-sanctions-framework"
+    ]
+   ],
+   "iso2": "YE",
+   "iso3": "YEM"
+  },
+  "Zambia": {
+   "n": "Zambia",
+   "cpi": 39,
+   "prev": 39,
+   "iso2": "ZM",
+   "iso3": "ZMB"
+  },
+  "Zimbabwe": {
+   "n": "Zimbabwe",
+   "eu": [
+    "Restrictive measures concerning an arms embargo in view of the situation in Zimbabwe"
+   ],
+   "cpi": 22,
+   "prev": 22,
+   "uk": [
+    [
+     "Zimbabwe sanctions regime",
+     "https://www.gov.uk/government/publications/zimbabwe-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Special Economic Measures (Zimbabwe) Regulations",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2008-248/"
+    ]
+   ],
+   "ch": [
+    [
+     "Ordinance on Measures against Zimbabwe",
+     "https://www.fedlex.admin.ch/eli/cc/2002/154/de"
+    ]
+   ],
+   "au": [
+    [
+     "Zimbabwe sanctions framework",
+     "https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/zimbabwe-sanctions-framework"
+    ]
+   ],
+   "iso2": "ZW",
+   "iso3": "ZWE"
+  },
+  "Monaco": {
+   "n": "Monaco",
+   "fatf": "grey",
+   "cpi": 72,
+   "prev": 84,
+   "iso2": "MC",
+   "iso3": "MCO"
+  },
+  "British Virgin Is.": {
+   "n": "British Virgin Islands",
+   "fatf": "grey",
+   "iso2": "VG",
+   "iso3": "VGB"
+  },
+  "Palestine": {
+   "n": "Palestine",
+   "fto": "y",
+   "ftor": 1,
+   "ftog": [
+    "HAMAS",
+    "Palestine Islamic Jihad (PIJ)",
+    "Hizballah",
+    "Al-Aqsa Martyrs Brigade (AAMB)",
+    "Popular Front for the Liberation of Palestine (PFLP)",
+    "PFLP-General Command (PFLP-GC)",
+    "Army of Islam (AOI)"
+   ],
+   "cpi": 36,
+   "prev": 37,
+   "iso2": "PS",
+   "iso3": "PSE"
+  },
+  "Micronesia": {
+   "n": "Micronesia",
+   "cpi": 62,
+   "prev": 62,
+   "iso2": "FM",
+   "iso3": "FSM"
+  },
+  "Marshall Is.": {
+   "n": "Marshall Is.",
+   "cpi": 55,
+   "prev": 55,
+   "iso2": "MH",
+   "iso3": "MHL"
+  },
+  "U.S. Virgin Is.": {
+   "n": "U.S. Virgin Is.",
+   "cpi": 47,
+   "prev": 47,
+   "iso2": "VI",
+   "iso3": "VIR"
+  },
+  "Guam": {
+   "n": "Guam",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "GU",
+   "iso3": "GUM"
+  },
+  "American Samoa": {
+   "n": "American Samoa",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "AS",
+   "iso3": "ASM"
+  },
+  "Puerto Rico": {
+   "n": "Puerto Rico",
+   "cpi": 59,
+   "prev": 56,
+   "iso2": "PR",
+   "iso3": "PRI"
+  },
+  "Cayman Is.": {
+   "n": "Cayman Is.",
+   "cpi": 60,
+   "prev": 60,
+   "iso2": "KY",
+   "iso3": "CYM"
+  },
+  "Bermuda": {
+   "n": "Bermuda",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "BM",
+   "iso3": "BMU"
+  },
+  "Tonga": {
+   "n": "Tonga",
+   "cpi": 40,
+   "prev": 40,
+   "iso2": "TO",
+   "iso3": "TON"
+  },
+  "San Marino": {
+   "n": "San Marino",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "SM",
+   "iso3": "SMR"
+  },
+  "Samoa": {
+   "n": "Samoa",
+   "cpi": 61,
+   "prev": 61,
+   "iso2": "WS",
+   "iso3": "WSM"
+  },
+  "St. Kitts and Nevis": {
+   "n": "St. Kitts and Nevis",
+   "cpi": 54,
+   "prev": 55,
+   "iso2": "KN",
+   "iso3": "KNA"
+  },
+  "Palau": {
+   "n": "Palau",
+   "cpi": 58,
+   "prev": 58,
+   "iso2": "PW",
+   "iso3": "PLW"
+  },
+  "Aruba": {
+   "n": "Aruba",
+   "cpi": 66,
+   "prev": 66,
+   "iso2": "AW",
+   "iso3": "ABW"
+  },
+  "Nauru": {
+   "n": "Nauru",
+   "cpi": 57,
+   "prev": 57,
+   "iso2": "NR",
+   "iso3": "NRU"
+  },
+  "Liechtenstein": {
+   "n": "Liechtenstein",
+   "cpi": 83,
+   "prev": 83,
+   "iso2": "LI",
+   "iso3": "LIE"
+  },
+  "Kiribati": {
+   "n": "Kiribati",
+   "cpi": 54,
+   "prev": 56,
+   "iso2": "KI",
+   "iso3": "KIR"
+  },
+  "Fr. Polynesia": {
+   "n": "Fr. Polynesia",
+   "cpi": 44,
+   "prev": 44,
+   "iso2": "PF",
+   "iso3": "PYF"
+  },
+  "New Caledonia": {
+   "n": "New Caledonia",
+   "cpi": 51,
+   "prev": 51,
+   "iso2": "NC",
+   "iso3": "NCL"
+  },
+  "Greenland": {
+   "n": "Greenland",
+   "cpi": 78,
+   "prev": 78,
+   "iso2": "GL",
+   "iso3": "GRL"
+  },
+  "Macao": {
+   "n": "Macao",
+   "cpi": 60,
+   "prev": 60,
+   "iso2": "MO",
+   "iso3": "MAC"
+  },
+  "Ashmore and Cartier Is.": {
+   "n": "Ashmore and Cartier Is."
+  },
+  "Antigua and Barb.": {
+   "n": "Antigua and Barb.",
+   "cpi": 60,
+   "prev": 54,
+   "iso2": "AG",
+   "iso3": "ATG"
+  },
+  "Andorra": {
+   "n": "Andorra",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "AD",
+   "iso3": "AND"
+  },
+  "Anguilla": {
+   "n": "Anguilla",
+   "cpi": 72,
+   "prev": 72,
+   "iso2": "AI",
+   "iso3": "AIA"
+  },
+  "Jersey": {
+   "n": "Jersey",
+   "cpi": 69,
+   "prev": 69,
+   "iso2": "JE",
+   "iso3": "JEY"
+  }
+ },
+ "fto_listings": {
+  "Abu Sayyaf Group (ASG)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Al-Aqsa Martyrs Brigade (AAMB)": [
+   "EU",
+   "Canada"
+  ],
+  "Ansar al-Dine (AAD)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Ansar al-Islam (AAI)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Ansar al-Shari'a in Benghazi": [
+   "EU",
+   "UK",
+   "UN"
+  ],
+  "Ansar al-Shari'a in Darnah": [
+   "EU",
+   "UN"
+  ],
+  "Ansar al-Shari'a in Tunisia": [
+   "EU",
+   "UK",
+   "UN"
+  ],
+  "Ansarallah": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Ansaru": [
+   "EU",
+   "UK",
+   "UN"
+  ],
+  "Antifa Ost (Hammerbande)": [],
+  "Army of Islam (AOI)": [],
+  "Asa'ib Ahl al-Haq (AAH)": [],
+  "Asbat al-Ansar (AAA)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Balochistan Liberation Army (BLA)": [
+   "UK"
+  ],
+  "Barrio 18": [],
+  "Boko Haram": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Cartel de Jalisco Nueva Generacion (CJNG)": [
+   "Canada"
+  ],
+  "Cartel de Sinaloa": [
+   "Canada"
+  ],
+  "Cartel de los Soles": [],
+  "Cartel del Golfo (Gulf Cartel)": [
+   "Canada"
+  ],
+  "Cartel del Noreste": [],
+  "Carteles Unidos": [
+   "Canada"
+  ],
+  "Chone Killers": [],
+  "Clan del Golfo": [],
+  "Comando Vermelho": [],
+  "Communist Party of the Philippines/New People's Army (CPP/NPA)": [
+   "EU"
+  ],
+  "Continuity Irish Republican Army (CIRA)": [],
+  "Gran Grif": [],
+  "HAMAS": [
+   "EU",
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "Haqqani Network (HQN)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Harakat Ansar Allah al-Awfiya (HAAA)": [],
+  "Harakat Sawa'd Misr (HASM)": [
+   "UK",
+   "Canada"
+  ],
+  "Harakat al-Nujaba (HAN)": [],
+  "Harakat ul-Jihad-i-Islami (HUJI)": [
+   "EU",
+   "UK",
+   "UN"
+  ],
+  "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)": [
+   "UK"
+  ],
+  "Harakat ul-Mujahidin (HUM)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Hizballah": [
+   "EU military wing",
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "Hizbul Mujahideen (HM)": [
+   "EU",
+   "Canada"
+  ],
+  "ISIS": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "ISIS in the Greater Sahara (ISIS-GS)": [
+   "EU",
+   "UN",
+   "Canada"
+  ],
+  "ISIS-Bangladesh": [
+   "Canada"
+  ],
+  "ISIS-DRC": [
+   "Canada"
+  ],
+  "ISIS-Libya": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "ISIS-Mozambique": [
+   "EU",
+   "Canada"
+  ],
+  "ISIS-Philippines": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "ISIS-Sinai Province": [
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "ISIS-West Africa": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)": [],
+  "Islamic Jihad Union (IJU)": [
+   "EU",
+   "UK",
+   "UN"
+  ],
+  "Islamic Movement of Uzbekistan (IMU)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Islamic Revolutionary Guard Corps (IRGC)": [
+   "EU",
+   "Canada"
+  ],
+  "Islamic State's Khorasan Province (ISIS-K)": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Jaish-e-Mohammed (JEM)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Jemaah Anshorut Tauhid (JAT)": [
+   "EU",
+   "UN"
+  ],
+  "Jemaah Islamiya (JI)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Juarez Cartel (La Linea)": [],
+  "Kata'ib Hizballah (KH)": [],
+  "Kata'ib Sayyid al-Shuhada (KSS)": [],
+  "Kata'ib al-Imam Ali (KIA)": [],
+  "Kurdistan Workers Party (PKK)": [
+   "EU",
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "La Nueva Familia Michoacana": [],
+  "Lashkar i Jhangvi (LJ)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Lashkar-e-Tayyiba (LeT)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Lebanese Muslim Brotherhood": [],
+  "Los Choneros": [],
+  "Los Lobos": [],
+  "Los Tiguerones": [],
+  "Los Viagras": [],
+  "Mara Salvatrucha (MS-13)": [
+   "Canada"
+  ],
+  "National Liberation Army (ELN)": [
+   "EU",
+   "Canada"
+  ],
+  "New Irish Republican Army": [],
+  "PFLP-General Command (PFLP-GC)": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "Palestine Islamic Jihad (PIJ)": [
+   "EU",
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "Popular Front for the Liberation of Palestine (PFLP)": [
+   "EU",
+   "Canada"
+  ],
+  "Primeiro Comando da Capital": [],
+  "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)": [
+   "Canada"
+  ],
+  "Revolutionary Class Self-Defense": [],
+  "Revolutionary People's Liberation Party/Front (DHKP/C)": [
+   "EU",
+   "UK"
+  ],
+  "Revolutionary Struggle (RS)": [],
+  "Segunda Marquetalia": [],
+  "Shining Path (Sendero Luminoso, SL)": [
+   "EU",
+   "Canada"
+  ],
+  "Sudanese Muslim Brotherhood": [],
+  "Tehrik-e Taliban Pakistan (TTP)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Tren de Aragua": [
+   "Canada"
+  ],
+  "Viv Ansanm": [],
+  "al-Ashtar Brigades": [
+   "UK",
+   "Canada"
+  ],
+  "al-Mulathamun Battalion (al-Murabitoun)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "al-Qa'ida (AQ)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "al-Qa'ida in the Arabian Peninsula (AQAP)": [
+   "EU",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "al-Qa'ida in the Indian Subcontinent (AQIS)": [
+   "EU",
+   "Canada",
+   "Australia"
+  ],
+  "al-Qa'ida in the Islamic Maghreb (AQIM)": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "al-Shabaab": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada",
+   "Australia"
+  ],
+  "Armed Proletarian Justice": [],
+  "Indian Mujahedeen (IM)": [
+   "UK",
+   "Canada"
+  ],
+  "Abdallah Azzam Brigades": [
+   "EU",
+   "UK",
+   "UN",
+   "Canada"
+  ],
+  "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)": [],
+  "Jaysh al-Adl (formerly Jundallah)": []
+ },
+ "fatf_evaluations": {
+  "Albania": [
+   "2018-12",
+   "2023-05",
+   "MONEYVAL"
+  ],
+  "Algeria": [
+   "2023-07",
+   "2026-05",
+   "MENAFATF"
+  ],
+  "Andorra": [
+   "2017-09",
+   "2021-12",
+   "MONEYVAL"
+  ],
+  "Angola": [
+   "2023-06",
+   "2026-03",
+   "ESAAMLG"
+  ],
+  "Anguilla": [
+   "2024-07",
+   "2024-07",
+   "CFATF"
+  ],
+  "Antigua and Barb.": [
+   "2018-07",
+   "2021-11",
+   "CFATF"
+  ],
+  "Argentina": [
+   "2024-12",
+   "2024-12",
+   "FATF/GAFILAT"
+  ],
+  "Armenia": [
+   "2026-05",
+   "2026-05",
+   "MONEYVAL"
+  ],
+  "Aruba": [
+   "2022-07",
+   "2022-07",
+   "CFATF"
+  ],
+  "Australia": [
+   "2015-04",
+   "2024-03",
+   "FATF"
+  ],
+  "Austria": [
+   "2026-04",
+   "2026-04",
+   "FATF"
+  ],
+  "Azerbaijan": [
+   "2024-02",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Bahamas": [
+   "2017-08",
+   "2022-12",
+   "CFATF"
+  ],
+  "Bahrain": [
+   "2018-09",
+   "2022-05",
+   "MENAFATF"
+  ],
+  "Guernsey": [
+   "2024-12",
+   "2024-12",
+   "MONEYVAL"
+  ],
+  "Bangladesh": [
+   "2016-11",
+   "2020-12",
+   "APG"
+  ],
+  "Barbados": [
+   "2018-02",
+   "2024-05",
+   "CFATF"
+  ],
+  "Belarus": [
+   "2019-12",
+   "2019-12",
+   "EAG"
+  ],
+  "Belgium": [
+   "2025-12",
+   "2025-12",
+   "FATF"
+  ],
+  "Belize": [
+   "2025-01",
+   "2025-01",
+   "CFATF"
+  ],
+  "Benin": [
+   "2021-09",
+   "2026-05",
+   "GIABA"
+  ],
+  "Bermuda": [
+   "2020-01",
+   "2020-01",
+   "CFATF"
+  ],
+  "Bhutan": [
+   "2016-10",
+   "2023-08",
+   "APG"
+  ],
+  "Bolivia": [
+   "2024-01",
+   "2025-08",
+   "GAFILAT"
+  ],
+  "Bosnia and Herz.": [
+   "2024-12",
+   "2024-12",
+   "MONEYVAL"
+  ],
+  "Botswana": [
+   "2017-05",
+   "2025-09",
+   "ESAAMLG"
+  ],
+  "Brazil": [
+   "2023-12",
+   "2023-12",
+   "FATF/GAFILAT"
+  ],
+  "British Virgin Is.": [
+   "2024-02",
+   "2025-10",
+   "CFATF"
+  ],
+  "Brunei": [
+   "2023-08",
+   "2024-06",
+   "APG"
+  ],
+  "Bulgaria": [
+   "2022-07",
+   "2026-06",
+   "MONEYVAL"
+  ],
+  "Burkina Faso": [
+   "2019-05",
+   "2025-05",
+   "GIABA"
+  ],
+  "Cabo Verde": [
+   "2019-05",
+   "2025-05",
+   "GIABA"
+  ],
+  "Cambodia": [
+   "2017-09",
+   "2023-10",
+   "APG"
+  ],
+  "Cameroon": [
+   "2022-03",
+   "2025-11",
+   "GABAC"
+  ],
+  "Canada": [
+   "2026-09",
+   "2026-09",
+   "FATF"
+  ],
+  "Cayman Is.": [
+   "2019-03",
+   "2021-10",
+   "CFATF"
+  ],
+  "Central African Rep.": [
+   "2023-11",
+   "2023-11",
+   "GABAC"
+  ],
+  "Chad": [
+   "2023-07",
+   "2026-03",
+   "GABAC"
+  ],
+  "Chile": [
+   "2021-09",
+   "2021-09",
+   "GAFILAT"
+  ],
+  "China": [
+   "2019-04",
+   "2022-11",
+   "FATF"
+  ],
+  "Taiwan": [
+   "2019-10",
+   "2019-10",
+   "APG"
+  ],
+  "Colombia": [
+   "2018-11",
+   "2023-01",
+   "GAFILAT"
+  ],
+  "Comoros": [
+   "2024-05",
+   "2026-05",
+   "GIABA"
+  ],
+  "Congo": [
+   "2022-09",
+   "2026-03",
+   "GABAC"
+  ],
+  "Cook Is.": [
+   "2018-09",
+   "2018-09",
+   "APG"
+  ],
+  "Costa Rica": [
+   "2015-12",
+   "2024-02",
+   "GAFILAT"
+  ],
+  "Croatia": [
+   "2022-02",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Cuba": [
+   "2015-12",
+   "2024-02",
+   "GAFILAT"
+  ],
+  "Curaçao": [
+   "2025-07",
+   "2025-07",
+   "CFATF"
+  ],
+  "Cyprus": [
+   "2019-12",
+   "2025-06",
+   "MONEYVAL"
+  ],
+  "Czechia": [
+   "2019-02",
+   "2022-12",
+   "MONEYVAL"
+  ],
+  "Côte d'Ivoire": [
+   "2023-08",
+   "2026-05",
+   "GIABA"
+  ],
+  "Dem. Rep. Congo": [
+   "2021-04",
+   "2026-03",
+   "GABAC"
+  ],
+  "Denmark": [
+   "2017-08",
+   "2021-02",
+   "FATF"
+  ],
+  "Djibouti": [
+   "2024-11",
+   "2024-11",
+   "MENAFATF"
+  ],
+  "Dominica": [
+   "2023-07",
+   "2026-05",
+   "CFATF"
+  ],
+  "Dominican Rep.": [
+   "2018-09",
+   "2019-09",
+   "GAFILAT"
+  ],
+  "Ecuador": [
+   "2023-01",
+   "2023-01",
+   "GAFILAT"
+  ],
+  "Egypt": [
+   "2021-08",
+   "2025-05",
+   "MENAFATF"
+  ],
+  "El Salvador": [
+   "2024-08",
+   "2024-08",
+   "GAFILAT"
+  ],
+  "Eq. Guinea": [
+   "2024-11",
+   "2024-11",
+   "GABAC"
+  ],
+  "Eritrea": [
+   "2025-07",
+   "2025-07",
+   "ESAAMLG"
+  ],
+  "Estonia": [
+   "2023-01",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "eSwatini": [
+   "2022-08",
+   "2025-09",
+   "ESAAMLG"
+  ],
+  "Ethiopia": [
+   "2015-06",
+   "2022-08",
+   "ESAAMLG"
+  ],
+  "Fiji": [
+   "2016-11",
+   "2023-05",
+   "APG"
+  ],
+  "Finland": [
+   "2019-04",
+   "2023-10",
+   "FATF"
+  ],
+  "France": [
+   "2022-05",
+   "2022-05",
+   "FATF"
+  ],
+  "Gabon": [
+   "2023-07",
+   "2026-03",
+   "GABAC"
+  ],
+  "Gambia": [
+   "2022-10",
+   "2024-05",
+   "GIABA"
+  ],
+  "Georgia": [
+   "2020-09",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Germany": [
+   "2022-08",
+   "2023-12",
+   "FATF"
+  ],
+  "Ghana": [
+   "2018-04",
+   "2022-08",
+   "GIABA"
+  ],
+  "Greece": [
+   "2019-09",
+   "2019-09",
+   "FATF"
+  ],
+  "Grenada": [
+   "2022-07",
+   "2026-05",
+   "CFATF"
+  ],
+  "Guatemala": [
+   "2017-02",
+   "2018-10",
+   "GAFILAT"
+  ],
+  "Guinea": [
+   "2024-01",
+   "2025-11",
+   "GIABA"
+  ],
+  "Guinea-Bissau": [
+   "2022-05",
+   "2022-05",
+   "GIABA"
+  ],
+  "Guyana": [
+   "2024-07",
+   "2024-07",
+   "CFATF"
+  ],
+  "Haiti": [
+   "2019-07",
+   "2024-07",
+   "CFATF"
+  ],
+  "Vatican": [
+   "2021-08",
+   "2024-05",
+   "MONEYVAL"
+  ],
+  "Honduras": [
+   "2017-01",
+   "2020-01",
+   "GAFILAT"
+  ],
+  "Hong Kong": [
+   "2019-09",
+   "2023-02",
+   "FATF"
+  ],
+  "Hungary": [
+   "2016-09",
+   "2024-05",
+   "MONEYVAL"
+  ],
+  "Iceland": [
+   "2018-04",
+   "2021-09",
+   "FATF"
+  ],
+  "India": [
+   "2024-09",
+   "2024-09",
+   "FATF/APG/EAG"
+  ],
+  "Indonesia": [
+   "2018-09",
+   "2026-06",
+   "FATF"
+  ],
+  "Iraq": [
+   "2024-05",
+   "2024-05",
+   "MENAFATF"
+  ],
+  "Ireland": [
+   "2017-09",
+   "2022-02",
+   "FATF"
+  ],
+  "Isle of Man": [
+   "2016-12",
+   "2022-12",
+   "MONEYVAL"
+  ],
+  "Israel": [
+   "2018-12",
+   "2022-05",
+   "FATF/MONEYVAL"
+  ],
+  "Italy": [
+   "2026-04",
+   "2026-04",
+   "FATF"
+  ],
+  "Jamaica": [
+   "2017-01",
+   "2024-01",
+   "CFATF"
+  ],
+  "Japan": [
+   "2021-08",
+   "2024-10",
+   "FATF/APG"
+  ],
+  "Jersey": [
+   "2024-05",
+   "2024-05",
+   "MONEYVAL"
+  ],
+  "Jordan": [
+   "2020-01",
+   "2025-05",
+   "MENAFATF"
+  ],
+  "Kazakhstan": [
+   "2023-07",
+   "2026-05",
+   "EAG"
+  ],
+  "Kenya": [
+   "2023-01",
+   "2024-08",
+   "ESAAMLG"
+  ],
+  "South Korea": [
+   "2020-04",
+   "2024-10",
+   "FATF"
+  ],
+  "Kuwait": [
+   "2024-10",
+   "2026-05",
+   "MENAFATF"
+  ],
+  "Kyrgyzstan": [
+   "2018-09",
+   "2023-12",
+   "EAG"
+  ],
+  "Laos": [
+   "2023-08",
+   "2025-06",
+   "APG"
+  ],
+  "Latvia": [
+   "2026-02",
+   "2026-02",
+   "MONEYVAL"
+  ],
+  "Lebanon": [
+   "2023-12",
+   "2023-12",
+   "MENAFATF"
+  ],
+  "Lesotho": [
+   "2024-02",
+   "2024-02",
+   "ESAAMLG"
+  ],
+  "Liberia": [
+   "2023-07",
+   "2023-07",
+   "GIABA"
+  ],
+  "Liechtenstein": [
+   "2022-07",
+   "2022-07",
+   "MONEYVAL"
+  ],
+  "Lithuania": [
+   "2019-02",
+   "2023-12",
+   "MONEYVAL"
+  ],
+  "Luxembourg": [
+   "2023-09",
+   "2023-09",
+   "FATF"
+  ],
+  "Macao": [
+   "2017-12",
+   "2019-10",
+   "APG"
+  ],
+  "Madagascar": [
+   "2018-09",
+   "2025-04",
+   "ESAAMLG/WB"
+  ],
+  "Malawi": [
+   "2019-09",
+   "2026-04",
+   "ESAAMLG"
+  ],
+  "Malaysia": [
+   "2025-12",
+   "2025-12",
+   "FATF/APG"
+  ],
+  "Maldives": [
+   "2025-10",
+   "2025-10",
+   "APG"
+  ],
+  "Mali": [
+   "2020-03",
+   "2026-01",
+   "GIABA"
+  ],
+  "Malta": [
+   "2019-07",
+   "2021-08",
+   "MONEYVAL"
+  ],
+  "Marshall Is.": [
+   "2024-11",
+   "2024-11",
+   "APG"
+  ],
+  "Mauritania": [
+   "2018-05",
+   "2021-11",
+   "MENAFATF"
+  ],
+  "Mauritius": [
+   "2018-07",
+   "2023-01",
+   "ESAAMLG"
+  ],
+  "Mexico": [
+   "2018-01",
+   "2023-05",
+   "FATF"
+  ],
+  "Moldova": [
+   "2019-07",
+   "2025-06",
+   "MONEYVAL"
+  ],
+  "Monaco": [
+   "2023-01",
+   "2024-11",
+   "MONEYVAL"
+  ],
+  "Mongolia": [
+   "2017-09",
+   "2023-10",
+   "APG"
+  ],
+  "Montenegro": [
+   "2024-01",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Montserrat": [
+   "2025-01",
+   "2025-01",
+   "CFATF"
+  ],
+  "Morocco": [
+   "2019-06",
+   "2024-05",
+   "MENAFATF"
+  ],
+  "Mozambique": [
+   "2021-06",
+   "2026-04",
+   "ESAAMLG"
+  ],
+  "Myanmar": [
+   "2018-09",
+   "2024-10",
+   "APG"
+  ],
+  "Namibia": [
+   "2023-01",
+   "2025-04",
+   "ESAAMLG"
+  ],
+  "Nauru": [
+   "2024-11",
+   "2025-02",
+   "APG"
+  ],
+  "Nepal": [
+   "2023-09",
+   "2025-06",
+   "APG"
+  ],
+  "Netherlands": [
+   "2022-08",
+   "2025-09",
+   "FATF"
+  ],
+  "New Zealand": [
+   "2021-04",
+   "2024-07",
+   "FATF/APG"
+  ],
+  "Nicaragua": [
+   "2017-10",
+   "2021-01",
+   "GAFILAT"
+  ],
+  "Niger": [
+   "2021-11",
+   "2026-01",
+   "GIABA"
+  ],
+  "Nigeria": [
+   "2021-11",
+   "2024-11",
+   "GIABA"
+  ],
+  "Niue": [
+   "2025-10",
+   "2025-10",
+   "APG"
+  ],
+  "Macedonia": [
+   "2023-07",
+   "2025-06",
+   "MONEYVAL"
+  ],
+  "Norway": [
+   "2014-12",
+   "2023-02",
+   "FATF"
+  ],
+  "Oman": [
+   "2024-12",
+   "2024-12",
+   "FATF/MENAFATF"
+  ],
+  "Pakistan": [
+   "2019-10",
+   "2022-08",
+   "APG"
+  ],
+  "Palau": [
+   "2018-09",
+   "2023-06",
+   "APG"
+  ],
+  "Panama": [
+   "2018-01",
+   "2019-08",
+   "GAFILAT"
+  ],
+  "Papua New Guinea": [
+   "2024-09",
+   "2024-09",
+   "APG"
+  ],
+  "Paraguay": [
+   "2022-11",
+   "2022-11",
+   "GAFILAT"
+  ],
+  "Peru": [
+   "2019-02",
+   "2020-01",
+   "GAFILAT"
+  ],
+  "Philippines": [
+   "2019-10",
+   "2022-08",
+   "APG"
+  ],
+  "Poland": [
+   "2021-02",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Portugal": [
+   "2017-12",
+   "2017-12",
+   "FATF"
+  ],
+  "Qatar": [
+   "2023-05",
+   "2023-05",
+   "FATF/MENAFATF"
+  ],
+  "Romania": [
+   "2023-07",
+   "2026-05",
+   "MONEYVAL"
+  ],
+  "Russia": [
+   "2019-12",
+   "2024-02",
+   "EAG"
+  ],
+  "Rwanda": [
+   "2024-07",
+   "2025-08",
+   "ESAAMLG"
+  ],
+  "St. Kitts and Nevis": [
+   "2022-01",
+   "2025-10",
+   "CFATF"
+  ],
+  "Saint Lucia": [
+   "2021-01",
+   "2024-10",
+   "CFATF"
+  ],
+  "St. Vin. and Gren.": [
+   "2024-01",
+   "2026-05",
+   "CFATF"
+  ],
+  "Samoa": [
+   "2015-10",
+   "2023-06",
+   "APG"
+  ],
+  "San Marino": [
+   "2021-07",
+   "2024-05",
+   "MONEYVAL"
+  ],
+  "São Tomé and Principe": [
+   "2024-11",
+   "2024-11",
+   "GIABA"
+  ],
+  "Saudi Arabia": [
+   "2018-09",
+   "2020-01",
+   "FATF/MENAFATF"
+  ],
+  "Senegal": [
+   "2018-05",
+   "2024-11",
+   "GIABA"
+  ],
+  "Serbia": [
+   "2025-12",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Seychelles": [
+   "2018-09",
+   "2026-04",
+   "ESAAMLG"
+  ],
+  "Sierra Leone": [
+   "2021-01",
+   "2025-11",
+   "GIABA"
+  ],
+  "Singapore": [
+   "2026-05",
+   "2026-05",
+   "FATF"
+  ],
+  "Sint Maarten": [
+   "2025-07",
+   "2025-07",
+   "CFATF"
+  ],
+  "Slovakia": [
+   "2020-09",
+   "2025-12",
+   "MONEYVAL"
+  ],
+  "Slovenia": [
+   "2026-05",
+   "2026-05",
+   "MONEYVAL"
+  ],
+  "Solomon Is.": [
+   "2019-10",
+   "2019-10",
+   "APG"
+  ],
+  "South Africa": [
+   "2021-10",
+   "2024-11",
+   "FATF"
+  ],
+  "Spain": [
+   "2014-12",
+   "2019-12",
+   "FATF"
+  ],
+  "Sri Lanka": [
+   "2015-10",
+   "2021-11",
+   "APG"
+  ],
+  "Suriname": [
+   "2023-01",
+   "2025-12",
+   "CFATF"
+  ],
+  "Sweden": [
+   "2017-04",
+   "2020-09",
+   "FATF"
+  ],
+  "Switzerland": [
+   "2016-12",
+   "2023-10",
+   "FATF"
+  ],
+  "Tajikistan": [
+   "2018-12",
+   "2024-11",
+   "EAG"
+  ],
+  "Tanzania": [
+   "2021-06",
+   "2024-09",
+   "ESAAMLG"
+  ],
+  "Thailand": [
+   "2017-12",
+   "2023-10",
+   "APG"
+  ],
+  "Timor-Leste": [
+   "2024-11",
+   "2024-11",
+   "APG"
+  ],
+  "Togo": [
+   "2022-10",
+   "2025-05",
+   "GIABA"
+  ],
+  "Tonga": [
+   "2021-09",
+   "2021-09",
+   "APG"
+  ],
+  "Trinidad and Tobago": [
+   "2016-06",
+   "2019-06",
+   "CFATF"
+  ],
+  "Tunisia": [
+   "2016-06",
+   "2020-01",
+   "MENAFATF"
+  ],
+  "Turkmenistan": [
+   "2023-07",
+   "2026-05",
+   "EAG"
+  ],
+  "Turks and Caicos Is.": [
+   "2020-01",
+   "2023-11",
+   "CFATF"
+  ],
+  "Turkey": [
+   "2026-09",
+   "2026-09",
+   "FATF"
+  ],
+  "Uganda": [
+   "2016-09",
+   "2026-03",
+   "ESAAMLG"
+  ],
+  "Ukraine": [
+   "2018-01",
+   "2020-09",
+   "MONEYVAL"
+  ],
+  "United Arab Emirates": [
+   "2020-04",
+   "2023-07",
+   "MENAFATF"
+  ],
+  "United Kingdom": [
+   "2018-12",
+   "2022-06",
+   "FATF"
+  ],
+  "United States of America": [
+   "2016-12",
+   "2024-03",
+   "FATF"
+  ],
+  "Uruguay": [
+   "2020-01",
+   "2020-01",
+   "GAFILAT"
+  ],
+  "Uzbekistan": [
+   "2022-08",
+   "2023-07",
+   "EAG"
+  ],
+  "Vanuatu": [
+   "2015-10",
+   "2018-09",
+   "APG"
+  ],
+  "Venezuela": [
+   "2023-03",
+   "2025-10",
+   "CFATF"
+  ],
+  "Vietnam": [
+   "2022-02",
+   "2025-02",
+   "APG"
+  ],
+  "Zambia": [
+   "2019-06",
+   "2025-09",
+   "ESAAMLG"
+  ],
+  "Zimbabwe": [
+   "2017-01",
+   "2024-04",
+   "ESAAMLG"
+  ]
+ },
+ "crt_links": {
+  "Afghanistan": "afghanistan",
+  "Albania": "albania",
+  "Algeria": "algeria",
+  "Argentina": "argentina",
+  "Bahrain": "bahrain",
+  "Bangladesh": "bangladesh",
+  "Benin": "benin",
+  "Bosnia and Herz.": "bosnia-and-herzegovina",
+  "Brazil": "brazil",
+  "Burkina Faso": "burkina-faso",
+  "Cameroon": "cameroon",
+  "Canada": "canada",
+  "Chad": "chad",
+  "China": "peoples-republic-of-china",
+  "Colombia": "colombia",
+  "Côte d'Ivoire": "cote-divoire",
+  "Norway": "norway",
+  "Sweden": "sweden",
+  "Dem. Rep. Congo": "democratic-republic-of-the-congo",
+  "Netherlands": "netherlands",
+  "Djibouti": "djibouti",
+  "Egypt": "egypt",
+  "Ethiopia": "ethiopia",
+  "Georgia": "georgia",
+  "Germany": "germany",
+  "United Kingdom": "united-kingdom",
+  "Belgium": "belgium",
+  "Austria": "austria",
+  "India": "india",
+  "Indonesia": "indonesia",
+  "Iraq": "iraq",
+  "France": "france",
+  "Israel": "israel-the-west-bank-and-gaza",
+  "Jordan": "jordan",
+  "Kazakhstan": "kazakhstan",
+  "Kenya": "kenya",
+  "Kosovo": "kosovo",
+  "Kuwait": "kuwait",
+  "Kyrgyzstan": "kyrgyz-republic",
+  "Lebanon": "lebanon",
+  "Libya": "libya",
+  "Malaysia": "malaysia",
+  "Maldives": "maldives",
+  "Mali": "mali",
+  "Cyprus": "cyprus",
+  "Mauritania": "mauritania",
+  "Mexico": "mexico",
+  "Morocco": "morocco",
+  "Mozambique": "mozambique",
+  "Niger": "niger",
+  "Nigeria": "nigeria",
+  "Macedonia": "north-macedonia",
+  "Spain": "spain",
+  "Oman": "oman",
+  "Pakistan": "pakistan",
+  "Panama": "panama",
+  "Paraguay": "paraguay",
+  "Peru": "peru",
+  "Philippines": "philippines",
+  "Italy": "italy",
+  "Qatar": "qatar",
+  "Greece": "greece",
+  "Russia": "russia",
+  "Saudi Arabia": "saudi-arabia",
+  "Senegal": "senegal",
+  "Somalia": "somalia",
+  "South Africa": "south-africa",
+  "Sri Lanka": "sri-lanka",
+  "Sudan": "sudan",
+  "Bulgaria": "bulgaria",
+  "Tajikistan": "tajikistan",
+  "Tanzania": "tanzania",
+  "Togo": "togo",
+  "Trinidad and Tobago": "trinidad-and-tobago",
+  "Tunisia": "tunisia",
+  "Turkey": "turkiye",
+  "Turkmenistan": "turkmenistan",
+  "Uganda": "uganda",
+  "United Arab Emirates": "united-arab-emirates",
+  "Uzbekistan": "uzbekistan",
+  "Venezuela": "venezuela",
+  "Yemen": "yemen",
+  "Palestine": "israel-the-west-bank-and-gaza"
+ },
+ "fto_listing_evidence": {
+  "Abu Sayyaf Group (ASG)": {
+   "UK": "Abu Sayyaf Group",
+   "Canada": "Abu Sayyaf Group",
+   "Australia": "Abu Sayyaf Group",
+   "UN": "ABU SAYYAF GROUP",
+   "EU": "Abu Sayyaf"
+  },
+  "Al-Aqsa Martyrs Brigade (AAMB)": {
+   "Canada": "Al-Aqsa Martyrs",
+   "EU": "Al-Aqsa Martyrs"
+  },
+  "Ansar al-Dine (AAD)": {
+   "UK": "including Ansar al-Dine",
+   "Canada": "^Ansar Dine$",
+   "UN": "ANSAR EDDINE",
+   "EU": "Ansar Eddine"
+  },
+  "Ansar al-Islam (AAI)": {
+   "UK": "Ansar Al Islam \\(AI\\)",
+   "Canada": "Ansar al-Islam \\(AI\\)",
+   "UN": "^ANSAR AL-ISLAM$",
+   "EU": "^Ansar al-Islam$"
+  },
+  "Ansar al-Shari'a in Benghazi": {
+   "UK": "Ansar al-Sharia-Benghazi",
+   "UN": "Benghazi",
+   "EU": "Charia Benghazi"
+  },
+  "Ansar al-Shari'a in Darnah": {
+   "UN": "Derna",
+   "EU": "Ansar al-Sharia Derna"
+  },
+  "Ansar al-Shari'a in Tunisia": {
+   "UK": "Ansar Al Sharia-Tunisia",
+   "UN": "Tunisia \\(AAS-T\\)|AAS-T",
+   "EU": "Ansar al-Sharia in Tunisia"
+  },
+  "Ansarallah": {
+   "Canada": "^Ansarallah$",
+   "Australia": "^Ansar Allah$",
+   "UN": "ANSARALLAH",
+   "EU": "Houthi"
+  },
+  "Ansaru": {
+   "UK": "Ansarul Muslimina Fi Biladis Sudan",
+   "UN": "ANSARUL MUSLIMINA FI BILADIS SUDAN",
+   "EU": "Ansarul Muslimina fi Biladis"
+  },
+  "Asbat al-Ansar (AAA)": {
+   "UK": "Asbat Al-Ansar",
+   "Canada": "Asbat Al-Ansar",
+   "UN": "ASBAT AL-ANSAR",
+   "EU": "Asbat al-Ansar"
+  },
+  "Balochistan Liberation Army (BLA)": {
+   "UK": "Baluchistan Liberation Army"
+  },
+  "Boko Haram": {
+   "UK": "^Boko Haram",
+   "Canada": "^Boko Haram$",
+   "Australia": "^Boko Haram$",
+   "UN": "^Boko Haram$",
+   "EU": "^Boko Haram$"
+  },
+  "Cartel de Jalisco Nueva Generacion (CJNG)": {
+   "Canada": "Jalisco Nueva Generaci"
+  },
+  "Cartel de Sinaloa": {
+   "Canada": "rtel de Sinaloa"
+  },
+  "Cartel del Golfo (Gulf Cartel)": {
+   "Canada": "rtel del Golfo"
+  },
+  "Carteles Unidos": {
+   "Canada": "rteles Unidos"
+  },
+  "Communist Party of the Philippines/New People's Army (CPP/NPA)": {
+   "EU": "NPA, Philippines|New People"
+  },
+  "HAMAS": {
+   "UK": "\\(Hamas\\)",
+   "Canada": "^Hamas",
+   "Australia": "^Hamas$",
+   "EU": "Hamas-Izz al-Din al-Qassem|^Hamas$"
+  },
+  "Haqqani Network (HQN)": {
+   "UK": "Haqqani Network",
+   "Canada": "^Haqqani Network$",
+   "UN": "HAQQANI NETWORK",
+   "EU": "^Haqqani Network$"
+  },
+  "Harakat Sawa'd Misr (HASM)": {
+   "UK": "Harakat Sawa.d Misr",
+   "Canada": "Harakat Sawa'd Misr"
+  },
+  "Harakat ul-Jihad-i-Islami (HUJI)": {
+   "UK": "Harakat-Ul-Jihad-Ul-Islami \\(HUJI\\)",
+   "UN": "HARAKAT-UL JIHAD ISLAMI",
+   "EU": "Harakat-ul Jihad Islami"
+  },
+  "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)": {
+   "UK": "\\(HUJI-B\\)"
+  },
+  "Harakat ul-Mujahidin (HUM)": {
+   "UK": "Harakat-Ul-Mujahideen/Alami",
+   "Canada": "Harakat ul-Mudjahidin",
+   "UN": "HARAKAT UL-MUJAHIDIN",
+   "EU": "Harakat Ul-Mujahidin"
+  },
+  "Hizballah": {
+   "UK": "Hizballah \\(Party of God\\)",
+   "Canada": "^Hizballah$",
+   "Australia": "^Hizballah$",
+   "EU military wing": "Hizbollahi s|military wing of Hizbollah|Hezbollah Military Wing|Hizballah Military Wing"
+  },
+  "Hizbul Mujahideen (HM)": {
+   "Canada": "^Hizbul Mujahideen$",
+   "EU": "^Hizbul Mujahideen$"
+  },
+  "ISIS": {
+   "UK": "Islamic State of Iraq and the Levant \\(ISIL\\)",
+   "Canada": "^Islamic State$",
+   "Australia": "^Islamic State$",
+   "UN": "AL-QAIDA IN IRAQ",
+   "EU": "Al-Qaida in Iraq|Islamic State in Iraq and the Levant$"
+  },
+  "ISIS in the Greater Sahara (ISIS-GS)": {
+   "Canada": "Islamic State in the Greater Sahara",
+   "UN": "ISLAMIC STATE IN THE GREATER SAHARA",
+   "EU": "Greater Sahara"
+  },
+  "ISIS-Bangladesh": {
+   "Canada": "Islamic State . Bangladesh"
+  },
+  "ISIS-DRC": {
+   "Canada": "Islamic State . Democratic Republic of the Congo"
+  },
+  "ISIS-Libya": {
+   "Canada": "Islamic State in Libya",
+   "Australia": "Islamic State in Libya",
+   "UN": "ISLAMIC STATE IN IRAQ AND THE LEVANT - LIBYA",
+   "EU": "Wilayat Barqa|Wilayat Tarablus|Wilayat Fezzan"
+  },
+  "ISIS-Mozambique": {
+   "Canada": "Islamic State-Mozambique",
+   "EU": "Mozambique Wilaya of the Islamic State"
+  },
+  "ISIS-Philippines": {
+   "Canada": "Islamic State East Asia",
+   "Australia": "Islamic State East Asia",
+   "UN": "South-East Asia \\(ISIL-SEA|East Asia Division",
+   "EU": "South-East Asia|East Asia Division"
+  },
+  "ISIS-Sinai Province": {
+   "UK": "Ansar Bayt al-Maqdis",
+   "Canada": "Sinai Province",
+   "Australia": "Islamic State Sinai Province"
+  },
+  "ISIS-West Africa": {
+   "Canada": "Islamic State West Africa Province",
+   "Australia": "Islamic State West Africa Province",
+   "UN": "ISLAMIC STATE WEST AFRICA PROVINCE",
+   "EU": "West Africa Province"
+  },
+  "Islamic Jihad Union (IJU)": {
+   "UK": "Islamic Jihad Union",
+   "UN": "ISLAMIC JIHAD GROUP",
+   "EU": "Islamic Jihad Union"
+  },
+  "Islamic Movement of Uzbekistan (IMU)": {
+   "UK": "Islamic Movement of Uzbekistan",
+   "Canada": "Islamic Movement of Uzbekistan",
+   "UN": "ISLAMIC MOVEMENT OF UZBEKISTAN",
+   "EU": "Islamic Movement of Uzbekistan"
+  },
+  "Islamic Revolutionary Guard Corps (IRGC)": {
+   "Canada": "^Islamic Revolutionary Guard Corps$",
+   "EU": "Revolutionary Guard Corps"
+  },
+  "Islamic State's Khorasan Province (ISIS-K)": {
+   "Canada": "Islamic State Khorasan Province",
+   "Australia": "Islamic State Khorasan Province",
+   "UN": "KHORASAN \\(ISIL-K\\)",
+   "EU": "Khorasan"
+  },
+  "Jaish-e-Mohammed (JEM)": {
+   "UK": "Jaish e Mohammed",
+   "Canada": "Jaish-e-Mohammed",
+   "Australia": "Jaish-e-Mohammad",
+   "UN": "JAISH-I-MOHAMMED",
+   "EU": "Army of Mohammed|Jaish-I-Mom?hammed"
+  },
+  "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)": {
+   "UK": "\\(JNIM\\)",
+   "Canada": "Nusrat Al-Islam",
+   "Australia": "Nusrat al-Islam",
+   "UN": "NUSRAT UL-ISLAM",
+   "EU": "JNIM"
+  },
+  "Jemaah Anshorut Tauhid (JAT)": {
+   "UN": "JEMMAH ANSHORUT TAUHID",
+   "EU": "Anshorut Tauhid"
+  },
+  "Jemaah Islamiya (JI)": {
+   "UK": "Jeemah Islamiyah",
+   "Canada": "Jemaah Islamiyyah",
+   "Australia": "Jemaah Islamiyah",
+   "UN": "JEMAAH ISLAMIYAH",
+   "EU": "Jemaah Islamiya"
+  },
+  "Kurdistan Workers Party (PKK)": {
+   "UK": "Partiya Karkeren Kurdistani",
+   "Canada": "Kurdistan Workers Party",
+   "Australia": "Kurdistan Workers",
+   "EU": "Kurdistan Workers"
+  },
+  "Lashkar i Jhangvi (LJ)": {
+   "UK": "Lashkar-e Jhangvi",
+   "Canada": "Lashkar-e-Jhangvi",
+   "UN": "LASHKAR I JHANGVI",
+   "EU": "Lashkar i Jhangvi"
+  },
+  "Lashkar-e-Tayyiba (LeT)": {
+   "UK": "Lashkar e Tayyaba",
+   "Canada": "Lashkar-e-Tayyiba",
+   "Australia": "Lashkar-e-Tayyiba",
+   "UN": "LASHKAR-E-TAYYIBA",
+   "EU": "Lashkar e-Tayyiba|Lashkar-e-Tayyiba"
+  },
+  "Mara Salvatrucha (MS-13)": {
+   "Canada": "Mara Salvatrucha"
+  },
+  "National Liberation Army (ELN)": {
+   "Canada": "\\(ELN\\)",
+   "EU": "National Liberation Army"
+  },
+  "PFLP-General Command (PFLP-GC)": {
+   "UK": "\\(PFLP-GC\\)",
+   "Canada": "\\(PFLP-GC\\)",
+   "EU": "General Command|Command"
+  },
+  "Palestine Islamic Jihad (PIJ)": {
+   "UK": "Palestinian Islamic Jihad",
+   "Canada": "Palestinian Islamic Jihad",
+   "Australia": "Palestinian Islamic Jihad",
+   "EU": "Palestinian Islamic Jihad"
+  },
+  "Popular Front for the Liberation of Palestine (PFLP)": {
+   "Canada": "Liberation of Palestine \\(PFLP\\)",
+   "EU": "Popular Front for the Liberation of Palestine$|^PFLP$|FPLP"
+  },
+  "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)": {
+   "Canada": "Fuerzas Armadas Revolucionarias de Colombia"
+  },
+  "Revolutionary People's Liberation Party/Front (DHKP/C)": {
+   "UK": "DHKP-C",
+   "EU": "DHKP|Revolutionary People"
+  },
+  "Shining Path (Sendero Luminoso, SL)": {
+   "Canada": "Sendero Luminoso",
+   "EU": "Shining Path"
+  },
+  "Tehrik-e Taliban Pakistan (TTP)": {
+   "UK": "Tehrik-e Taliban Pakistan",
+   "Canada": "Tehrik-e-Taliban Pakistan",
+   "UN": "TEHRIK-E TALIBAN PAKISTAN",
+   "EU": "^Tehrik-e Taliban Pakistan$"
+  },
+  "Tren de Aragua": {
+   "Canada": "Tren de Aragua"
+  },
+  "al-Ashtar Brigades": {
+   "UK": "Al-Ashtar Brigades",
+   "Canada": "Al-Ashtar Brigades"
+  },
+  "al-Mulathamun Battalion (al-Murabitoun)": {
+   "UK": "^Al Murabitun",
+   "Canada": "Al-Murabitoun",
+   "UN": "AL MOURABITOUN",
+   "EU": "Al Mourabitoun"
+  },
+  "al-Qa'ida (AQ)": {
+   "UK": "Al Qa.ida \\(AQ\\)",
+   "Canada": "^Al Qaida$",
+   "Australia": "Al-Qa.ida \\(AQ\\)",
+   "UN": "^AL-QAIDA$",
+   "EU": "^Al-Qaida$|^Al-Qa'ida$"
+  },
+  "al-Qa'ida in the Arabian Peninsula (AQAP)": {
+   "Canada": "Arabian Peninsula",
+   "Australia": "Arabian Peninsula",
+   "UN": "ARABIAN PENINSULA \\(AQAP\\)",
+   "EU": "Al-Qaida in the Arabian Peninsula"
+  },
+  "al-Qa'ida in the Indian Subcontinent (AQIS)": {
+   "Canada": "Indian Subcontinent",
+   "Australia": "Indian Subcontinent",
+   "EU": "Indian Subcontinent"
+  },
+  "al-Qa'ida in the Islamic Maghreb (AQIM)": {
+   "UK": "al-Qa.ida in the Maghreb|Salafist Group for Call and Combat",
+   "Canada": "Islamic Maghreb",
+   "Australia": "Islamic Maghreb",
+   "UN": "ISLAMIC MAGHREB",
+   "EU": "Islamic Maghreb"
+  },
+  "al-Shabaab": {
+   "UK": "^Al Shabaab",
+   "Canada": "^Al Shabaab$",
+   "Australia": "^Al-Shabaab$",
+   "UN": "^AL-SHABAAB$",
+   "EU": "^Al-Shabaab$"
+  },
+  "Indian Mujahedeen (IM)": {
+   "UK": "Indian Mujahideen",
+   "Canada": "Indian Mujahideen"
+  },
+  "Abdallah Azzam Brigades": {
+   "UK": "Abdallah Azzam Brigades",
+   "Canada": "Abdallah Azzam Brigades",
+   "UN": "ABDALLAH AZZAM BRIGADES",
+   "EU": "Abdallah Azzam Brigades"
+  }
+ }
+}

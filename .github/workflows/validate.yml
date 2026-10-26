@@ -1,0 +1,54 @@
+name: Validate data
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 14 * * 1"   # weekly drift check on the published file (Monday, about 7am Pacific)
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python validate.py
+  sources:
+    # Code checks against the official lists themselves (UK, Canada, Australia, UN, EU, Federal Register,
+    # EU Sanctions Map, World Bank, OpenSanctions, links). Errors block the merge.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python checks/check_sources.py
+      - if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+              title: "Weekly source check found errors in the published data",
+              body: "The weekly check of the published file against the official lists failed. See " + context.serverUrl + "/" + context.repo.owner + "/" + context.repo.repo + "/actions/runs/" + context.runId,
+              labels: ["held"]});
+  verifier-signoff:
+    # A data pull request can merge only after the independent verifier workflow (a different company's model,
+    # running as github-actions[bot]) has applied the "verified" label. A label added by anyone else does not count.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const names = pr.labels.map(l => l.name);
+            if (names.includes("held")) core.setFailed("Held for Andrzej");
+            const ev = await github.paginate(github.rest.issues.listEvents, {owner: context.repo.owner, repo: context.repo.repo, issue_number: pr.number});
+            const last = ev.filter(e => (e.event === "labeled" || e.event === "unlabeled") && e.label && e.label.name === "verified").pop();
+            if (!last || last.event !== "labeled" || last.actor.login !== "github-actions[bot]")
+              core.setFailed("Waiting for the independent verifier (label 'verified' applied by github-actions[bot])");

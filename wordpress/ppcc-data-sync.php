@@ -5,8 +5,8 @@
  * validates it, keeps the last good copy, and prints it into page 13392 only.
  * Visitors' browsers never contact GitHub. No credentials are stored.
  */
-const PPCC_SOURCE = 'https://raw.githubusercontent.com/andrzej-dot/paragon-country-check-data/main/country-check-data.json'; // set at install
-const PPCC_PAGE   = 13392;
+if ( ! defined( 'PPCC_SOURCE' ) ) define( 'PPCC_SOURCE', 'https://raw.githubusercontent.com/andrzej-dot/paragon-country-check-data/main/country-check-data.json' );
+if ( ! defined( 'PPCC_PAGE' ) ) define( 'PPCC_PAGE', 13392 );
 
 function ppcc_valid( $d ) {
 	if ( ! is_array( $d ) || ( $d['meta']['schema_version'] ?? 0 ) !== 1 ) return false;
@@ -41,5 +41,5 @@ add_action( 'wp_head', function () {
 	if ( ! is_page( PPCC_PAGE ) ) return;
 	$d = get_option( 'ppcc_data' );
 	if ( ! $d ) return; // page falls back to "being updated"
-	echo '<script id="ppcc-data">window.PPCC_DATA=' . wp_json_encode( $d ) . ';</script>' . "\n";
+	echo '<script id="ppcc-data">window.PPCC_DATA=' . wp_json_encode( $d, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE ) . ';</script>' . "\n";
 }, 1 );

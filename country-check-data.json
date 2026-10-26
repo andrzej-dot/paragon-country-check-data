@@ -18,6 +18,33 @@
    "fatf_black": 3,
    "fatf_grey": 22,
    "fto_groups": 98
+  },
+  "page": {
+   "_note": "Text and dates shown on the page. 'checked' is the date the layer was last confirmed current against its source; the page marks a layer 'being updated' once checked is older than the page's maximum age for that layer (cpi 400, fatf 150, fto 35, sanc 35 days). Change only through the update procedure; never move 'checked' forward without having checked that layer's sources.",
+   "asof": {
+    "cpi": "World Bank release of 25 September 2026",
+    "fatf": "As of the June 2026 FATF Plenary",
+    "fto": "Designations current through 15 October 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
+    "sanc": "Checked 25 October 2026"
+   },
+   "layers": {
+    "cpi": {
+     "checked": "2026-10-23",
+     "when": "World Bank, Worldwide Governance Indicators, 2025 data"
+    },
+    "fatf": {
+     "checked": "2026-06-19",
+     "when": "FATF Plenary, 17 to 19 June 2026"
+    },
+    "fto": {
+     "checked": "2026-10-15",
+     "when": "current through 15 October 2026"
+    },
+    "sanc": {
+     "checked": "2026-10-25",
+     "when": "checked 25 October 2026"
+    }
+   }
   }
  },
  "countries": {

@@ -4,17 +4,17 @@ The one procedure for changing any data value on Country Check. Page wording and
 
 ## Roles
 - **Proposer**: the weekday daily data check (scheduled task "Country Check daily data check"). Finds changes and opens pull requests. Never merges.
-- **Verifier**: a separate scheduled task ("Country Check independent verifier"). Runs after the proposer, starts fresh, and is told to look for reasons each change is wrong. It sees the proposed values and the source URLs, never the proposer's reasoning.
-- **Code checks**: `validate.py` and `checks/check_sources.py`, run by GitHub on every pull request. No judgment, no AI.
+- **Verifier**: a separate scheduled Claude task ("Country Check independent verifier") with its own context. It sees the proposed values and source URLs, never the proposer's reasoning, and is told to look for reasons each change is wrong. Andrzej decided on 26 Oct not to add a model from another company; the word-for-word quote check is the main protection against a shared misreading or an invented quote.
+- **Code checks**: `validate.py`, `checks/check_sources.py` and `checks/check_evidence.py`, run by GitHub on every pull request. No judgment, no AI. `check_evidence.py` fetches each cited page itself (or its Internet Archive copy if the site refuses servers) and fails unless every quote appears in it word for word.
 - **Andrzej**: notified, not asked, except for held changes.
 
 ## Steps for every change
-1. **Proposer** opens one pull request per source event (for example, one Federal Register notice). The description must contain, for each changed value: field and country or group, old value, new value, official source URL, the quoted passage that supports it (under 50 words), and the corrections-log line if the change corrects an error.
+1. **Proposer** opens one pull request per source event (for example, one Federal Register notice). The description must contain, for each changed value: field and country or group, old value, new value, official source URL, the quoted passage that supports it (under 50 words), and the corrections-log line if the change corrects an error. The same entries go in a file `evidence/YYYY-MM-DD-<topic>.json` as a list of {"path", "new", "url", "quote"} so code can check them.
 2. **Code checks** run. Any error blocks the merge. A new non-U.S. FTO label cannot pass without an evidence pattern that matches the official list.
-3. **Verifier** re-derives each change from the official source on its own, then from a second source where one exists (table below). It records a verdict per change in a pull-request comment: confirmed (with its own quote), or doubt (with the reason).
+3. **Verifier** re-derives each change from the official source on its own, then from a second source where one exists (table below). It posts one comment beginning `<!-- country-check-verifier -->` with a ```json block listing, per changed value, {"path", "verdict": "confirmed" or "doubt", "url", "quote", "reason"}, then adds the label `verifier-done`. Code then checks every verifier quote word for word.
 4. **Outcome**
-   - All changes confirmed and no strict rule triggered: verifier adds the label `verified`. Auto-merge publishes. The site picks it up within six hours.
-   - Any doubt, any disagreement with the outside tie-breaker, or any strict-rule change the verifier cannot confirm from two sources: label `held`. Andrzej is notified with a two-line summary. Held pull requests wait; nothing is published.
+   - All verdicts confirmed and every quote found: the sign-off check passes and auto-merge publishes. The site picks it up within six hours.
+   - Any doubt, a quote not found, or a strict change without two source URLs: the check fails and nothing is published. The verifier adds `held` and Andrzej is notified with a two-line summary.
 5. **Weekly summary** (Monday): what was published, what is held, what the weekly source check found.
 6. **Reverting**: reverting the merge commit on GitHub restores the previous file; the site follows within six hours, or at once with `?ppcc_refresh=1` when an administrator loads the page.
 

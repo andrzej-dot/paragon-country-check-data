@@ -18,6 +18,9 @@ The one procedure for changing any data value on Country Check. Page wording and
 5. **Weekly summary** (Monday): what was published, what is held, what the weekly source check found.
 6. **Reverting**: reverting the merge commit on GitHub restores the previous file; the site follows within six hours, or at once with `?ppcc_refresh=1` when an administrator loads the page.
 
+## Changes to the system itself
+Any pull request that touches anything other than `country-check-data.json` and `evidence/` (checks, workflows, this procedure, the website snippet) fails the sign-off check by design and never publishes automatically. Andrzej merges those himself, so no agent can weaken the controls on its own.
+
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:
 - Removing any sanction program, FTO label or FATF listing.

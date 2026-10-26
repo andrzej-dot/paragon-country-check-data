@@ -51,6 +51,11 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
+      - name: Data-only change
+        # Changes to checks, workflows, procedure or anything else never publish automatically: Andrzej merges them himself.
+        run: |
+          other=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -v -E '^(country-check-data\.json|evidence/.*\.json)$' || true)
+          if [ -n "$other" ]; then echo "Not a data-only change; needs Andrzej's merge:"; echo "$other"; exit 1; fi
       - name: Not held
         if: contains(github.event.pull_request.labels.*.name, 'held')
         run: echo "Held for Andrzej" && exit 1

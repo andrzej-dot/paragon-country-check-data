@@ -14,7 +14,6 @@ if len(C) < 200: err(f"countries: {len(C)} entries, expected at least 200")
 if len(L) < 50: err(f"fto_listings: {len(L)} entries, expected at least 50")
 
 URL = re.compile(r"^https://[^\s\"]+$")
-BODIES = {"EU", "EU military wing", "UK", "UN", "Canada", "Australia"}
 for k, o in C.items():
     if not o.get("n"): err(f"{k}: missing display name n")
     if o.get("fatf") not in (None, "black", "grey"): err(f"{k}: fatf must be black or grey")
@@ -30,9 +29,11 @@ for k, o in C.items():
     for j in ("eu", "un"):
         if j in o and not all(isinstance(x, str) and x for x in o[j]): err(f"{k}: bad {j} list")
     if "cpi" in o and not (isinstance(o["cpi"], int) and 0 <= o["cpi"] <= 100): err(f"{k}: cpi out of range")
+# Since 27 Oct 2026 the FTO view is U.S.-only: fto_listings is the list of U.S.-designated groups, each with an empty list.
+# Other governments' listings are not kept; any label here fails the check, so no task can add them back.
 for g, b in L.items():
-    bad = set(b) - BODIES
-    if bad: err(f"fto_listings {g}: unknown bodies {bad}")
+    if b != []: err(f"fto_listings {g}: must be an empty list (other governments' FTO listings are not kept)")
+if "fto_listing_evidence" in d: err("fto_listing_evidence: no longer used; remove it")
 for k, v in F.items():
     if k not in C: WARN.append(f"fatf_evaluations: {k} has an evaluation but no country entry (territory shown on the map only)")
     if not (isinstance(v, list) and len(v) == 3 and re.fullmatch(r"\d{4}-\d{2}", v[0])): err(f"fatf_evaluations {k}: bad entry {v}")
@@ -43,17 +44,6 @@ nb = sum(1 for o in C.values() if o.get("fatf") == "black"); ng = sum(1 for o in
 cnt = m.get("counts", {})
 if cnt.get("fatf_black") != nb or cnt.get("fatf_grey") != ng: err(f"meta.counts FATF ({cnt.get('fatf_black')}/{cnt.get('fatf_grey')}) do not match data ({nb}/{ng})")
 
-# Every non-U.S. label must carry an evidence pattern that the source check can test against the official list
-EV = d.get("fto_listing_evidence", {})
-for g, bodies in L.items():
-    for b in bodies:
-        if b in ("UK", "Canada", "Australia", "UN", "EU", "EU military wing") and not EV.get(g, {}).get(b):
-            err(f"fto_listings {g}: label {b} has no evidence pattern in fto_listing_evidence")
-        if EV.get(g, {}).get(b):
-            try: re.compile(EV[g][b])
-            except re.error as e: err(f"fto_listing_evidence {g}/{b}: bad pattern ({e})")
-for g in EV:
-    if g not in L: err(f"fto_listing_evidence: {g} is not in fto_listings")
 # Every country needs ISO codes so automated checks can match it to official datasets
 for k, o in C.items():
     if not o.get("iso2") and o.get("n") not in ("Ashmore and Cartier Is.",):

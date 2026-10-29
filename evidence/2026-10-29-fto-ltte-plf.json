@@ -1,0 +1,26 @@
+[
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [],
+  "url": "https://www.state.gov/foreign-terrorist-organizations",
+  "quote": "October 8, 1997 Liberation Tigers of Tamil Eelam (LTTE)"
+ },
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [],
+  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
+  "quote": "\"Liberation Tigers of Tamil Eelam\",\"LTTE\""
+ },
+ {
+  "path": "fto_listings.Palestine Liberation Front (PLF)",
+  "new": [],
+  "url": "https://www.state.gov/foreign-terrorist-organizations",
+  "quote": "October 8, 1997 Palestine Liberation Front (PLF)"
+ },
+ {
+  "path": "fto_listings.Palestine Liberation Front (PLF)",
+  "new": [],
+  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
+  "quote": "\"Palestine Liberation Front\",\"PLF\""
+ }
+]

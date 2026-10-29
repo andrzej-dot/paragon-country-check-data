@@ -41,6 +41,26 @@ try:
             W(f"Federal Register public inspection (not yet published): {x.get('title')} ({x.get('html_url')})")
 except Exception as e: R["unreachable"].append(f"Federal Register: {e}")
 
+# 3b. U.S. sanctions watch: new OFAC rules and notices, and presidential sanctions orders, in the Federal Register.
+# Nothing here is an error (OFAC publishes routinely, and an error would block every data change). Each item goes to
+# R["watch"]; the weekly run opens an issue listing them so Andrzej sees anything that might add, lift or change a
+# country program, above all the locked comprehensive embargoes in validate.py.
+R["watch"] = []
+try:
+    wsince = (dt.date.today() - dt.timedelta(days=8)).isoformat() if "--weekly" in sys.argv else since
+    base = "https://www.federalregister.gov/api/v1/documents.json?per_page=100&order=newest&fields%5B%5D=title&fields%5B%5D=html_url&fields%5B%5D=publication_date&fields%5B%5D=type&conditions%5Bpublication_date%5D%5Bgte%5D=" + wsince
+    seen = set()
+    for q in (base + "&conditions%5Bagencies%5D%5B%5D=foreign-assets-control-office",
+              base + "&conditions%5Btype%5D%5B%5D=PRESDOCU&conditions%5Bterm%5D=sanctions+OR+%22blocking+property%22+OR+%22national+emergency%22"):
+        for x in json.loads(get(q)).get("results", []):
+            if x.get("html_url") in seen: continue
+            seen.add(x.get("html_url"))
+            t = x.get("title") or ""
+            hot = [k for k in ("Cuba", "Cuban", "Iran", "North Korea", "Korea", "Ukraine", "Crimea", "Venezuela", "Syria", "Russia", "Belarus") if k.lower() in t.lower()]
+            R["watch"].append(f"{x.get('publication_date')} {x.get('type')}: {t} ({x.get('html_url')})" + (f"  [names: {', '.join(hot)}]" if hot else ""))
+    I(f"Sanctions watch since {wsince}: {len(R['watch'])} Federal Register item(s)")
+except Exception as e: R["unreachable"].append(f"Federal Register sanctions watch: {e}")
+
 # 4. EU country regimes (EU Sanctions Map) against the eu field
 try:
     rg = json.loads(get("https://www.sanctionsmap.eu/api/v1/regime"))["data"]
@@ -136,7 +156,7 @@ try:
 except Exception as e: R["unreachable"].append(f"OpenSanctions: {e}")
 
 json.dump(R, open("checks/report.json", "w"), indent=1)
-for k in ("errors", "warnings", "unreachable", "info"):
+for k in ("errors", "warnings", "watch", "unreachable", "info"):
     print(f"\n{k.upper()} ({len(R[k])})")
     for m in R[k]: print(" -", m)
 sys.exit(1 if R["errors"] else 0)

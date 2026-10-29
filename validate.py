@@ -23,11 +23,13 @@ for k, o in C.items():
         if g not in L: err(f"{k}: group '{g}' not in fto_listings")
     if o.get("us") not in (None, "c", "t"): err(f"{k}: us must be c or t")
     if o.get("us") and not o.get("usp"): err(f"{k}: us set but usp empty")
-    for j in ("usp", "uk", "ca", "ch", "au"):
+    for j in ("usp", "uk", "ca", "ch", "au", "eu", "un"):
         for e in o.get(j, []) or []:
             if not (isinstance(e, list) and len(e) == 2 and e[0] and URL.match(e[1])): err(f"{k}: bad {j} entry {e}")
-    for j in ("eu", "un"):
-        if j in o and not all(isinstance(x, str) and x for x in o[j]): err(f"{k}: bad {j} list")
+    for e in o.get("eu", []) or []:
+        if isinstance(e, list) and len(e) == 2 and not e[1].startswith("https://www.sanctionsmap.eu/#/main/details/"): err(f"{k}: eu link must be an EU Sanctions Map regime page: {e}")
+    for e in o.get("un", []) or []:
+        if isinstance(e, list) and len(e) == 2 and not e[1].startswith(("https://main.un.org/securitycouncil/", "https://digitallibrary.un.org/")): err(f"{k}: un link must be a UN page: {e}")
     if "cpi" in o and not (isinstance(o["cpi"], int) and 0 <= o["cpi"] <= 100): err(f"{k}: cpi out of range")
 # Since 27 Oct 2026 the FTO view is U.S.-only: fto_listings is the list of U.S.-designated groups, each with an empty list.
 # Other governments' listings are not kept; any label here fails the check, so no task can add them back.

@@ -45,14 +45,19 @@ except Exception as e: R["unreachable"].append(f"Federal Register: {e}")
 try:
     rg = json.loads(get("https://www.sanctionsmap.eu/api/v1/regime"))["data"]
     by2 = {o.get("iso2"): k for k, o in C.items() if o.get("iso2")}
-    want = {}
+    want, ids = {}, {}
     for r in rg:
         code = ((r.get("country") or {}).get("data") or {}).get("code")
         spec = (r.get("specification") or "").strip()
         if not code or code not in by2 or "satisfying of certain claims" in spec or code == "US": continue
         want.setdefault(by2[code], set()).add(spec.rstrip("."))
+        ids.setdefault((by2[code], spec.rstrip(".")), set()).add(r.get("id"))
     for k, specs in want.items():
-        have = {x.rstrip(".") for x in (C[k].get("eu") or [])}
+        have = {x[0].rstrip(".") for x in (C[k].get("eu") or [])}
+        for name, url in (C[k].get("eu") or []):
+            m = re.search(r"/details/(\d+)/", url)
+            if not m or int(m.group(1)) not in ids.get((k, name.rstrip(".")), set()):
+                E_(f"EU {C[k]['n']}: link for '{name}' does not point to that regime on the EU Sanctions Map ({url})")
         for s in specs - have: E_(f"EU {C[k]['n']}: regime on the EU Sanctions Map missing from page: {s}")
         for s in have - specs: E_(f"EU {C[k]['n']}: page shows a regime not on the EU Sanctions Map: {s}")
     for k, o in C.items():
@@ -71,7 +76,7 @@ except Exception as e: R["unreachable"].append(f"World Bank: {e}")
 # 6. Every official link resolves
 urls = set()
 for o in C.values():
-    for j in ("usp", "uk", "ca", "ch", "au"):
+    for j in ("usp", "uk", "ca", "ch", "au", "eu", "un"):
         for e in o.get(j) or []: urls.add(e[1])
 for slug in set(D.get("crt_links", {}).values()):
     urls.add(f"https://www.state.gov/reports/country-reports-on-terrorism-2024/{slug}/")

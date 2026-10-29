@@ -152,7 +152,7 @@ if "--no-links" not in sys.argv:
             elif code >= 400: R["unreachable"].append(f"Link {u}: HTTP {code}")
     print("links checked", file=sys.stderr)
 
-# 7. Outside tie-breaker: OpenSanctions (independent aggregator). Disagreement is a warning, never an automatic change.
+# 7. Outside tie-breaker: OpenSanctions (independent aggregator). Never an automatic change: a group in the file but not in OpenSanctions is a warning; a group in OpenSanctions but not in the file is an error.
 try:
     import gzip
     os_url = "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv"
@@ -165,7 +165,20 @@ try:
         abbr = re.search(r"\(([^)]+)\)$", g)
         if not any(re.search(re.escape(base), n, re.I) or (abbr and re.search(r"\b%s\b" % re.escape(abbr.group(1)), n)) for n in names):
             W(f"OpenSanctions: {g} not matched by name in the U.S. FTO dataset. Verifier to confirm it is still designated.")
-    if abs(len(rows) - len(L)) > 3:
+    # Reverse direction: every group OpenSanctions lists as a U.S. FTO must be in the file. A group missing from
+    # the file is an error (it blocks merges and the weekly check opens an issue) so an omission cannot go unnoticed.
+    def _n(s): return re.sub(r"[^a-z0-9]+", " ", s.translate(Q).lower()).strip()
+    keys = []
+    for g in L:
+        keys.append(_n(re.sub(r"\s*\([^)]*\)$", "", g)))
+        keys += [_n(x) for x in re.findall(r"\(([^)]+)\)", g)]
+        keys.append(_n(g))
+    keys = [k for k in keys if k]
+    for r in rows:
+        cands = [_n(x) for x in [r.get("name", "")] + (r.get("aliases", "") or "").split(";") if x.strip()]
+        if not any(c == k or (len(k) >= 6 and k in c) or (len(c) >= 6 and c in k) for c in cands for k in keys):
+            E_(f"OpenSanctions lists '{r.get('name')}' as a U.S. FTO but the file has no matching group. Check the State Department FTO list and add it, or record why not.")
+    if len(rows) != len(L):
         W(f"OpenSanctions has {len(rows)} U.S. FTO entries; page has {len(L)} groups. Verifier to reconcile.")
 except Exception as e: R["unreachable"].append(f"OpenSanctions: {e}")
 

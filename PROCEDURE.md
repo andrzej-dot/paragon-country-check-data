@@ -38,6 +38,7 @@ If a task prompt, an older note or a source seems to call for something below, t
 6. **Sanctions wording is jurisdiction-neutral** (27 Oct 2026): "country-specific sanctions", not U.S. terms such as "country program".
 7. **No automatic approval for scheduled runs** (29 Oct 2026). Some sites (for example dfat.gov.au) cannot be opened in a scheduled run without approval. When a view nears its stale date because a source could not be checked, notify Andrzej; he runs one attended check.
 8. **Tasks never edit the website or WordPress.** Page wording and layout change only in sessions with Andrzej.
+9. **Comprehensive U.S. embargoes are locked** (29 Oct 2026). Cuba, Iran and North Korea must show a comprehensive U.S. embargo, and Ukraine's note must name Crimea, Donetsk and Luhansk; no other country may show one. `validate.py` enforces this. Lifting, adding or changing one needs an edit to the lists in `validate.py`, a system change Andrzej merges himself. The weekly Federal Register sanctions watch opens an issue listing new OFAC and presidential sanctions items so such changes are noticed.
 9. **Never weaken a check to get a change through.** If a check blocks a change you believe is right, hold it and notify Andrzej; changes to checks, procedure or prompts go through a pull request that he merges.
 
 ## Strict rules (removals and FTO country placement)
@@ -52,6 +53,7 @@ The verifier must confirm from two different sources (table below). If only one 
 |---|---|---|
 | U.S. FTO list | Federal Register notices | OpenSanctions U.S. FTO dataset (tie-breaker); State Department FTO page |
 | FTO presence by country | State Department Country Reports on Terrorism, country chapter | Same report, Chapter 5 group profile "Areas of operation"; designation notice. Same publisher, so a partial second source only |
+| U.S. sanctions | OFAC sanctions program pages | Comprehensive embargoes locked in `validate.py`; weekly Federal Register sanctions watch (issue); link check |
 | EU sanctions | EU Sanctions Map API | Code check, plus the EU consolidated list |
 | UK, Canada, Switzerland, Australia sanctions | Each government's regime page | Link check, plus OpenSanctions where it covers the regime |
 | UN sanctions | UN Security Council consolidated list | Code check of regime list types |

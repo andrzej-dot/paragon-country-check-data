@@ -46,6 +46,25 @@ nb = sum(1 for o in C.values() if o.get("fatf") == "black"); ng = sum(1 for o in
 cnt = m.get("counts", {})
 if cnt.get("fatf_black") != nb or cnt.get("fatf_grey") != ng: err(f"meta.counts FATF ({cnt.get('fatf_black')}/{cnt.get('fatf_grey')}) do not match data ({nb}/{ng})")
 
+# Comprehensive U.S. embargoes are locked (Andrzej, 29 Oct 2026). These are the only U.S. sanctions that by themselves
+# make a grant to anyone in the country unlawful, so a wrong "not comprehensive" here is the most harmful error the page
+# can make. No data change can remove or downgrade them, and no data change can add a new one: either needs an edit to
+# the lists below, which is a system change Andrzej merges himself. When OFAC genuinely lifts or adds an embargo, edit
+# these lists in the same pull request as the data change. The weekly Federal Register watch (checks/check_sources.py)
+# is how such a change is noticed.
+COMPREHENSIVE = {"Cuba", "Iran", "North Korea"}
+REGION_NOTES = {"Ukraine": ("Crimea", "Donetsk", "Luhansk")}
+for k in sorted(COMPREHENSIVE):
+    if k not in C: err(f"locked: {k} is missing from countries")
+    elif C[k].get("us") != "c": err(f"locked: {k} must show a comprehensive U.S. embargo (us = c); lifting it needs Andrzej's edit to COMPREHENSIVE in validate.py")
+    elif not C[k].get("usp"): err(f"locked: {k} must keep its OFAC program link")
+for k, o in C.items():
+    if o.get("us") == "c" and k not in COMPREHENSIVE: err(f"locked: {k} shows a comprehensive U.S. embargo that is not in COMPREHENSIVE; adding one needs Andrzej's edit to validate.py")
+for k, words in REGION_NOTES.items():
+    note = (C.get(k) or {}).get("usn") or ""
+    for w in words:
+        if w not in note: err(f"locked: {k} usn must name {w} (comprehensive embargo on occupied regions); changing it needs Andrzej's edit to REGION_NOTES in validate.py")
+
 # Every country needs ISO codes so automated checks can match it to official datasets
 for k, o in C.items():
     if not o.get("iso2") and o.get("n") not in ("Ashmore and Cartier Is.",):

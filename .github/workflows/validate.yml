@@ -28,7 +28,19 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
-      - run: python checks/check_sources.py
+      - run: python checks/check_sources.py ${{ github.event_name == 'schedule' && '--weekly' || '' }}
+      - name: Weekly sanctions watch (opens an issue when the Federal Register has new OFAC or presidential sanctions items)
+        if: always() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let w = [];
+            try { w = JSON.parse(fs.readFileSync('checks/report.json', 'utf8')).watch || []; } catch (e) {}
+            if (!w.length) return;
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+              title: "Sanctions watch: " + w.length + " new Federal Register item(s) to review",
+              body: "New OFAC rules or notices, or presidential sanctions orders, published in the last 8 days. Check whether any adds, lifts or changes a country program on Country Check, above all the locked comprehensive embargoes (Cuba, Iran, North Korea, the occupied regions of Ukraine) in validate.py.\n\n" + w.map(x => "- " + x).join("\n")});
       - name: Proposer evidence (every changed value has a quote found word for word in its source)
         if: github.event_name == 'pull_request'
         run: python checks/check_evidence.py proposer origin/${{ github.base_ref }}

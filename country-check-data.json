@@ -2,7 +2,7 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 17 to 19 June 2026",
@@ -17,7 +17,7 @@
    "countries": 211,
    "fatf_black": 3,
    "fatf_grey": 22,
-   "fto_groups": 98
+   "fto_groups": 100
   },
   "page": {
    "_note": "Text and dates shown on the page. 'checked' is the date the layer was last confirmed current against its source; the page marks a layer 'being updated' once checked is older than the page's maximum age for that layer (cpi 400, fatf 150, fto 35, sanc 35 days). Change only through the update procedure; never move 'checked' forward without having checked that layer's sources. 'text' holds the dated phrases in the page's source notes and map key; keep them consistent with 'layers' and 'asof'.",
@@ -3361,7 +3361,15 @@
    "Canada"
   ],
   "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)": [],
-  "Jaysh al-Adl (formerly Jundallah)": []
+  "Jaysh al-Adl (formerly Jundallah)": [],
+  "Liberation Tigers of Tamil Eelam (LTTE)": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "Palestine Liberation Front (PLF)": [
+   "Canada"
+  ]
  },
  "fatf_evaluations": {
   "Albania": [
@@ -4763,6 +4771,14 @@
    "Canada": "Abdallah Azzam Brigades",
    "UN": "ABDALLAH AZZAM BRIGADES",
    "EU": "Abdallah Azzam Brigades"
+  },
+  "Liberation Tigers of Tamil Eelam (LTTE)": {
+   "UK": "Liberation Tigers of Tamil Eelam",
+   "Canada": "Liberation Tigers of Tamil Eelam",
+   "EU": "Liberation Tigers of Tamil Eelam"
+  },
+  "Palestine Liberation Front (PLF)": {
+   "Canada": "Palestine Liberation Front \\(PLF\\)"
   }
  }
 }

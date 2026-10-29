@@ -1,0 +1,66 @@
+[
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "url": "https://www.state.gov/foreign-terrorist-organizations",
+  "quote": "October 8, 1997 Liberation Tigers of Tamil Eelam (LTTE)"
+ },
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
+  "quote": "\"Liberation Tigers of Tamil Eelam\",\"LTTE\""
+ },
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "url": "https://www.gov.uk/government/publications/proscribed-terror-groups-or-organisations--2/proscribed-terrorist-groups-or-organisations-accessible-version",
+  "quote": "Liberation Tigers of Tamil Eelam (LTTE): Proscribed March 2001"
+ },
+ {
+  "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
+  "new": [
+   "EU",
+   "UK",
+   "Canada"
+  ],
+  "url": "https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx",
+  "quote": "Liberation Tigers of Tamil Eelam (LTTE) Also known as The Tamil Tigers"
+ },
+ {
+  "path": "fto_listings.Palestine Liberation Front (PLF)",
+  "new": [
+   "Canada"
+  ],
+  "url": "https://www.state.gov/foreign-terrorist-organizations",
+  "quote": "October 8, 1997 Palestine Liberation Front (PLF)"
+ },
+ {
+  "path": "fto_listings.Palestine Liberation Front (PLF)",
+  "new": [
+   "Canada"
+  ],
+  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
+  "quote": "\"Palestine Liberation Front\",\"PLF\""
+ },
+ {
+  "path": "fto_listings.Palestine Liberation Front (PLF)",
+  "new": [
+   "Canada"
+  ],
+  "url": "https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx",
+  "quote": "Palestine Liberation Front (PLF) Also known as PLF-Abu Abbas Faction"
+ }
+]

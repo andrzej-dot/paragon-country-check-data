@@ -73,10 +73,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures imposed with respect to the Taliban"
+    [
+     "Restrictive measures imposed with respect to the Taliban",
+     "https://www.sanctionsmap.eu/#/main/details/1/"
+    ]
    ],
    "un": [
-    "1988 Sanctions Committee (Taliban)"
+    [
+     "1988 Sanctions Committee (Taliban)",
+     "https://main.un.org/securitycouncil/en/sanctions/1988"
+    ]
    ],
    "cpi": 22,
    "prev": 22,
@@ -226,7 +232,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine"
+    [
+     "Restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine",
+     "https://www.sanctionsmap.eu/#/main/details/2/"
+    ]
    ],
    "cpi": 36,
    "prev": 36,
@@ -304,7 +313,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Bosnia and Herzegovina"
+    [
+     "Restrictive measures in view of the situation in Bosnia and Herzegovina",
+     "https://www.sanctionsmap.eu/#/main/details/4/"
+    ]
    ],
    "cpi": 38,
    "prev": 38,
@@ -366,7 +378,10 @@
   "Burundi": {
    "n": "Burundi",
    "eu": [
-    "Restrictive measures in view of the situation in Burundi"
+    [
+     "Restrictive measures in view of the situation in Burundi",
+     "https://www.sanctionsmap.eu/#/main/details/7/"
+    ]
    ],
    "cpi": 17,
    "prev": 19,
@@ -425,10 +440,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in the Central African Republic"
+    [
+     "Restrictive measures in view of the situation in the Central African Republic",
+     "https://www.sanctionsmap.eu/#/main/details/9/"
+    ]
    ],
    "un": [
-    "2745 Sanctions Committee (Central African Republic)"
+    [
+     "2745 Sanctions Committee (Central African Republic)",
+     "https://main.un.org/securitycouncil/en/sanctions/2745"
+    ]
    ],
    "cpi": 21,
    "prev": 22,
@@ -489,7 +510,10 @@
     ]
    ],
    "eu": [
-    "Specific restrictive measures in relation to the events at the Tiananmen Square protests of 1989"
+    [
+     "Specific restrictive measures in relation to the events at the Tiananmen Square protests of 1989",
+     "https://www.sanctionsmap.eu/#/main/details/10/"
+    ]
    ],
    "uk": [
     [
@@ -616,10 +640,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in the Democratic Republic of the Congo"
+    [
+     "Restrictive measures in view of the situation in the Democratic Republic of the Congo",
+     "https://www.sanctionsmap.eu/#/main/details/11/"
+    ]
    ],
    "un": [
-    "1533 Sanctions Committee (Democratic Republic of the Congo)"
+    [
+     "1533 Sanctions Committee (Democratic Republic of the Congo)",
+     "https://main.un.org/securitycouncil/en/sanctions/1533"
+    ]
    ],
    "cpi": 18,
    "prev": 17,
@@ -856,7 +886,10 @@
     "Barrio 18"
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Guatemala"
+    [
+     "Restrictive measures in view of the situation in Guatemala",
+     "https://www.sanctionsmap.eu/#/main/details/59/"
+    ]
    ],
    "cpi": 29,
    "prev": 29,
@@ -878,7 +911,10 @@
   "Guinea": {
    "n": "Guinea",
    "eu": [
-    "Restrictive measures in view of the situation in Guinea"
+    [
+     "Restrictive measures in view of the situation in Guinea",
+     "https://www.sanctionsmap.eu/#/main/details/14/"
+    ]
    ],
    "cpi": 27,
    "prev": 24,
@@ -900,10 +936,16 @@
   "Guinea-Bissau": {
    "n": "Guinea-Bissau",
    "eu": [
-    "Restrictive measures in view of the situation in Guinea-Bissau"
+    [
+     "Restrictive measures in view of the situation in Guinea-Bissau",
+     "https://www.sanctionsmap.eu/#/main/details/15/"
+    ]
    ],
    "un": [
-    "2048 Sanctions Committee (Guinea-Bissau)"
+    [
+     "2048 Sanctions Committee (Guinea-Bissau)",
+     "https://main.un.org/securitycouncil/en/sanctions/2048"
+    ]
    ],
    "cpi": 20,
    "prev": 21,
@@ -944,10 +986,16 @@
     "Gran Grif"
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Haiti"
+    [
+     "Restrictive measures in view of the situation in Haiti",
+     "https://www.sanctionsmap.eu/#/main/details/54/"
+    ]
    ],
    "un": [
-    "2653 Sanctions Committee (Haiti)"
+    [
+     "2653 Sanctions Committee (Haiti)",
+     "https://main.un.org/securitycouncil/en/sanctions/2653"
+    ]
    ],
    "cpi": 17,
    "prev": 17,
@@ -1084,12 +1132,24 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in relation to serious human rights violations in Iran",
-    "Restrictive measures in relation to the non-proliferation of weapons of mass destruction",
-    "Restrictive measures in view of Iran’s military support to Russia’s war of aggression against Ukraine and to armed groups and entities in the Middle East and the Red Sea region"
+    [
+     "Restrictive measures in relation to serious human rights violations in Iran",
+     "https://www.sanctionsmap.eu/#/main/details/17/"
+    ],
+    [
+     "Restrictive measures in relation to the non-proliferation of weapons of mass destruction",
+     "https://www.sanctionsmap.eu/#/main/details/18/"
+    ],
+    [
+     "Restrictive measures in view of Iran’s military support to Russia’s war of aggression against Ukraine and to armed groups and entities in the Middle East and the Red Sea region",
+     "https://www.sanctionsmap.eu/#/main/details/56/"
+    ]
    ],
    "un": [
-    "1737 Sanctions Committee (Iran)"
+    [
+     "1737 Sanctions Committee (Iran)",
+     "https://main.un.org/securitycouncil/en/sanctions/1737"
+    ]
    ],
    "cpi": 25,
    "prev": 25,
@@ -1152,10 +1212,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures on Iraq"
+    [
+     "Restrictive measures on Iraq",
+     "https://www.sanctionsmap.eu/#/main/details/19/"
+    ]
    ],
    "un": [
-    "1518 Sanctions Committee (Iraq)"
+    [
+     "1518 Sanctions Committee (Iraq)",
+     "https://main.un.org/securitycouncil/en/sanctions/1518"
+    ]
    ],
    "cpi": 23,
    "prev": 23,
@@ -1280,10 +1346,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in relation to the non-proliferation of the weapons of mass destruction"
+    [
+     "Restrictive measures in relation to the non-proliferation of the weapons of mass destruction",
+     "https://www.sanctionsmap.eu/#/main/details/20/"
+    ]
    ],
    "un": [
-    "1718 Sanctions Committee (DPRK)"
+    [
+     "1718 Sanctions Committee (DPRK)",
+     "https://main.un.org/securitycouncil/en/sanctions/1718"
+    ]
    ],
    "cpi": 17,
    "prev": 17,
@@ -1408,13 +1480,28 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Lebanon",
-    "Restrictive measures in relation to the UN Security Council Resolution 1701 (2006) on Lebanon",
-    "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon"
+    [
+     "Restrictive measures in view of the situation in Lebanon",
+     "https://www.sanctionsmap.eu/#/main/details/51/"
+    ],
+    [
+     "Restrictive measures in relation to the UN Security Council Resolution 1701 (2006) on Lebanon",
+     "https://www.sanctionsmap.eu/#/main/details/21/"
+    ],
+    [
+     "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon",
+     "https://www.sanctionsmap.eu/#/main/details/22/"
+    ]
    ],
    "un": [
-    "1636 Sanctions Committee (14 February 2005 Beirut bombing)",
-    "Arms embargo under Resolution 1701 (2006)"
+    [
+     "1636 Sanctions Committee (14 February 2005 Beirut bombing)",
+     "https://main.un.org/securitycouncil/en/sanctions/1636"
+    ],
+    [
+     "Arms embargo under Resolution 1701 (2006)",
+     "https://digitallibrary.un.org/record/581053"
+    ]
    ],
    "cpi": 23,
    "prev": 22,
@@ -1484,10 +1571,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Libya"
+    [
+     "Restrictive measures in view of the situation in Libya",
+     "https://www.sanctionsmap.eu/#/main/details/23/"
+    ]
    ],
    "un": [
-    "1970 Sanctions Committee (Libya)"
+    [
+     "1970 Sanctions Committee (Libya)",
+     "https://main.un.org/securitycouncil/en/sanctions/1970"
+    ]
    ],
    "cpi": 17,
    "prev": 17,
@@ -1585,7 +1678,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Mali"
+    [
+     "Restrictive measures in view of the situation in Mali",
+     "https://www.sanctionsmap.eu/#/main/details/42/"
+    ]
    ],
    "cpi": 29,
    "prev": 29,
@@ -1646,8 +1742,14 @@
   "Moldova": {
    "n": "Moldova",
    "eu": [
-    "Restrictive measures in view of actions destabilising the Republic of Moldova",
-    "Restrictive measures in relation to the campaign against Latinscript schools in the Transnistrian region"
+    [
+     "Restrictive measures in view of actions destabilising the Republic of Moldova",
+     "https://www.sanctionsmap.eu/#/main/details/55/"
+    ],
+    [
+     "Restrictive measures in relation to the campaign against Latinscript schools in the Transnistrian region",
+     "https://www.sanctionsmap.eu/#/main/details/25/"
+    ]
    ],
    "cpi": 43,
    "prev": 42,
@@ -1721,7 +1823,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Myanmar/Burma"
+    [
+     "Restrictive measures in view of the situation in Myanmar/Burma",
+     "https://www.sanctionsmap.eu/#/main/details/8/"
+    ]
    ],
    "cpi": 22,
    "prev": 23,
@@ -1791,7 +1896,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Nicaragua"
+    [
+     "Restrictive measures in view of the situation in Nicaragua",
+     "https://www.sanctionsmap.eu/#/main/details/48/"
+    ]
    ],
    "cpi": 20,
    "prev": 19,
@@ -1826,7 +1934,10 @@
     "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Niger"
+    [
+     "Restrictive measures in view of the situation in Niger",
+     "https://www.sanctionsmap.eu/#/main/details/58/"
+    ]
    ],
    "cpi": 33,
    "prev": 35,
@@ -2020,9 +2131,18 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Russia",
-    "Restrictive measures in view of Russia's destabilising activities",
-    "Restrictive measures in view of Russia's actions destabilising the situation in Ukraine (sectoral restrictive measures)"
+    [
+     "Restrictive measures in view of the situation in Russia",
+     "https://www.sanctionsmap.eu/#/main/details/61/"
+    ],
+    [
+     "Restrictive measures in view of Russia's destabilising activities",
+     "https://www.sanctionsmap.eu/#/main/details/63/"
+    ],
+    [
+     "Restrictive measures in view of Russia's actions destabilising the situation in Ukraine (sectoral restrictive measures)",
+     "https://www.sanctionsmap.eu/#/main/details/26/"
+    ]
    ],
    "cpi": 28,
    "prev": 30,
@@ -2179,10 +2299,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Somalia"
+    [
+     "Restrictive measures in view of the situation in Somalia",
+     "https://www.sanctionsmap.eu/#/main/details/29/"
+    ]
    ],
    "un": [
-    "2713 Sanctions Committee (Al-Shabaab)"
+    [
+     "2713 Sanctions Committee (Al-Shabaab)",
+     "https://main.un.org/securitycouncil/en/sanctions/2713"
+    ]
    ],
    "cpi": 14,
    "prev": 12,
@@ -2235,10 +2361,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in South Sudan"
+    [
+     "Restrictive measures in view of the situation in South Sudan",
+     "https://www.sanctionsmap.eu/#/main/details/30/"
+    ]
    ],
    "un": [
-    "2206 Sanctions Committee (South Sudan)"
+    [
+     "2206 Sanctions Committee (South Sudan)",
+     "https://main.un.org/securitycouncil/en/sanctions/2206"
+    ]
    ],
    "cpi": 6,
    "prev": 7,
@@ -2310,11 +2442,20 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Sudan",
-    "Restrictive measures in view of activities undermining the stability and the political transition of Sudan"
+    [
+     "Restrictive measures in view of the situation in Sudan",
+     "https://www.sanctionsmap.eu/#/main/details/31/"
+    ],
+    [
+     "Restrictive measures in view of activities undermining the stability and the political transition of Sudan",
+     "https://www.sanctionsmap.eu/#/main/details/57/"
+    ]
    ],
    "un": [
-    "1591 Sanctions Committee (Sudan)"
+    [
+     "1591 Sanctions Committee (Sudan)",
+     "https://main.un.org/securitycouncil/en/sanctions/1591"
+    ]
    ],
    "cpi": 16,
    "prev": 17,
@@ -2395,11 +2536,20 @@
     ]
    ],
    "eu": [
-    "Restrictive measures against Syria",
-    "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon"
+    [
+     "Restrictive measures against Syria",
+     "https://www.sanctionsmap.eu/#/main/details/32/"
+    ],
+    [
+     "Restrictive measures in relation to the 14 February 2005 terrorist bombing in Beirut, Lebanon",
+     "https://www.sanctionsmap.eu/#/main/details/34/"
+    ]
    ],
    "un": [
-    "1636 Sanctions Committee (14 February 2005 Beirut bombing)"
+    [
+     "1636 Sanctions Committee (14 February 2005 Beirut bombing)",
+     "https://main.un.org/securitycouncil/en/sanctions/1636"
+    ]
    ],
    "cpi": 15,
    "prev": 14,
@@ -2510,7 +2660,10 @@
     "al-Qa'ida in the Islamic Maghreb (AQIM)"
    ],
    "eu": [
-    "Misappropriation of state funds of Tunisia"
+    [
+     "Misappropriation of state funds of Tunisia",
+     "https://www.sanctionsmap.eu/#/main/details/33/"
+    ]
    ],
    "cpi": 44,
    "prev": 44,
@@ -2526,7 +2679,10 @@
     "Revolutionary People's Liberation Party/Front (DHKP/C)"
    ],
    "eu": [
-    "Restrictive measures in view of Türkiye’s  unauthorised drilling activities in the Eastern Mediterranean"
+    [
+     "Restrictive measures in view of Türkiye’s  unauthorised drilling activities in the Eastern Mediterranean",
+     "https://www.sanctionsmap.eu/#/main/details/49/"
+    ]
    ],
    "cpi": 37,
    "prev": 37,
@@ -2563,10 +2719,22 @@
    ],
    "usn": "Includes a comprehensive embargo on the Crimea region and the so-called Donetsk and Luhansk People's Republic regions of Ukraine.",
    "eu": [
-    "Restrictive measures in response to the illegal recognition, occupation or annexation by the Russian Federation of certain non-government controlled areas of Ukraine",
-    "Misappropriation of state funds of Ukraine",
-    "Restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
-    "Restrictive measures in response to the illegal annexation of Crimea and Sevastopol"
+    [
+     "Restrictive measures in response to the illegal recognition, occupation or annexation by the Russian Federation of certain non-government controlled areas of Ukraine",
+     "https://www.sanctionsmap.eu/#/main/details/52/"
+    ],
+    [
+     "Misappropriation of state funds of Ukraine",
+     "https://www.sanctionsmap.eu/#/main/details/35/"
+    ],
+    [
+     "Restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
+     "https://www.sanctionsmap.eu/#/main/details/36/"
+    ],
+    [
+     "Restrictive measures in response to the illegal annexation of Crimea and Sevastopol",
+     "https://www.sanctionsmap.eu/#/main/details/37/"
+    ]
    ],
    "cpi": 34,
    "prev": 34,
@@ -2664,7 +2832,10 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Venezuela"
+    [
+     "Restrictive measures in view of the situation in Venezuela",
+     "https://www.sanctionsmap.eu/#/main/details/44/"
+    ]
    ],
    "cpi": 17,
    "prev": 16,
@@ -2715,10 +2886,16 @@
     ]
    ],
    "eu": [
-    "Restrictive measures in view of the situation in Yemen"
+    [
+     "Restrictive measures in view of the situation in Yemen",
+     "https://www.sanctionsmap.eu/#/main/details/39/"
+    ]
    ],
    "un": [
-    "2140 Sanctions Committee (Yemen)"
+    [
+     "2140 Sanctions Committee (Yemen)",
+     "https://main.un.org/securitycouncil/en/sanctions/2140"
+    ]
    ],
    "cpi": 14,
    "prev": 15,
@@ -2759,7 +2936,10 @@
   "Zimbabwe": {
    "n": "Zimbabwe",
    "eu": [
-    "Restrictive measures concerning an arms embargo in view of the situation in Zimbabwe"
+    [
+     "Restrictive measures concerning an arms embargo in view of the situation in Zimbabwe",
+     "https://www.sanctionsmap.eu/#/main/details/40/"
+    ]
    ],
    "cpi": 22,
    "prev": 22,

@@ -10,7 +10,7 @@ The one procedure for changing any data value on Country Check. Page wording and
 
 ## Steps for every change
 1. **Proposer** opens one pull request per source event (for example, one Federal Register notice). The description must contain, for each changed value: field and country or group, old value, new value, official source URL, the quoted passage that supports it (under 50 words), and the corrections-log line if the change corrects an error. The same entries go in a file `evidence/YYYY-MM-DD-<topic>.json` as a list of {"path", "new", "url", "quote"} so code can check them.
-2. **Code checks** run. Any error blocks the merge. A new non-U.S. FTO label cannot pass without an evidence pattern that matches the official list.
+2. **Code checks** run. Any error blocks the merge.
 3. **Verifier** re-derives each change from the official source on its own, then from a second source where one exists (table below). It posts one comment beginning `<!-- country-check-verifier -->` with a ```json block listing, per changed value, {"path", "verdict": "confirmed" or "doubt", "url", "quote", "reason"}, then adds the label `verifier-done`. Code then checks every verifier quote word for word.
 4. **Outcome**
    - All verdicts confirmed and every quote found: the sign-off check passes and auto-merge publishes. The site picks it up within six hours.
@@ -29,7 +29,7 @@ Any pull request that touches anything other than `country-check-data.json` and 
 
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:
-- Removing any sanction program, FTO label or FATF listing.
+- Removing any sanction program or FATF listing.
 - Changing a country's FTO presence (Identified, None identified, Not covered) or its group list.
 - Any change touching more than five countries at once.
 The verifier must confirm from two different sources (table below). If only one source exists, the change is held.
@@ -39,7 +39,6 @@ The verifier must confirm from two different sources (table below). If only one 
 |---|---|---|
 | U.S. FTO list | Federal Register notices | OpenSanctions U.S. FTO dataset (tie-breaker); State Department FTO page |
 | FTO presence by country | State Department Country Reports on Terrorism, country chapter | Same report, Chapter 5 group profile "Areas of operation"; designation notice. Same publisher, so a partial second source only |
-| Other bodies' FTO labels | UK, Canada, Australia lists; UN and EU consolidated lists | Code check with stored evidence patterns |
 | EU sanctions | EU Sanctions Map API | Code check, plus the EU consolidated list |
 | UK, Canada, Switzerland, Australia sanctions | Each government's regime page | Link check, plus OpenSanctions where it covers the regime |
 | UN sanctions | UN Security Council consolidated list | Code check of regime list types |

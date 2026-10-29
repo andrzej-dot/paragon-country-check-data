@@ -12,7 +12,7 @@ def get(url, timeout=90):
         return r.read()
 
 D = json.load(open("country-check-data.json", encoding="utf-8"))
-C, L, EV = D["countries"], D["fto_listings"], D.get("fto_listing_evidence", {})
+C, L = D["countries"], D["fto_listings"]
 since = sys.argv[sys.argv.index("--since") + 1] if "--since" in sys.argv else D["meta"]["updated"]
 R = {"errors": [], "warnings": [], "info": [], "unreachable": []}
 def E_(m): R["errors"].append(m)
@@ -26,60 +26,8 @@ def textlist(url, tags):
         out += [html.unescape(re.sub(r"<[^>]+>", "", x)).strip() for x in re.findall(r"<%s[^>]*>(.*?)</%s>" % (t, t), s, re.S)]
     return out
 
-LISTS = {}
-# Only counter-terrorism regimes count for "possible missing label" warnings (a group listed under, say, the Haiti regime is not a terrorist listing).
-TERROR_UN = {"Al-Qaida"}
-TERROR_EU = {"TERR", "EUAQ", "TAQA", "HAM"}
-TERROR_NAMES = {}
+# Other governments' FTO lists (UK, Canada, Australia, UN, EU) are not checked: the FTO view is U.S.-only since 27 Oct 2026.
 Q = str.maketrans({"\u2019": "'", "\u2018": "'", "\u02bc": "'"})
-SRC = {
- "UK": ("https://www.gov.uk/government/publications/proscribed-terror-groups-or-organisations--2/proscribed-terrorist-groups-or-organisations-accessible-version", ["h3"]),
- "Canada": ("https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx", ["h2", "h3"]),
- "Australia": ("https://www.nationalsecurity.gov.au/what-australia-is-doing/terrorist-organisations/listed-terrorist-organisations", ["td", "p", "a", "li", "strong"]),
-}
-for k, (u, tags) in SRC.items():
-    try: LISTS[k] = textlist(u, tags)
-    except Exception as e: R["unreachable"].append(f"{k} list: {e}")
-try:
-    t = ET.fromstring(get("https://scsanctions.un.org/resources/xml/en/consolidated.xml"))
-    un_names, un_types = [], set()
-    for e in t.iter("ENTITY"):
-        lt = e.findtext("UN_LIST_TYPE"); un_types.add(lt)
-        nm = [e.findtext("FIRST_NAME") or ""] + [a.findtext("ALIAS_NAME") or "" for a in e.iter("ENTITY_ALIAS")]
-        un_names += nm
-        if lt in TERROR_UN: TERROR_NAMES.setdefault("UN", []).extend(nm)
-    LISTS["UN"] = [n for n in un_names if n]
-    I("UN list types present: " + ", ".join(sorted(x for x in un_types if x)))
-except Exception as e: R["unreachable"].append(f"UN list: {e}")
-try:
-    eu_names = []
-    for ev, el in ET.iterparse(urllib.request.urlopen(urllib.request.Request("https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw", headers=UA), timeout=180)):
-        if el.tag.split("}")[-1] == "sanctionEntity":
-            nm = [c.get("wholeName") for c in el if c.tag.split("}")[-1] == "nameAlias" and c.get("wholeName")]
-            eu_names += nm
-            progs = {c.get("programme") for c in el if c.tag.split("}")[-1] == "regulation"}
-            if progs & TERROR_EU: TERROR_NAMES.setdefault("EU", []).extend(nm)
-            el.clear()
-    LISTS["EU"] = eu_names; LISTS["EU military wing"] = eu_names
-except Exception as e: R["unreachable"].append(f"EU list: {e}")
-
-# 1. Every listing label must still be supported by its evidence pattern on the official list
-for g, bodies in L.items():
-    for b in bodies:
-        if b not in LISTS: continue
-        pat = EV.get(g, {}).get(b)
-        if not pat: E_(f"Label {g} / {b}: no evidence pattern recorded"); continue
-        if not any(re.search(pat, x, re.I) for x in LISTS[b]):
-            E_(f"Label {g} / {b}: not found on the {b} list any more (pattern '{pat}'). Possible delisting or renaming.")
-# 2. Possible missing labels: the group's own name found on a list where it carries no label
-for g, bodies in L.items():
-    base = re.sub(r"\s*\([^)]*\)$", "", g)
-    if len(base) < 6: continue
-    for b in ("UK", "Canada", "Australia", "UN", "EU"):
-        if b in bodies or b not in LISTS or (b == "EU" and "EU military wing" in bodies): continue
-        pool = TERROR_NAMES.get(b, []) if b in ("UN", "EU") else LISTS[b]
-        if any(re.search(r"\b%s\b(?![-\u2013])" % re.escape(base), x.translate(Q), re.I) for x in pool):
-            W(f"Label {g}: name appears on the {b} list but no {b} label is shown. Verifier to confirm whether it is the same group.")
 
 # 3. U.S. FTO designations and revocations in the Federal Register since the last update
 try:

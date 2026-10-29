@@ -2,22 +2,20 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 17 to 19 June 2026",
    "fto_designations": "2026-10-15",
    "fto_presence_source": "State Department Country Reports on Terrorism 2024 (published 2026)",
    "sanctions": "2026-10-25",
-   "fto_listing_labels": "2026-10-25",
-   "fatf_evaluations": "FATF consolidated tables: 2013 Methodology updated 24 August 2026; 2022 Methodology updated 25 September 2026",
-   "fto_listing_evidence": "2026-10-26"
+   "fatf_evaluations": "FATF consolidated tables: 2013 Methodology updated 24 August 2026; 2022 Methodology updated 25 September 2026"
   },
   "counts": {
    "countries": 211,
    "fatf_black": 3,
    "fatf_grey": 22,
-   "fto_groups": 98
+   "fto_groups": 100
   },
   "page": {
    "_note": "Text and dates shown on the page. 'checked' is the date the layer was last confirmed current against its source; the page marks a layer 'being updated' once checked is older than the page's maximum age for that layer (cpi 400, fatf 150, fto 35, sanc 35 days). Change only through the update procedure; never move 'checked' forward without having checked that layer's sources. 'text' holds the dated phrases in the page's source notes and map key; keep them consistent with 'layers' and 'asof'.",
@@ -51,7 +49,6 @@
     "fatf_src": "as of the FATF Plenary of 17 to 19 June 2026 (the next Plenary meets 28 to 30 October 2026)",
     "fatf_key": "June 2026 Plenary",
     "fto_src": "current through 15 October 2026",
-    "fto_labels": "EU, UK and UN listings checked 23 October 2026; Canadian and Australian listings checked 25 October 2026",
     "sanc_src": "Checked 25 October 2026"
    }
   }
@@ -3005,363 +3002,106 @@
   }
  },
  "fto_listings": {
-  "Abu Sayyaf Group (ASG)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Al-Aqsa Martyrs Brigade (AAMB)": [
-   "EU",
-   "Canada"
-  ],
-  "Ansar al-Dine (AAD)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Ansar al-Islam (AAI)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Ansar al-Shari'a in Benghazi": [
-   "EU",
-   "UK",
-   "UN"
-  ],
-  "Ansar al-Shari'a in Darnah": [
-   "EU",
-   "UN"
-  ],
-  "Ansar al-Shari'a in Tunisia": [
-   "EU",
-   "UK",
-   "UN"
-  ],
-  "Ansarallah": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Ansaru": [
-   "EU",
-   "UK",
-   "UN"
-  ],
+  "Abu Sayyaf Group (ASG)": [],
+  "Al-Aqsa Martyrs Brigade (AAMB)": [],
+  "Ansar al-Dine (AAD)": [],
+  "Ansar al-Islam (AAI)": [],
+  "Ansar al-Shari'a in Benghazi": [],
+  "Ansar al-Shari'a in Darnah": [],
+  "Ansar al-Shari'a in Tunisia": [],
+  "Ansarallah": [],
+  "Ansaru": [],
   "Antifa Ost (Hammerbande)": [],
   "Army of Islam (AOI)": [],
   "Asa'ib Ahl al-Haq (AAH)": [],
-  "Asbat al-Ansar (AAA)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Balochistan Liberation Army (BLA)": [
-   "UK"
-  ],
+  "Asbat al-Ansar (AAA)": [],
+  "Balochistan Liberation Army (BLA)": [],
   "Barrio 18": [],
-  "Boko Haram": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Cartel de Jalisco Nueva Generacion (CJNG)": [
-   "Canada"
-  ],
-  "Cartel de Sinaloa": [
-   "Canada"
-  ],
+  "Boko Haram": [],
+  "Cartel de Jalisco Nueva Generacion (CJNG)": [],
+  "Cartel de Sinaloa": [],
   "Cartel de los Soles": [],
-  "Cartel del Golfo (Gulf Cartel)": [
-   "Canada"
-  ],
+  "Cartel del Golfo (Gulf Cartel)": [],
   "Cartel del Noreste": [],
-  "Carteles Unidos": [
-   "Canada"
-  ],
+  "Carteles Unidos": [],
   "Chone Killers": [],
   "Clan del Golfo": [],
   "Comando Vermelho": [],
-  "Communist Party of the Philippines/New People's Army (CPP/NPA)": [
-   "EU"
-  ],
+  "Communist Party of the Philippines/New People's Army (CPP/NPA)": [],
   "Continuity Irish Republican Army (CIRA)": [],
   "Gran Grif": [],
-  "HAMAS": [
-   "EU",
-   "UK",
-   "Canada",
-   "Australia"
-  ],
-  "Haqqani Network (HQN)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
+  "HAMAS": [],
+  "Haqqani Network (HQN)": [],
   "Harakat Ansar Allah al-Awfiya (HAAA)": [],
-  "Harakat Sawa'd Misr (HASM)": [
-   "UK",
-   "Canada"
-  ],
+  "Harakat Sawa'd Misr (HASM)": [],
   "Harakat al-Nujaba (HAN)": [],
-  "Harakat ul-Jihad-i-Islami (HUJI)": [
-   "EU",
-   "UK",
-   "UN"
-  ],
-  "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)": [
-   "UK"
-  ],
-  "Harakat ul-Mujahidin (HUM)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Hizballah": [
-   "EU military wing",
-   "UK",
-   "Canada",
-   "Australia"
-  ],
-  "Hizbul Mujahideen (HM)": [
-   "EU",
-   "Canada"
-  ],
-  "ISIS": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "ISIS in the Greater Sahara (ISIS-GS)": [
-   "EU",
-   "UN",
-   "Canada"
-  ],
-  "ISIS-Bangladesh": [
-   "Canada"
-  ],
-  "ISIS-DRC": [
-   "Canada"
-  ],
-  "ISIS-Libya": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "ISIS-Mozambique": [
-   "EU",
-   "Canada"
-  ],
-  "ISIS-Philippines": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "ISIS-Sinai Province": [
-   "UK",
-   "Canada",
-   "Australia"
-  ],
-  "ISIS-West Africa": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
+  "Harakat ul-Jihad-i-Islami (HUJI)": [],
+  "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)": [],
+  "Harakat ul-Mujahidin (HUM)": [],
+  "Hizballah": [],
+  "Hizbul Mujahideen (HM)": [],
+  "ISIS": [],
+  "ISIS in the Greater Sahara (ISIS-GS)": [],
+  "ISIS-Bangladesh": [],
+  "ISIS-DRC": [],
+  "ISIS-Libya": [],
+  "ISIS-Mozambique": [],
+  "ISIS-Philippines": [],
+  "ISIS-Sinai Province": [],
+  "ISIS-West Africa": [],
   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)": [],
-  "Islamic Jihad Union (IJU)": [
-   "EU",
-   "UK",
-   "UN"
-  ],
-  "Islamic Movement of Uzbekistan (IMU)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Islamic Revolutionary Guard Corps (IRGC)": [
-   "EU",
-   "Canada"
-  ],
-  "Islamic State's Khorasan Province (ISIS-K)": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Jaish-e-Mohammed (JEM)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "Jemaah Anshorut Tauhid (JAT)": [
-   "EU",
-   "UN"
-  ],
-  "Jemaah Islamiya (JI)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
+  "Islamic Jihad Union (IJU)": [],
+  "Islamic Movement of Uzbekistan (IMU)": [],
+  "Islamic Revolutionary Guard Corps (IRGC)": [],
+  "Islamic State's Khorasan Province (ISIS-K)": [],
+  "Jaish-e-Mohammed (JEM)": [],
+  "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)": [],
+  "Jemaah Anshorut Tauhid (JAT)": [],
+  "Jemaah Islamiya (JI)": [],
   "Juarez Cartel (La Linea)": [],
   "Kata'ib Hizballah (KH)": [],
   "Kata'ib Sayyid al-Shuhada (KSS)": [],
   "Kata'ib al-Imam Ali (KIA)": [],
-  "Kurdistan Workers Party (PKK)": [
-   "EU",
-   "UK",
-   "Canada",
-   "Australia"
-  ],
+  "Kurdistan Workers Party (PKK)": [],
   "La Nueva Familia Michoacana": [],
-  "Lashkar i Jhangvi (LJ)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Lashkar-e-Tayyiba (LeT)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
+  "Lashkar i Jhangvi (LJ)": [],
+  "Lashkar-e-Tayyiba (LeT)": [],
   "Lebanese Muslim Brotherhood": [],
   "Los Choneros": [],
   "Los Lobos": [],
   "Los Tiguerones": [],
   "Los Viagras": [],
-  "Mara Salvatrucha (MS-13)": [
-   "Canada"
-  ],
-  "National Liberation Army (ELN)": [
-   "EU",
-   "Canada"
-  ],
+  "Mara Salvatrucha (MS-13)": [],
+  "National Liberation Army (ELN)": [],
   "New Irish Republican Army": [],
-  "PFLP-General Command (PFLP-GC)": [
-   "EU",
-   "UK",
-   "Canada"
-  ],
-  "Palestine Islamic Jihad (PIJ)": [
-   "EU",
-   "UK",
-   "Canada",
-   "Australia"
-  ],
-  "Popular Front for the Liberation of Palestine (PFLP)": [
-   "EU",
-   "Canada"
-  ],
+  "PFLP-General Command (PFLP-GC)": [],
+  "Palestine Islamic Jihad (PIJ)": [],
+  "Popular Front for the Liberation of Palestine (PFLP)": [],
   "Primeiro Comando da Capital": [],
-  "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)": [
-   "Canada"
-  ],
+  "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)": [],
   "Revolutionary Class Self-Defense": [],
-  "Revolutionary People's Liberation Party/Front (DHKP/C)": [
-   "EU",
-   "UK"
-  ],
+  "Revolutionary People's Liberation Party/Front (DHKP/C)": [],
   "Revolutionary Struggle (RS)": [],
   "Segunda Marquetalia": [],
-  "Shining Path (Sendero Luminoso, SL)": [
-   "EU",
-   "Canada"
-  ],
+  "Shining Path (Sendero Luminoso, SL)": [],
   "Sudanese Muslim Brotherhood": [],
-  "Tehrik-e Taliban Pakistan (TTP)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "Tren de Aragua": [
-   "Canada"
-  ],
+  "Tehrik-e Taliban Pakistan (TTP)": [],
+  "Tren de Aragua": [],
   "Viv Ansanm": [],
-  "al-Ashtar Brigades": [
-   "UK",
-   "Canada"
-  ],
-  "al-Mulathamun Battalion (al-Murabitoun)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
-  "al-Qa'ida (AQ)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "al-Qa'ida in the Arabian Peninsula (AQAP)": [
-   "EU",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "al-Qa'ida in the Indian Subcontinent (AQIS)": [
-   "EU",
-   "Canada",
-   "Australia"
-  ],
-  "al-Qa'ida in the Islamic Maghreb (AQIM)": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
-  "al-Shabaab": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada",
-   "Australia"
-  ],
+  "al-Ashtar Brigades": [],
+  "al-Mulathamun Battalion (al-Murabitoun)": [],
+  "al-Qa'ida (AQ)": [],
+  "al-Qa'ida in the Arabian Peninsula (AQAP)": [],
+  "al-Qa'ida in the Indian Subcontinent (AQIS)": [],
+  "al-Qa'ida in the Islamic Maghreb (AQIM)": [],
+  "al-Shabaab": [],
   "Armed Proletarian Justice": [],
-  "Indian Mujahedeen (IM)": [
-   "UK",
-   "Canada"
-  ],
-  "Abdallah Azzam Brigades": [
-   "EU",
-   "UK",
-   "UN",
-   "Canada"
-  ],
+  "Indian Mujahedeen (IM)": [],
+  "Abdallah Azzam Brigades": [],
   "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)": [],
-  "Jaysh al-Adl (formerly Jundallah)": []
+  "Jaysh al-Adl (formerly Jundallah)": [],
+  "Liberation Tigers of Tamil Eelam (LTTE)": [],
+  "Palestine Liberation Front (PLF)": []
  },
  "fatf_evaluations": {
   "Albania": [
@@ -4439,330 +4179,5 @@
   "Venezuela": "venezuela",
   "Yemen": "yemen",
   "Palestine": "israel-the-west-bank-and-gaza"
- },
- "fto_listing_evidence": {
-  "Abu Sayyaf Group (ASG)": {
-   "UK": "Abu Sayyaf Group",
-   "Canada": "Abu Sayyaf Group",
-   "Australia": "Abu Sayyaf Group",
-   "UN": "ABU SAYYAF GROUP",
-   "EU": "Abu Sayyaf"
-  },
-  "Al-Aqsa Martyrs Brigade (AAMB)": {
-   "Canada": "Al-Aqsa Martyrs",
-   "EU": "Al-Aqsa Martyrs"
-  },
-  "Ansar al-Dine (AAD)": {
-   "UK": "including Ansar al-Dine",
-   "Canada": "^Ansar Dine$",
-   "UN": "ANSAR EDDINE",
-   "EU": "Ansar Eddine"
-  },
-  "Ansar al-Islam (AAI)": {
-   "UK": "Ansar Al Islam \\(AI\\)",
-   "Canada": "Ansar al-Islam \\(AI\\)",
-   "UN": "^ANSAR AL-ISLAM$",
-   "EU": "^Ansar al-Islam$"
-  },
-  "Ansar al-Shari'a in Benghazi": {
-   "UK": "Ansar al-Sharia-Benghazi",
-   "UN": "Benghazi",
-   "EU": "Charia Benghazi"
-  },
-  "Ansar al-Shari'a in Darnah": {
-   "UN": "Derna",
-   "EU": "Ansar al-Sharia Derna"
-  },
-  "Ansar al-Shari'a in Tunisia": {
-   "UK": "Ansar Al Sharia-Tunisia",
-   "UN": "Tunisia \\(AAS-T\\)|AAS-T",
-   "EU": "Ansar al-Sharia in Tunisia"
-  },
-  "Ansarallah": {
-   "Canada": "^Ansarallah$",
-   "Australia": "^Ansar Allah$",
-   "UN": "ANSARALLAH",
-   "EU": "Houthi"
-  },
-  "Ansaru": {
-   "UK": "Ansarul Muslimina Fi Biladis Sudan",
-   "UN": "ANSARUL MUSLIMINA FI BILADIS SUDAN",
-   "EU": "Ansarul Muslimina fi Biladis"
-  },
-  "Asbat al-Ansar (AAA)": {
-   "UK": "Asbat Al-Ansar",
-   "Canada": "Asbat Al-Ansar",
-   "UN": "ASBAT AL-ANSAR",
-   "EU": "Asbat al-Ansar"
-  },
-  "Balochistan Liberation Army (BLA)": {
-   "UK": "Baluchistan Liberation Army"
-  },
-  "Boko Haram": {
-   "UK": "^Boko Haram",
-   "Canada": "^Boko Haram$",
-   "Australia": "^Boko Haram$",
-   "UN": "^Boko Haram$",
-   "EU": "^Boko Haram$"
-  },
-  "Cartel de Jalisco Nueva Generacion (CJNG)": {
-   "Canada": "Jalisco Nueva Generaci"
-  },
-  "Cartel de Sinaloa": {
-   "Canada": "rtel de Sinaloa"
-  },
-  "Cartel del Golfo (Gulf Cartel)": {
-   "Canada": "rtel del Golfo"
-  },
-  "Carteles Unidos": {
-   "Canada": "rteles Unidos"
-  },
-  "Communist Party of the Philippines/New People's Army (CPP/NPA)": {
-   "EU": "NPA, Philippines|New People"
-  },
-  "HAMAS": {
-   "UK": "\\(Hamas\\)",
-   "Canada": "^Hamas",
-   "Australia": "^Hamas$",
-   "EU": "Hamas-Izz al-Din al-Qassem|^Hamas$"
-  },
-  "Haqqani Network (HQN)": {
-   "UK": "Haqqani Network",
-   "Canada": "^Haqqani Network$",
-   "UN": "HAQQANI NETWORK",
-   "EU": "^Haqqani Network$"
-  },
-  "Harakat Sawa'd Misr (HASM)": {
-   "UK": "Harakat Sawa.d Misr",
-   "Canada": "Harakat Sawa'd Misr"
-  },
-  "Harakat ul-Jihad-i-Islami (HUJI)": {
-   "UK": "Harakat-Ul-Jihad-Ul-Islami \\(HUJI\\)",
-   "UN": "HARAKAT-UL JIHAD ISLAMI",
-   "EU": "Harakat-ul Jihad Islami"
-  },
-  "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)": {
-   "UK": "\\(HUJI-B\\)"
-  },
-  "Harakat ul-Mujahidin (HUM)": {
-   "UK": "Harakat-Ul-Mujahideen/Alami",
-   "Canada": "Harakat ul-Mudjahidin",
-   "UN": "HARAKAT UL-MUJAHIDIN",
-   "EU": "Harakat Ul-Mujahidin"
-  },
-  "Hizballah": {
-   "UK": "Hizballah \\(Party of God\\)",
-   "Canada": "^Hizballah$",
-   "Australia": "^Hizballah$",
-   "EU military wing": "Hizbollahi s|military wing of Hizbollah|Hezbollah Military Wing|Hizballah Military Wing"
-  },
-  "Hizbul Mujahideen (HM)": {
-   "Canada": "^Hizbul Mujahideen$",
-   "EU": "^Hizbul Mujahideen$"
-  },
-  "ISIS": {
-   "UK": "Islamic State of Iraq and the Levant \\(ISIL\\)",
-   "Canada": "^Islamic State$",
-   "Australia": "^Islamic State$",
-   "UN": "AL-QAIDA IN IRAQ",
-   "EU": "Al-Qaida in Iraq|Islamic State in Iraq and the Levant$"
-  },
-  "ISIS in the Greater Sahara (ISIS-GS)": {
-   "Canada": "Islamic State in the Greater Sahara",
-   "UN": "ISLAMIC STATE IN THE GREATER SAHARA",
-   "EU": "Greater Sahara"
-  },
-  "ISIS-Bangladesh": {
-   "Canada": "Islamic State . Bangladesh"
-  },
-  "ISIS-DRC": {
-   "Canada": "Islamic State . Democratic Republic of the Congo"
-  },
-  "ISIS-Libya": {
-   "Canada": "Islamic State in Libya",
-   "Australia": "Islamic State in Libya",
-   "UN": "ISLAMIC STATE IN IRAQ AND THE LEVANT - LIBYA",
-   "EU": "Wilayat Barqa|Wilayat Tarablus|Wilayat Fezzan"
-  },
-  "ISIS-Mozambique": {
-   "Canada": "Islamic State-Mozambique",
-   "EU": "Mozambique Wilaya of the Islamic State"
-  },
-  "ISIS-Philippines": {
-   "Canada": "Islamic State East Asia",
-   "Australia": "Islamic State East Asia",
-   "UN": "South-East Asia \\(ISIL-SEA|East Asia Division",
-   "EU": "South-East Asia|East Asia Division"
-  },
-  "ISIS-Sinai Province": {
-   "UK": "Ansar Bayt al-Maqdis",
-   "Canada": "Sinai Province",
-   "Australia": "Islamic State Sinai Province"
-  },
-  "ISIS-West Africa": {
-   "Canada": "Islamic State West Africa Province",
-   "Australia": "Islamic State West Africa Province",
-   "UN": "ISLAMIC STATE WEST AFRICA PROVINCE",
-   "EU": "West Africa Province"
-  },
-  "Islamic Jihad Union (IJU)": {
-   "UK": "Islamic Jihad Union",
-   "UN": "ISLAMIC JIHAD GROUP",
-   "EU": "Islamic Jihad Union"
-  },
-  "Islamic Movement of Uzbekistan (IMU)": {
-   "UK": "Islamic Movement of Uzbekistan",
-   "Canada": "Islamic Movement of Uzbekistan",
-   "UN": "ISLAMIC MOVEMENT OF UZBEKISTAN",
-   "EU": "Islamic Movement of Uzbekistan"
-  },
-  "Islamic Revolutionary Guard Corps (IRGC)": {
-   "Canada": "^Islamic Revolutionary Guard Corps$",
-   "EU": "Revolutionary Guard Corps"
-  },
-  "Islamic State's Khorasan Province (ISIS-K)": {
-   "Canada": "Islamic State Khorasan Province",
-   "Australia": "Islamic State Khorasan Province",
-   "UN": "KHORASAN \\(ISIL-K\\)",
-   "EU": "Khorasan"
-  },
-  "Jaish-e-Mohammed (JEM)": {
-   "UK": "Jaish e Mohammed",
-   "Canada": "Jaish-e-Mohammed",
-   "Australia": "Jaish-e-Mohammad",
-   "UN": "JAISH-I-MOHAMMED",
-   "EU": "Army of Mohammed|Jaish-I-Mom?hammed"
-  },
-  "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)": {
-   "UK": "\\(JNIM\\)",
-   "Canada": "Nusrat Al-Islam",
-   "Australia": "Nusrat al-Islam",
-   "UN": "NUSRAT UL-ISLAM",
-   "EU": "JNIM"
-  },
-  "Jemaah Anshorut Tauhid (JAT)": {
-   "UN": "JEMMAH ANSHORUT TAUHID",
-   "EU": "Anshorut Tauhid"
-  },
-  "Jemaah Islamiya (JI)": {
-   "UK": "Jeemah Islamiyah",
-   "Canada": "Jemaah Islamiyyah",
-   "Australia": "Jemaah Islamiyah",
-   "UN": "JEMAAH ISLAMIYAH",
-   "EU": "Jemaah Islamiya"
-  },
-  "Kurdistan Workers Party (PKK)": {
-   "UK": "Partiya Karkeren Kurdistani",
-   "Canada": "Kurdistan Workers Party",
-   "Australia": "Kurdistan Workers",
-   "EU": "Kurdistan Workers"
-  },
-  "Lashkar i Jhangvi (LJ)": {
-   "UK": "Lashkar-e Jhangvi",
-   "Canada": "Lashkar-e-Jhangvi",
-   "UN": "LASHKAR I JHANGVI",
-   "EU": "Lashkar i Jhangvi"
-  },
-  "Lashkar-e-Tayyiba (LeT)": {
-   "UK": "Lashkar e Tayyaba",
-   "Canada": "Lashkar-e-Tayyiba",
-   "Australia": "Lashkar-e-Tayyiba",
-   "UN": "LASHKAR-E-TAYYIBA",
-   "EU": "Lashkar e-Tayyiba|Lashkar-e-Tayyiba"
-  },
-  "Mara Salvatrucha (MS-13)": {
-   "Canada": "Mara Salvatrucha"
-  },
-  "National Liberation Army (ELN)": {
-   "Canada": "\\(ELN\\)",
-   "EU": "National Liberation Army"
-  },
-  "PFLP-General Command (PFLP-GC)": {
-   "UK": "\\(PFLP-GC\\)",
-   "Canada": "\\(PFLP-GC\\)",
-   "EU": "General Command|Command"
-  },
-  "Palestine Islamic Jihad (PIJ)": {
-   "UK": "Palestinian Islamic Jihad",
-   "Canada": "Palestinian Islamic Jihad",
-   "Australia": "Palestinian Islamic Jihad",
-   "EU": "Palestinian Islamic Jihad"
-  },
-  "Popular Front for the Liberation of Palestine (PFLP)": {
-   "Canada": "Liberation of Palestine \\(PFLP\\)",
-   "EU": "Popular Front for the Liberation of Palestine$|^PFLP$|FPLP"
-  },
-  "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)": {
-   "Canada": "Fuerzas Armadas Revolucionarias de Colombia"
-  },
-  "Revolutionary People's Liberation Party/Front (DHKP/C)": {
-   "UK": "DHKP-C",
-   "EU": "DHKP|Revolutionary People"
-  },
-  "Shining Path (Sendero Luminoso, SL)": {
-   "Canada": "Sendero Luminoso",
-   "EU": "Shining Path"
-  },
-  "Tehrik-e Taliban Pakistan (TTP)": {
-   "UK": "Tehrik-e Taliban Pakistan",
-   "Canada": "Tehrik-e-Taliban Pakistan",
-   "UN": "TEHRIK-E TALIBAN PAKISTAN",
-   "EU": "^Tehrik-e Taliban Pakistan$"
-  },
-  "Tren de Aragua": {
-   "Canada": "Tren de Aragua"
-  },
-  "al-Ashtar Brigades": {
-   "UK": "Al-Ashtar Brigades",
-   "Canada": "Al-Ashtar Brigades"
-  },
-  "al-Mulathamun Battalion (al-Murabitoun)": {
-   "UK": "^Al Murabitun",
-   "Canada": "Al-Murabitoun",
-   "UN": "AL MOURABITOUN",
-   "EU": "Al Mourabitoun"
-  },
-  "al-Qa'ida (AQ)": {
-   "UK": "Al Qa.ida \\(AQ\\)",
-   "Canada": "^Al Qaida$",
-   "Australia": "Al-Qa.ida \\(AQ\\)",
-   "UN": "^AL-QAIDA$",
-   "EU": "^Al-Qaida$|^Al-Qa'ida$"
-  },
-  "al-Qa'ida in the Arabian Peninsula (AQAP)": {
-   "Canada": "Arabian Peninsula",
-   "Australia": "Arabian Peninsula",
-   "UN": "ARABIAN PENINSULA \\(AQAP\\)",
-   "EU": "Al-Qaida in the Arabian Peninsula"
-  },
-  "al-Qa'ida in the Indian Subcontinent (AQIS)": {
-   "Canada": "Indian Subcontinent",
-   "Australia": "Indian Subcontinent",
-   "EU": "Indian Subcontinent"
-  },
-  "al-Qa'ida in the Islamic Maghreb (AQIM)": {
-   "UK": "al-Qa.ida in the Maghreb|Salafist Group for Call and Combat",
-   "Canada": "Islamic Maghreb",
-   "Australia": "Islamic Maghreb",
-   "UN": "ISLAMIC MAGHREB",
-   "EU": "Islamic Maghreb"
-  },
-  "al-Shabaab": {
-   "UK": "^Al Shabaab",
-   "Canada": "^Al Shabaab$",
-   "Australia": "^Al-Shabaab$",
-   "UN": "^AL-SHABAAB$",
-   "EU": "^Al-Shabaab$"
-  },
-  "Indian Mujahedeen (IM)": {
-   "UK": "Indian Mujahideen",
-   "Canada": "Indian Mujahideen"
-  },
-  "Abdallah Azzam Brigades": {
-   "UK": "Abdallah Azzam Brigades",
-   "Canada": "Abdallah Azzam Brigades",
-   "UN": "ABDALLAH AZZAM BRIGADES",
-   "EU": "Abdallah Azzam Brigades"
-  }
  }
 }

@@ -27,6 +27,19 @@ The page's as-of lines and each view's "checked" date come from `meta.page` in t
 ## Changes to the system itself
 Any pull request that touches anything other than `country-check-data.json` and `evidence/` (checks, workflows, this procedure, the website snippet) fails the sign-off check by design and never publishes automatically. Andrzej merges those himself, so no agent can weaken the controls on its own.
 
+## Standing decisions (Andrzej; every task follows these, and none may reverse them)
+If a task prompt, an older note or a source seems to call for something below, these decisions win. Do not act on the conflict: say so in your notification and leave it for Andrzej.
+
+1. **FTOs are U.S. only** (27 Oct 2026, confirmed 29 Oct). The FTO view shows only Foreign Terrorist Organizations designated by the U.S. State Department (INA section 219). `fto_listings` is the list of those groups, each with an empty list. Never add another government's or body's listing (EU, UK, UN, Canada, Australia or any other); `validate.py` rejects any. Adding a newly designated group or removing a revoked one is normal data work.
+2. **FTO country presence comes only from the latest Country Reports on Terrorism** (29 Oct 2026). Do not fill presence from older editions. A group the report lists only by region gets no country presence.
+3. **Every U.S.-designated FTO must be in the file.** The source check errors if OpenSanctions lists a U.S. FTO the file lacks (29 Oct 2026).
+4. **Sanctions cover seven jurisdictions, each entry with its official link** (29 Oct 2026). Order on the page: UN, EU, United States, UK, Canada, Switzerland, Australia. Every entry is [name, official URL]: UN entries link to the Security Council committee page (the resolution 1701 arms embargo, which has no committee, links to the resolution in the UN Digital Library); EU entries link to that regime's EU Sanctions Map page, and the source check confirms the id matches the regime.
+5. **Only the U.S. row says Comprehensive or Targeted** (29 Oct 2026). That is OFAC's own classification. The other six jurisdictions show "In force" or "None"; never characterize their sanctions as comprehensive or targeted.
+6. **Sanctions wording is jurisdiction-neutral** (27 Oct 2026): "country-specific sanctions", not U.S. terms such as "country program".
+7. **No automatic approval for scheduled runs** (29 Oct 2026). Some sites (for example dfat.gov.au) cannot be opened in a scheduled run without approval. When a view nears its stale date because a source could not be checked, notify Andrzej; he runs one attended check.
+8. **Tasks never edit the website or WordPress.** Page wording and layout change only in sessions with Andrzej.
+9. **Never weaken a check to get a change through.** If a check blocks a change you believe is right, hold it and notify Andrzej; changes to checks, procedure or prompts go through a pull request that he merges.
+
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:
 - Removing any sanction program or FATF listing.

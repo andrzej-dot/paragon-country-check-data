@@ -2858,7 +2858,8 @@
     ]
    ],
    "iso2": "VE",
-   "iso3": "VEN"
+   "iso3": "VEN",
+   "usn": "Includes blocking of the Government of Venezuela (Executive Order 13884), so U.S. persons are generally prohibited from dealings with Venezuelan government bodies, including agencies and entities it owns or controls, unless the activity is exempt or authorized by an OFAC license."
   },
   "Vietnam": {
    "n": "Vietnam",

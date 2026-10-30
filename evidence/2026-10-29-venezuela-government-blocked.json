@@ -1,0 +1,14 @@
+[
+ {
+  "path": "countries.Venezuela.usn",
+  "new": "Includes blocking of the Government of Venezuela (Executive Order 13884), so U.S. persons are generally prohibited from dealings with Venezuelan government bodies, including agencies and entities it owns or controls, unless the activity is exempt or authorized by an OFAC license.",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2019-08-07/html/2019-17052.htm",
+  "quote": "all property and interests in property of the Government of Venezuela that are in the United States, that hereafter come within the United States, or that are or hereafter come within the possession or control of any United States person are blocked"
+ },
+ {
+  "path": "countries.Venezuela.usn",
+  "new": "Includes blocking of the Government of Venezuela (Executive Order 13884), so U.S. persons are generally prohibited from dealings with Venezuelan government bodies, including agencies and entities it owns or controls, unless the activity is exempt or authorized by an OFAC license.",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-30/html/2026-20008.htm",
+  "quote": "includes the State and Government of Venezuela, any political subdivision, agency, or instrumentality thereof, any person owned or controlled, directly or indirectly, by the foregoing"
+ }
+]

@@ -27,7 +27,7 @@
    },
    "layers": {
     "cpi": {
-     "checked": "2026-10-29",
+     "checked": "2026-10-30",
      "when": "World Bank, Worldwide Governance Indicators, 2025 data"
     },
     "fatf": {
@@ -44,7 +44,7 @@
     }
    },
    "text": {
-    "cpi_src": "accessed 29 October 2026",
+    "cpi_src": "accessed 30 October 2026",
     "fatf_cite": "June 2026",
     "fatf_src": "as of the FATF Plenary of 17 to 19 June 2026 (the next Plenary meets 28 to 30 October 2026)",
     "fatf_key": "June 2026 Plenary",

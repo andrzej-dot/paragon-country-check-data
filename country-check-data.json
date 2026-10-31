@@ -5,7 +5,7 @@
   "updated": "2026-10-29",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
-   "fatf": "FATF Plenary, 17 to 19 June 2026",
+   "fatf": "FATF Plenary, 28 to 30 October 2026",
    "fto_designations": "2026-10-15",
    "fto_presence_source": "State Department Country Reports on Terrorism 2024 (published 2026)",
    "sanctions": "2026-10-25",
@@ -14,14 +14,14 @@
   "counts": {
    "countries": 211,
    "fatf_black": 3,
-   "fatf_grey": 22,
+   "fatf_grey": 18,
    "fto_groups": 100
   },
   "page": {
    "_note": "Text and dates shown on the page. 'checked' is the date the layer was last confirmed current against its source; the page marks a layer 'being updated' once checked is older than the page's maximum age for that layer (cpi 400, fatf 150, fto 35, sanc 35 days). Change only through the update procedure; never move 'checked' forward without having checked that layer's sources. 'text' holds the dated phrases in the page's source notes and map key; keep them consistent with 'layers' and 'asof'.",
    "asof": {
     "cpi": "World Bank release of 25 September 2026",
-    "fatf": "As of the June 2026 FATF Plenary",
+    "fatf": "As of the October 2026 FATF Plenary",
     "fto": "Designations current through 15 October 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
     "sanc": "Checked 25 October 2026"
    },
@@ -31,8 +31,8 @@
      "when": "World Bank, Worldwide Governance Indicators, 2025 data"
     },
     "fatf": {
-     "checked": "2026-06-19",
-     "when": "FATF Plenary, 17 to 19 June 2026"
+     "checked": "2026-10-30",
+     "when": "FATF Plenary, 28 to 30 October 2026"
     },
     "fto": {
      "checked": "2026-10-15",
@@ -45,9 +45,9 @@
    },
    "text": {
     "cpi_src": "accessed 30 October 2026",
-    "fatf_cite": "June 2026",
-    "fatf_src": "as of the FATF Plenary of 17 to 19 June 2026 (the next Plenary meets 28 to 30 October 2026)",
-    "fatf_key": "June 2026 Plenary",
+    "fatf_cite": "October 2026",
+    "fatf_src": "as of the FATF Plenary of 28 to 30 October 2026 (the next Plenary meets 22 to 26 February 2027)",
+    "fatf_key": "October 2026 Plenary",
     "fto_src": "current through 15 October 2026",
     "sanc_src": "Checked 25 October 2026"
    }
@@ -569,7 +569,6 @@
   },
   "Côte d'Ivoire": {
    "n": "Côte d'Ivoire",
-   "fatf": "grey",
    "fto": "y",
    "ftog": [
     "ISIS",
@@ -627,7 +626,6 @@
   },
   "Dem. Rep. Congo": {
    "n": "Democratic Republic of the Congo",
-   "fatf": "grey",
    "fto": "y",
    "ftog": [
     "ISIS-DRC"
@@ -2506,7 +2504,6 @@
   },
   "Bulgaria": {
    "n": "Bulgaria",
-   "fatf": "grey",
    "fto": "n",
    "cpi": 42,
    "prev": 42,
@@ -2973,7 +2970,6 @@
   },
   "Monaco": {
    "n": "Monaco",
-   "fatf": "grey",
    "cpi": 72,
    "prev": 84,
    "iso2": "MC",

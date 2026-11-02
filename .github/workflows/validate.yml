@@ -28,6 +28,8 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
+      - name: Headless browser for sites that refuse plain requests (checks/fetch.py)
+        run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
       - run: python checks/check_sources.py ${{ github.event_name == 'schedule' && '--weekly' || '' }}
       - name: Weekly sanctions watch (opens an issue when the Federal Register has new OFAC or presidential sanctions items)
         if: always() && github.event_name == 'schedule'
@@ -74,5 +76,7 @@ jobs:
       - name: Fetch pull request comments
         env: {GH_TOKEN: "${{ github.token }}"}
         run: gh api --paginate repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments > comments.json
+      - name: Headless browser for sites that refuse plain requests (checks/fetch.py)
+        run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
       - name: Verifier evidence
         run: python checks/check_evidence.py verifier origin/${{ github.base_ref }} comments.json

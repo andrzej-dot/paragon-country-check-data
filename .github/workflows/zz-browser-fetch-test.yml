@@ -12,11 +12,9 @@ jobs:
           import asyncio
           from playwright.async_api import async_playwright
           URLS = {
-           "dfat page2": ("https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/russia-sanctions-regime", "Russia"),
-           "fatf outcomes": ("https://www.fatf-gafi.org/en/publications/Fatfgeneral/outcomes-fatf-plenary-october-2026.html", "agreed to remove Bulgaria"),
-           "fatf grey list": ("https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2026.html", "welcomes Monaco"),
-           "dfat afghanistan": ("https://www.dfat.gov.au/international-relations/security/sanctions/sanctions-regimes/afghanistan-sanctions-framework", "Afghanistan"),
-           "state fto": ("https://www.state.gov/foreign-terrorist-organizations", "Los Tiguerones"),
+           "legislation AU regs": ("https://www.legislation.gov.au/F2011L02673/latest/text", "Autonomous Sanctions"),
+           "dfat home": ("https://www.dfat.gov.au/", "Foreign Affairs"),
+           "dfat sanctions": ("https://www.dfat.gov.au/international-relations/security/sanctions", "sanctions"),
           }
           async def main():
               async with async_playwright() as p:

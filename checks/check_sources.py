@@ -125,6 +125,31 @@ if "--no-links" not in sys.argv:
             elif code >= 400: R["unreachable"].append(f"Link {u}: HTTP {code}")
     print("links checked", file=sys.stderr)
 
+# 6b. The State Department's own FTO list is the authority for which groups are designated (added 2 Nov 2026).
+# OpenSanctions (section 7) lags new designations by weeks; when State's list and the file agree, OpenSanctions gaps
+# are information, not warnings. state.gov refuses some server requests, so this uses the shared fetcher
+# (plain request, then a real browser). If State's page cannot be read, section 7 warns exactly as before.
+sys.path.insert(0, "checks")
+from fetch import page_text as _page_text
+STATE_FTO = "https://www.state.gov/foreign-terrorist-organizations"
+state_ok = False
+try:
+    st, how = _page_text(STATE_FTO)
+    if not st: raise RuntimeError("could not read the page")
+    a = st.find("designated foreign terrorist organizations"); b = st.find("delisted foreign terrorist organizations", a)
+    if a < 0 or b < 0: raise RuntimeError("list headings not found on the page")
+    sec = st[a:b]
+    MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december"
+    n_state = len(re.findall(r"(?<!\()\b(?:%s) \d{1,2}, \d{4}" % MONTHS, sec))
+    def _k(g): return re.sub(r"\s*\([^)]*\)$", "", g).translate(Q).lower().replace("\u2013", "-")
+    missing = [g for g in L if _k(g) not in sec]
+    if missing: W(f"State Department FTO list ({how}): file groups not found on it by name: {', '.join(missing)}. Verifier to confirm each is still designated.")
+    if n_state != len(L): W(f"State Department FTO list ({how}) shows {n_state} designated groups; the file has {len(L)}. Verifier to reconcile against {STATE_FTO}.")
+    if not missing and n_state == len(L):
+        state_ok = True
+        I(f"State Department FTO list ({how}): {n_state} designated groups, every one in the file. It governs; OpenSanctions gaps below are information only.")
+except Exception as e: R["unreachable"].append(f"State Department FTO list: {e}")
+
 # 7. Outside tie-breaker: OpenSanctions (independent aggregator). Never an automatic change: a group in the file but not in OpenSanctions is a warning; a group in OpenSanctions but not in the file is an error.
 try:
     import gzip
@@ -137,7 +162,7 @@ try:
         base = re.sub(r"\s*\([^)]*\)$", "", g)
         abbr = re.search(r"\(([^)]+)\)$", g)
         if not any(re.search(re.escape(base), n, re.I) or (abbr and re.search(r"\b%s\b" % re.escape(abbr.group(1)), n)) for n in names):
-            W(f"OpenSanctions: {g} not matched by name in the U.S. FTO dataset. Verifier to confirm it is still designated.")
+            (I if state_ok else W)(f"OpenSanctions: {g} not matched by name in the U.S. FTO dataset." + (" The State Department list (above) confirms it." if state_ok else " Verifier to confirm it is still designated."))
     # Reverse direction: every group OpenSanctions lists as a U.S. FTO must be in the file. A group missing from
     # the file is an error (it blocks merges and the weekly check opens an issue) so an omission cannot go unnoticed.
     def _n(s): return re.sub(r"[^a-z0-9]+", " ", s.translate(Q).lower()).strip()
@@ -152,11 +177,30 @@ try:
         if not any(c == k or (len(k) >= 6 and k in c) or (len(c) >= 6 and c in k) for c in cands for k in keys):
             E_(f"OpenSanctions lists '{r.get('name')}' as a U.S. FTO but the file has no matching group. Check the State Department FTO list and add it, or record why not.")
     if len(rows) != len(L):
-        W(f"OpenSanctions has {len(rows)} U.S. FTO entries; page has {len(L)} groups. Verifier to reconcile.")
+        (I if state_ok else W)(f"OpenSanctions has {len(rows)} U.S. FTO entries; page has {len(L)} groups." + (" State Department list matches the file; OpenSanctions is behind." if state_ok else " Verifier to reconcile."))
 except Exception as e: R["unreachable"].append(f"OpenSanctions: {e}")
 
+
+# 8. Known events (added 2 Nov 2026). meta.next_events lists dated events that change a view (FATF Plenaries, the
+# World Bank governance release). Once an event's check_from date has passed, the event is DUE: the proposer checks
+# that source every run until the update is published, and the pull request that applies the update replaces the
+# entry with the next event. An entry stays due until then, whatever the view's "checked" date says. Not an error (an event can take days to publish), but the run report
+# carries it and the watchdog turns a due event older than its grace days into a Notion task for Andrzej.
+R["due"] = []
+try:
+    today = dt.date.today().isoformat()
+    layers = D["meta"]["page"]["layers"]
+    for e in D["meta"].get("next_events", []):
+        v, cf = e.get("view"), e.get("check_from", "")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", cf) or v not in layers:
+            W(f"meta.next_events: bad entry {e}"); continue
+        if cf <= today:
+            days = (dt.date.today() - dt.date.fromisoformat(cf)).days
+            R["due"].append(f"{v}: {e.get('event')} (check from {cf}, {days} day(s) ago; grace {e.get('grace_days', 7)} days). Source: {e.get('source', '')}")
+except Exception as e: W(f"meta.next_events: {e}")
+
 json.dump(R, open("checks/report.json", "w"), indent=1)
-for k in ("errors", "warnings", "watch", "unreachable", "info"):
+for k in ("errors", "due", "warnings", "watch", "unreachable", "info"):
     print(f"\n{k.upper()} ({len(R[k])})")
     for m in R[k]: print(" -", m)
 sys.exit(1 if R["errors"] else 0)

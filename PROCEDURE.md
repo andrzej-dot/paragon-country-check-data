@@ -5,8 +5,8 @@ The one procedure for changing any data value on Country Check. Page wording and
 ## Roles
 - **Proposer**: the weekday daily data check (scheduled task "Country Check daily data check"). Finds changes and opens pull requests. Never merges.
 - **Verifier**: a separate scheduled Claude task ("Country Check independent verifier") with its own context. It sees the proposed values and source URLs, never the proposer's reasoning, and is told to look for reasons each change is wrong. Andrzej decided on 26 Oct not to add a model from another company; the word-for-word quote check is the main protection against a shared misreading or an invented quote.
-- **Code checks**: `validate.py`, `checks/check_sources.py` and `checks/check_evidence.py`, run by GitHub on every pull request. No judgment, no AI. `check_evidence.py` fetches each cited page itself (or its Internet Archive copy if the site refuses servers) and fails unless every quote appears in it word for word.
-- **Andrzej**: notified, not asked, except for held changes.
+- **Code checks**: `validate.py`, `checks/check_sources.py` and `checks/check_evidence.py`, run by GitHub on every pull request. No judgment, no AI. `check_evidence.py` fetches each cited page itself and fails unless every quote appears in it word for word. If a site refuses plain server requests (fatf-gafi.org, sometimes state.gov), the check opens the live page in a headless browser (`checks/fetch.py`, added 2 Nov 2026). There is no third-party fallback: a page neither route can read fails the check and the change is held.
+- **Andrzej**: not asked about routine work. Anything that needs him becomes a task in his Notion Tasks database (see "Run log and watchdog"), never only a chat summary or a push notification.
 
 ## Steps for every change
 1. **Proposer** opens one pull request per source event (for example, one Federal Register notice). The description must contain, for each changed value: field and country or group, old value, new value, official source URL, the quoted passage that supports it (under 50 words), and the corrections-log line if the change corrects an error. The same entries go in a file `evidence/YYYY-MM-DD-<topic>.json` as a list of {"path", "new", "url", "quote"} so code can check them.
@@ -14,7 +14,7 @@ The one procedure for changing any data value on Country Check. Page wording and
 3. **Verifier** re-derives each change from the official source on its own, then from a second source where one exists (table below). It posts one comment beginning `<!-- country-check-verifier -->` with a ```json block listing, per changed value, {"path", "verdict": "confirmed" or "doubt", "url", "quote", "reason"}, then adds the label `verifier-done`. Code then checks every verifier quote word for word.
 4. **Outcome**
    - All verdicts confirmed and every quote found: the sign-off check passes and auto-merge publishes. The site picks it up within six hours.
-   - Any doubt, a quote not found, or a strict change without two source URLs: the check fails and nothing is published. The verifier adds `held` and Andrzej is notified with a two-line summary.
+   - Any doubt, a quote not found, or a strict change without two source URLs: the check fails and nothing is published. The verifier adds `held` and creates a Notion task for Andrzej (see "Run log and watchdog").
 5. **Weekly summary** (Monday): what was published, what is held, what the weekly source check found.
 6. **Reverting**: reverting the merge commit on GitHub restores the previous file; the site follows within six hours, or at once with `?ppcc_refresh=1` when an administrator loads the page.
 
@@ -22,7 +22,23 @@ The one procedure for changing any data value on Country Check. Page wording and
 The page's as-of lines and each view's "checked" date come from `meta.page` in the data file. A view shows "being updated" once its checked date is older than its maximum age (corruption 400 days, FATF 150, FTO 35, sanctions 35).
 - The proposer moves a view's `checked` date forward only after it has, in that same run, confirmed that view against its sources and found nothing to change (FTO: Federal Register and State Department FTO list; sanctions: every jurisdiction's regime list; FATF: the latest plenary outcome; corruption: World Bank release). If any source could not be reached, the date stays put.
 - Date-only changes touch `meta`, which the evidence check does not cover, so they publish once the structure check passes. The structure check rejects future dates and malformed text.
-- When a view is within seven days of going stale and cannot be confirmed, the proposer notifies Andrzej.
+- When a view is within seven days of going stale and cannot be confirmed, the watchdog creates a Notion task for Andrzej (see "Run log and watchdog").
+
+## Known events (added 2 Nov 2026)
+`meta.next_events` lists the dated events that change a view: the next FATF Plenary and the World Bank governance release. From an event's `check_from` date the source check reports it under DUE on every run, and the proposer checks that source on every run until the update is published. The pull request that applies the update also replaces the entry with the next event (dates only as the source announces them; if not yet announced, the expected month with a `check_from` near its middle, and say so in `event`). An event still due after its `grace_days` becomes a Notion task for Andrzej. The calendar exists because a view's age limit alone (FATF 150 days) would leave the page showing a list FATF had already changed.
+
+## Run log and watchdog (added 2 Nov 2026)
+So that nothing that needs Andrzej depends on someone reading a run summary:
+- **Run log.** Every proposer and verifier run ends by posting one comment on the open issue titled "Country Check run log" (label `run-log`; create it if missing). The comment starts with `<!-- run: proposer YYYY-MM-DD -->` or `<!-- run: verifier YYYY-MM-DD -->` and holds a ```json block: {"task", "date", "status": "ok" | "partial" | "failed", "prs_opened": [...], "prs_reviewed": [...], "unreachable": [...], "due": [...], "open_warnings": [...], "needs_andrzej": [...]}. Facts only, no judgment that nothing needs Andrzej.
+- **The two daily tasks watch each other.** The verifier confirms that today's proposer entry exists; the proposer confirms that the previous weekday's verifier entry exists. A missing entry means a task did not run.
+- **Warnings have an owner.** Every source-check warning addressed to the verifier is resolved by the verifier in its next run, whether or not a pull request is open, and the resolution goes in its run-log entry. Open issues opened by the weekly workflow (sanctions watch, weekly check failure) are worked by the proposer: it opens the data pull request, or comments why the page is unaffected and closes the issue.
+- **What becomes a Notion task for Andrzej** (created by whichever task finds it, after checking the Tasks database for an open task with the same title): a missing run entry; a held pull request older than two weekdays; a due event past its grace days; a view within seven days of going stale that cannot be confirmed; a warning the verifier could not resolve; a conflict with a standing decision; anything a task cannot do without him. Title "Country Check: <what>", Owner and Assignee Andrzej, Status Not started, Type One-Time Task, Workstream Tag Systems & Technology, Priority High if the page is or will within three days be wrong or stale, otherwise Normal, Due Date only when there is a real deadline (for example the stale date). The body says what happened, why it needs him, what to do, and the links, ending with a "Source:" line naming the task and run date. A one-line push notification pointing to the task may follow; the Notion task is the record.
+- **No self-scheduled follow-ups.** Tasks never schedule their own reminders or re-checks; the next scheduled run and the watchdog cover that.
+
+## Reading sources a task's own session cannot open (added 2 Nov 2026)
+Some official sites refuse the scheduled tasks' sessions (fatf-gafi.org always; state.gov at times; dfat.gov.au refuses servers entirely). Do not stop, and do not ask Andrzej to run a check:
+- **FATF and the State Department**: start the "Fetch sources" workflow (`gh api -X POST repos/andrzej-dot/paragon-country-check-data/actions/workflows/fetch-sources.yml/dispatches -f ref=main -f "inputs[urls]=URL1 URL2"`), wait for the run to finish, download its `pages` artifact and read the page text. The same pages pass the word-for-word quote check, which opens them in a browser too.
+- **Australia**: dfat.gov.au cannot be read by any server, so new or ended Australian sanctions frameworks are confirmed against the Federal Register of Legislation (https://www.legislation.gov.au), where the regulations that make them are published; quote and cite the legislation page. The dfat.gov.au framework pages stay as the page's links. If the register cannot confirm a change, hold the pull request and create a Notion task.
 
 ## Changes to the system itself
 Any pull request that touches anything other than `country-check-data.json` and `evidence/` (checks, workflows, this procedure, the website snippet) fails the sign-off check by design and never publishes automatically. Andrzej merges those himself, so no agent can weaken the controls on its own.
@@ -36,10 +52,10 @@ If a task prompt, an older note or a source seems to call for something below, t
 4. **Sanctions cover seven jurisdictions, each entry with its official link** (29 Oct 2026). Order on the page: UN, EU, United States, UK, Canada, Switzerland, Australia. Every entry is [name, official URL]: UN entries link to the Security Council committee page (the resolution 1701 arms embargo, which has no committee, links to the resolution in the UN Digital Library); EU entries link to that regime's EU Sanctions Map page, and the source check confirms the id matches the regime.
 5. **Only the U.S. row says Comprehensive or Targeted** (29 Oct 2026). That is OFAC's own classification. The other six jurisdictions show "In force" or "None"; never characterize their sanctions as comprehensive or targeted.
 6. **Sanctions wording is jurisdiction-neutral** (27 Oct 2026): "country-specific sanctions", not U.S. terms such as "country program".
-7. **No automatic approval for scheduled runs** (29 Oct 2026). Some sites (for example dfat.gov.au) cannot be opened in a scheduled run without approval. When a view nears its stale date because a source could not be checked, notify Andrzej; he runs one attended check.
+7. **No automatic approval for scheduled runs** (29 Oct 2026; updated 2 Nov 2026). Scheduled runs do not ask for approval to open sites. Sources their own session cannot open are read through the "Fetch sources" workflow or, for Australia, the Federal Register of Legislation ("Reading sources a task's own session cannot open" above). Only if a source still cannot be read, and a view nears its stale date, does the watchdog create a Notion task for Andrzej.
 8. **Tasks never edit the website or WordPress.** Page wording and layout change only in sessions with Andrzej.
 9. **Comprehensive U.S. embargoes are locked** (29 Oct 2026). Cuba, Iran and North Korea must show a comprehensive U.S. embargo, and Ukraine's note must name Crimea, Donetsk and Luhansk; no other country may show one. `validate.py` enforces this. Lifting, adding or changing one needs an edit to the lists in `validate.py`, a system change Andrzej merges himself. The weekly Federal Register sanctions watch opens an issue listing new OFAC and presidential sanctions items so such changes are noticed.
-9. **Never weaken a check to get a change through.** If a check blocks a change you believe is right, hold it and notify Andrzej; changes to checks, procedure or prompts go through a pull request that he merges.
+10. **Never weaken a check to get a change through.** If a check blocks a change you believe is right, hold it and create a Notion task for Andrzej; changes to checks, procedure or prompts go through a pull request that he merges.
 
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:
@@ -51,13 +67,14 @@ The verifier must confirm from two different sources (table below). If only one 
 ## Sources and second sources
 | Data | Primary source | Second source or code check |
 |---|---|---|
-| U.S. FTO list | Federal Register notices | OpenSanctions U.S. FTO dataset (tie-breaker); State Department FTO page |
+| U.S. FTO list | Federal Register notices; State Department FTO page (governs which groups are designated) | OpenSanctions U.S. FTO dataset (tie-breaker; it lags new designations, so a gap is information when State's page matches the file) |
 | FTO presence by country | State Department Country Reports on Terrorism, country chapter | Same report, Chapter 5 group profile "Areas of operation"; designation notice. Same publisher, so a partial second source only |
 | U.S. sanctions | OFAC sanctions program pages | Comprehensive embargoes locked in `validate.py`; weekly Federal Register sanctions watch (issue); link check |
 | EU sanctions | EU Sanctions Map API | Code check, plus the EU consolidated list |
-| UK, Canada, Switzerland, Australia sanctions | Each government's regime page | Link check, plus OpenSanctions where it covers the regime |
+| UK, Canada, Switzerland sanctions | Each government's regime page | Link check, plus OpenSanctions where it covers the regime |
+| Australia sanctions | Federal Register of Legislation (the regulations that make each framework) | DFAT framework pages (shown on the page; not readable by servers) |
 | UN sanctions | UN Security Council consolidated list | Code check of regime list types |
-| FATF | FATF plenary public statements | FATF high-risk and monitored jurisdictions pages |
+| FATF | FATF plenary outcomes publication | FATF list publications ("Jurisdictions under Increased Monitoring", "High-Risk Jurisdictions subject to a Call for Action"); FinCEN's post-Plenary release as an extra check |
 | Corruption score | Transparency International CPI | World Bank Control of Corruption (direction-of-change sanity check only) |
 
 ## Rebuilds (to catch errors both agents share)

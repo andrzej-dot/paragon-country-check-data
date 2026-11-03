@@ -51,7 +51,23 @@
     "fto_src": "current through 3 November 2026",
     "sanc_src": "Checked 3 November 2026"
    }
-  }
+  },
+  "next_events": [
+   {
+    "view": "fatf",
+    "event": "Next FATF Plenary (February 2027; exact dates not yet announced by FATF)",
+    "check_from": "2027-02-15",
+    "grace_days": 14,
+    "source": "https://www.fatf-gafi.org/en/publications.html (Outcomes FATF Plenary, and the two list publications)"
+   },
+   {
+    "view": "cpi",
+    "event": "World Bank Worldwide Governance Indicators annual update (last released 25 September 2026)",
+    "check_from": "2027-09-01",
+    "grace_days": 45,
+    "source": "World Bank WGI API (checks/check_sources.py section 5)"
+   }
+  ]
  },
  "countries": {
   "Afghanistan": {

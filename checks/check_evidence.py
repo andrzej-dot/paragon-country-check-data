@@ -8,8 +8,8 @@ What it enforces
 1. Every changed data value (countries.<key>.<field>, fto_listings.<group>, fatf_evaluations.<key>, crt_links.<key>)
    is covered by an evidence entry whose "new" equals the value now in the file.
 2. Every quoted passage actually appears, word for word, in the official page it cites (fetched here, fresh;
-   if the site refuses plain server requests, the page is opened in a headless browser; only if that also fails
-   is the latest Internet Archive copy used).
+   if the site refuses plain server requests, the page is opened in a headless browser; there is no third-party
+   fallback, so a page that cannot be read fails the check and the change is held).
 3. Strict changes (any removal, any FTO presence or group change, or more than five countries) need two
    different source URLs.
 4. Verifier mode: the verifier's comment (marker <!-- country-check-verifier -->) must mark every changed value
@@ -48,7 +48,7 @@ def is_removal(o, n):
 
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fetch import norm, page_text  # plain request, then a real browser, then the Internet Archive
+from fetch import norm, page_text  # plain request, then a real browser; official pages only
 
 def check_entries(entries, changes, who, errors, need_verdict=False):
     by_path = {}
@@ -65,7 +65,7 @@ def check_entries(entries, changes, who, errors, need_verdict=False):
             errors.append(f"{who}: {p} needs an https source URL and a quote of at least 15 characters"); continue
         txt, src = page_text(u)
         if txt is None:
-            errors.append(f"{who}: {p} source could not be fetched (live or archive): {u}"); continue
+            errors.append(f"{who}: {p} source could not be read (plain request or browser): {u}"); continue
         if q not in txt:
             errors.append(f"{who}: {p} quote not found word for word in {u} ({src} copy): \"{e.get('quote')}\""); continue
         by_path.setdefault(p, set()).add(u)

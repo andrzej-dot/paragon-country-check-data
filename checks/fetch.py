@@ -1,8 +1,9 @@
 """Read an official web page as plain text, the same way every time.
 
 Some official sites (fatf-gafi.org, and state.gov on some days) refuse plain server requests but serve a real
-browser. So: try a plain request first; if refused, open the page in a headless Chromium browser; only if both fail,
-fall back to the latest Internet Archive copy. The text always comes from the page itself, fetched at that moment.
+browser. So: try a plain request first; if refused, open the page in a headless Chromium browser. There is no
+third-party fallback (no Internet Archive copy): official sources only (Andrzej, 2 Nov 2026). If both fail, the page
+is unreadable and the change is held.
 
 Used by check_evidence.py (word-for-word quote check), check_sources.py and the "Fetch sources" workflow.
 Command line: python checks/fetch.py URL [URL ...]   prints, per URL, how it was read and the page text.
@@ -60,7 +61,7 @@ _cache = {}
 
 
 def page_text(url, raw=False):
-    """Returns (text, how) where how is 'live', 'live (browser)' or 'archive'; (None, None) if unreadable.
+    """Returns (text, how) where how is 'live' or 'live (browser)'; (None, None) if unreadable.
     text is normalised (lower case, single spaces) unless raw=True."""
     key = (url, raw)
     if key in _cache:
@@ -72,16 +73,6 @@ def page_text(url, raw=False):
         t = _browser_text(url)
         if t:
             txt, how = t, "live (browser)"
-        else:
-            try:
-                txt, how = _plain("https://web.archive.org/web/2id_/" + url), "archive"
-            except Exception:
-                # Unchanged from the original check: ask the Internet Archive to capture the page, then read that copy.
-                try:
-                    urllib.request.urlopen(urllib.request.Request("https://web.archive.org/save/" + url, headers={"User-Agent": UA}), timeout=120).read()
-                    txt, how = _plain("https://web.archive.org/web/2id_/" + url), "archive (captured now)"
-                except Exception:
-                    pass
     out = (txt if raw or txt is None else norm(txt), how)
     _cache[key] = out
     return out

@@ -15,5 +15,21 @@
   "url": "https://www.state.gov/designation-of-international-cartels/",
   "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile",
   "basis": "Decision 12: based there (a cell operating in the country)"
+ },
+ {
+  "path": "countries.Chile.fto",
+  "new": "y",
+  "url": "https://home.treasury.gov/news/press-releases/sb0195",
+  "quote": "is the leader of a Tren de Aragua cell known as “Los Gallegos” that has operated in Chile",
+  "basis": "Second source (confirmation only; presence rests on the State Department statement under decision 2): Treasury press release of 17 July 2025 describing a Tren de Aragua cell operating in Chile"
+ },
+ {
+  "path": "countries.Chile.ftog",
+  "new": [
+   "Tren de Aragua"
+  ],
+  "url": "https://home.treasury.gov/news/press-releases/sb0195",
+  "quote": "is the leader of a Tren de Aragua cell known as “Los Gallegos” that has operated in Chile",
+  "basis": "Second source (confirmation only; presence rests on the State Department statement under decision 2): Treasury press release of 17 July 2025 describing a Tren de Aragua cell operating in Chile"
  }
 ]

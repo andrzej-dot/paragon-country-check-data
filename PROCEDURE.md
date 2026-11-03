@@ -48,7 +48,7 @@ If a task prompt, an older note or a source seems to call for something below, t
 
 1. **FTOs are U.S. only** (27 Oct 2026, confirmed 29 Oct). The FTO view shows only Foreign Terrorist Organizations designated by the U.S. State Department (INA section 219). `fto_listings` is the list of those groups, each with an empty list. Never add another government's or body's listing (EU, UK, UN, Canada, Australia or any other); `validate.py` rejects any. Adding a newly designated group or removing a revoked one is normal data work.
 2. **FTO country presence comes only from the latest Country Reports on Terrorism** (29 Oct 2026). Do not fill presence from older editions. A group the report lists only by region gets no country presence.
-3. **Every U.S.-designated FTO must be in the file.** The source check errors if OpenSanctions lists a U.S. FTO the file lacks (29 Oct 2026).
+3. **Every U.S.-designated FTO must be in the file.** The source check errors if OpenSanctions lists a U.S. FTO the file lacks (29 Oct 2026). OpenSanctions is an alarm only, never a source (decision 11): a group is added or kept only on the State Department FTO list or a Federal Register notice.
 4. **Sanctions cover seven jurisdictions, each entry with its official link** (29 Oct 2026). Order on the page: UN, EU, United States, UK, Canada, Switzerland, Australia. Every entry is [name, official URL]: UN entries link to the Security Council committee page (the resolution 1701 arms embargo, which has no committee, links to the resolution in the UN Digital Library); EU entries link to that regime's EU Sanctions Map page, and the source check confirms the id matches the regime.
 5. **Only the U.S. row says Comprehensive or Targeted** (29 Oct 2026). That is OFAC's own classification. The other six jurisdictions show "In force" or "None"; never characterize their sanctions as comprehensive or targeted.
 6. **Sanctions wording is jurisdiction-neutral** (27 Oct 2026): "country-specific sanctions", not U.S. terms such as "country program".
@@ -56,6 +56,7 @@ If a task prompt, an older note or a source seems to call for something below, t
 8. **Tasks never edit the website or WordPress.** Page wording and layout change only in sessions with Andrzej.
 9. **Comprehensive U.S. embargoes are locked** (29 Oct 2026). Cuba, Iran and North Korea must show a comprehensive U.S. embargo, and Ukraine's note must name Crimea, Donetsk and Luhansk; no other country may show one. `validate.py` enforces this. Lifting, adding or changing one needs an edit to the lists in `validate.py`, a system change Andrzej merges himself. The weekly Federal Register sanctions watch opens an issue listing new OFAC and presidential sanctions items so such changes are noticed.
 10. **Never weaken a check to get a change through.** If a check blocks a change you believe is right, hold it and create a Notion task for Andrzej; changes to checks, procedure or prompts go through a pull request that he merges.
+11. **Official sources only** (2 Nov 2026). Every value on Country Check, and every quote in an evidence file, a verifier comment, a rebuild, an audit or a correction, must come from a page published by the government or official intergovernmental body that owns the information, read on that body's own site (a plain request or the headless browser in `checks/fetch.py`, both reading the live official page). Examples: state.gov, federalregister.gov, govinfo.gov, ofac.treasury.gov, fincen.gov, gov.uk, justice.gc.ca, admin.ch, legislation.gov.au, un.org, europa.eu and sanctionsmap.eu, fatf-gafi.org, worldbank.org. Never use a copy of official text on any other site, even when the wording matches: news outlets, GlobalSecurity, press-release distributors, think tanks, Wikipedia, data aggregators such as OpenSanctions, or the Internet Archive. A non-official site may only point to where an official page might be; the value and the quote must then come from the official page itself. If the official page cannot be read, hold the change; never substitute a copy. `checks/check_evidence.py` enforces the site rule (`OFFICIAL_HOSTS`).
 
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:
@@ -67,15 +68,15 @@ The verifier must confirm from two different sources (table below). If only one 
 ## Sources and second sources
 | Data | Primary source | Second source or code check |
 |---|---|---|
-| U.S. FTO list | Federal Register notices; State Department FTO page (governs which groups are designated) | OpenSanctions U.S. FTO dataset (tie-breaker; it lags new designations, so a gap is information when State's page matches the file) |
-| FTO presence by country | State Department Country Reports on Terrorism, country chapter | Same report, Chapter 5 group profile "Areas of operation"; designation notice. Same publisher, so a partial second source only |
+| U.S. FTO list | Federal Register notices; State Department FTO page (governs which groups are designated) | OpenSanctions U.S. FTO dataset as an alarm only, never a source (decision 11); it lags new designations, so a gap is information when State's page matches the file |
+| FTO presence by country | State Department Country Reports on Terrorism, country chapter (state.gov) | Same report, Chapter 4 group profile "Location/Area of Operation"; for groups designated after the report, the State Department designation statement on state.gov or the Federal Register notice. Same publisher, so a partial second source only |
 | U.S. sanctions | OFAC sanctions program pages | Comprehensive embargoes locked in `validate.py`; weekly Federal Register sanctions watch (issue); link check |
 | EU sanctions | EU Sanctions Map API | Code check, plus the EU consolidated list |
-| UK, Canada, Switzerland sanctions | Each government's regime page | Link check, plus OpenSanctions where it covers the regime |
+| UK, Canada, Switzerland sanctions | Each government's regime page | Link check |
 | Australia sanctions | Federal Register of Legislation (the regulations that make each framework) | DFAT framework pages (shown on the page; not readable by servers) |
 | UN sanctions | UN Security Council consolidated list | Code check of regime list types |
 | FATF | FATF plenary outcomes publication | FATF list publications ("Jurisdictions under Increased Monitoring", "High-Risk Jurisdictions subject to a Call for Action"); FinCEN's post-Plenary release as an extra check |
-| Corruption score | Transparency International CPI | World Bank Control of Corruption (direction-of-change sanity check only) |
+| Corruption score | World Bank Control of Corruption (worldbank.org) | Link and range check |
 
 ## Rebuilds (to catch errors both agents share)
 - **Monthly sample**: the rebuild task picks 10 countries and 5 FTO groups at random and rebuilds every value from the official sources without looking at the current file. Differences become a `held` pull request.
@@ -83,6 +84,6 @@ The verifier must confirm from two different sources (table below). If only one 
 - **Weekly source check**: GitHub runs `checks/check_sources.py` on the published file every Monday and opens an issue if anything has drifted.
 
 ## Honest limits
-- Both agents are the same kind of model, so they can share a misreading. The code checks, the outside tie-breaker and the rebuilds reduce this. They do not remove it.
+- Both agents are the same kind of model, so they can share a misreading. The code checks, the OpenSanctions alarm and the rebuilds reduce this. They do not remove it.
 - Where only prose is available (FTO presence by country), there is no code check. The strict rules and holds are the protection.
 - Both agents act through the same GitHub connection, so independence is procedural (separate tasks, separate instructions, no shared reasoning), not a separate identity.

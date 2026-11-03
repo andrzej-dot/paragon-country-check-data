@@ -125,10 +125,7 @@
   },
   "Albania": {
    "n": "Albania",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "us": "t",
    "usp": [
     [
@@ -383,8 +380,7 @@
    "fto": "y",
    "ftog": [
     "ISIS in the Greater Sahara (ISIS-GS)",
-    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
-    "Ansar al-Dine (AAD)"
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
    ],
    "cpi": 44,
    "prev": 43,
@@ -632,7 +628,6 @@
    "n": "Sweden",
    "fto": "y",
    "ftog": [
-    "ISIS",
     "al-Qa'ida (AQ)"
    ],
    "cpi": 87,
@@ -696,10 +691,7 @@
   },
   "Netherlands": {
    "n": "Netherlands",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 86,
    "prev": 87,
    "iso2": "NL",
@@ -746,7 +738,6 @@
    "fto": "y",
    "ftog": [
     "ISIS-Sinai Province",
-    "al-Qa'ida (AQ)",
     "Harakat Sawa'd Misr (HASM)"
    ],
    "cpi": 34,
@@ -877,8 +868,7 @@
    "fto": "y",
    "ftog": [
     "Continuity Irish Republican Army (CIRA)",
-    "New Irish Republican Army",
-    "ISIS"
+    "New Irish Republican Army"
    ],
    "cpi": 79,
    "prev": 78,
@@ -1089,10 +1079,7 @@
   },
   "Austria": {
    "n": "Austria",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 74,
    "prev": 74,
    "iso2": "AT",
@@ -1107,10 +1094,8 @@
     "Jaish-e-Mohammed (JEM)",
     "Hizbul Mujahideen (HM)",
     "al-Qa'ida in the Indian Subcontinent (AQIS)",
-    "Islamic Jihad Union (IJU)",
     "Harakat ul-Mujahidin (HUM)",
     "Harakat ul-Jihad-i-Islami (HUJI)",
-    "Lashkar i Jhangvi (LJ)",
     "Indian Mujahedeen (IM)"
    ],
    "cpi": 42,
@@ -1268,11 +1253,7 @@
   },
   "France": {
    "n": "France",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)"
-   ],
+   "fto": "n",
    "cpi": 73,
    "prev": 73,
    "iso2": "FR",
@@ -1285,7 +1266,6 @@
    "ftog": [
     "HAMAS",
     "Palestine Islamic Jihad (PIJ)",
-    "Hizballah",
     "Al-Aqsa Martyrs Brigade (AAMB)",
     "Popular Front for the Liberation of Palestine (PFLP)",
     "PFLP-General Command (PFLP-GC)",
@@ -1429,10 +1409,7 @@
   "Kuwait": {
    "n": "Kuwait",
    "fatf": "grey",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 54,
    "prev": 52,
    "iso2": "KW",
@@ -1440,11 +1417,7 @@
   },
   "Kyrgyzstan": {
    "n": "Kyrgyzstan",
-   "fto": "y",
-   "ftog": [
-    "Islamic State's Khorasan Province (ISIS-K)",
-    "Islamic Movement of Uzbekistan (IMU)"
-   ],
+   "fto": "n",
    "cpi": 26,
    "prev": 25,
    "iso2": "KG",
@@ -1807,8 +1780,7 @@
    "n": "Morocco",
    "fto": "y",
    "ftog": [
-    "ISIS",
-    "al-Qa'ida in the Islamic Maghreb (AQIM)"
+    "ISIS"
    ],
    "cpi": 38,
    "prev": 38,
@@ -2025,7 +1997,6 @@
     "Lashkar-e-Tayyiba (LeT)",
     "Jaish-e-Mohammed (JEM)",
     "Lashkar i Jhangvi (LJ)",
-    "Islamic Jihad Union (IJU)",
     "Harakat ul-Mujahidin (HUM)",
     "Jaysh al-Adl (formerly Jundallah)"
    ],
@@ -2052,10 +2023,7 @@
   },
   "Paraguay": {
    "n": "Paraguay",
-   "fto": "y",
-   "ftog": [
-    "Hizballah"
-   ],
+   "fto": "n",
    "cpi": 28,
    "prev": 28,
    "iso2": "PY",
@@ -2090,8 +2058,6 @@
    "n": "Italy",
    "fto": "y",
    "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)",
     "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
    ],
    "cpi": 60,
@@ -2655,10 +2621,7 @@
   },
   "Trinidad and Tobago": {
    "n": "Trinidad and Tobago",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 41,
    "prev": 41,
    "iso2": "TT",
@@ -2668,7 +2631,6 @@
    "n": "Tunisia",
    "fto": "y",
    "ftog": [
-    "ISIS",
     "Ansar al-Shari'a in Tunisia",
     "al-Qa'ida in the Islamic Maghreb (AQIM)"
    ],
@@ -2811,7 +2773,6 @@
    "n": "Uzbekistan",
    "fto": "y",
    "ftog": [
-    "Islamic Movement of Uzbekistan (IMU)",
     "Islamic Jihad Union (IJU)"
    ],
    "cpi": 34,
@@ -3004,7 +2965,6 @@
    "ftog": [
     "HAMAS",
     "Palestine Islamic Jihad (PIJ)",
-    "Hizballah",
     "Al-Aqsa Martyrs Brigade (AAMB)",
     "Popular Front for the Liberation of Palestine (PFLP)",
     "PFLP-General Command (PFLP-GC)",

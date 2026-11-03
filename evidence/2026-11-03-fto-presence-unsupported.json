@@ -1,0 +1,493 @@
+[
+ {
+  "path": "countries.Albania.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/albania/",
+  "quote": "The terrorism threat in Albania included attempts by ISIS sympathizers to radicalize Albanians to violence"
+ },
+ {
+  "path": "countries.Albania.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Albania.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/albania/",
+  "quote": "The terrorism threat in Albania included attempts by ISIS sympathizers to radicalize Albanians to violence"
+ },
+ {
+  "path": "countries.Albania.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Austria.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/austria/",
+  "quote": "This includes a plot by a 19-year-old Austrian who swore an oath to ISIS to bomb the August 8-10 Taylor Swift concerts."
+ },
+ {
+  "path": "countries.Austria.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Austria.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/austria/",
+  "quote": "This includes a plot by a 19-year-old Austrian who swore an oath to ISIS to bomb the August 8-10 Taylor Swift concerts."
+ },
+ {
+  "path": "countries.Austria.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.France.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/france/",
+  "quote": "France is at its highest threat level, “Emergency Attack,” which it has maintained since just before the 2024 Olympic and Paralympic Games."
+ },
+ {
+  "path": "countries.France.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.France.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Iran, North Africa, West Africa, Pakistan, Somalia, Syria, and Yemen."
+ },
+ {
+  "path": "countries.France.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/france/",
+  "quote": "France is at its highest threat level, “Emergency Attack,” which it has maintained since just before the 2024 Olympic and Paralympic Games."
+ },
+ {
+  "path": "countries.France.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.France.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Iran, North Africa, West Africa, Pakistan, Somalia, Syria, and Yemen."
+ },
+ {
+  "path": "countries.Italy.ftog",
+  "new": [
+   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/italy/",
+  "quote": "Italy conducted terror investigations and prosecutions and regularly deported foreign nationals for terrorism-related security reasons."
+ },
+ {
+  "path": "countries.Italy.ftog",
+  "new": [
+   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Italy.ftog",
+  "new": [
+   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Iran, North Africa, West Africa, Pakistan, Somalia, Syria, and Yemen."
+ },
+ {
+  "path": "countries.Netherlands.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/netherlands/",
+  "quote": "Dutch authorities view ISIS’s online mobilization of youth and anti-authority violence as ongoing concerns."
+ },
+ {
+  "path": "countries.Netherlands.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Netherlands.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/netherlands/",
+  "quote": "Dutch authorities view ISIS’s online mobilization of youth and anti-authority violence as ongoing concerns."
+ },
+ {
+  "path": "countries.Netherlands.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Sweden.ftog",
+  "new": [
+   "al-Qa'ida (AQ)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sweden/",
+  "quote": "Swedish citizen Lina Laina Ishaq stood trial for genocide, crimes against humanity, and war crimes for enslaving Yazidi women and children in Syria between 2014 and 2016."
+ },
+ {
+  "path": "countries.Sweden.ftog",
+  "new": [
+   "al-Qa'ida (AQ)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.United Kingdom.ftog",
+  "new": [
+   "Continuity Irish Republican Army (CIRA)",
+   "New Irish Republican Army"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/united-kingdom/",
+  "quote": "There are about 20 detained and 22 displaced British nationals in northeast Syria, including alleged ISIS fighters and their associated family members."
+ },
+ {
+  "path": "countries.United Kingdom.ftog",
+  "new": [
+   "Continuity Irish Republican Army (CIRA)",
+   "New Irish Republican Army"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Kuwait.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kuwait/",
+  "quote": "In January, prosecutors charged three people with joining ISIS and planning an attack on Shiite places of worship."
+ },
+ {
+  "path": "countries.Kuwait.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Kuwait.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kuwait/",
+  "quote": "In January, prosecutors charged three people with joining ISIS and planning an attack on Shiite places of worship."
+ },
+ {
+  "path": "countries.Kuwait.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Kyrgyzstan.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kyrgyz-republic/",
+  "quote": "The Kyrgyz Republic focused on arresting suspected terrorists and repatriating, rehabilitating, and reintegrating nationals from Iraq and northeast Syria."
+ },
+ {
+  "path": "countries.Kyrgyzstan.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Pakistan, and Central Asia."
+ },
+ {
+  "path": "countries.Kyrgyzstan.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Pakistan, Syria, Türkiye, and Central Asia."
+ },
+ {
+  "path": "countries.Kyrgyzstan.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kyrgyz-republic/",
+  "quote": "The Kyrgyz Republic focused on arresting suspected terrorists and repatriating, rehabilitating, and reintegrating nationals from Iraq and northeast Syria."
+ },
+ {
+  "path": "countries.Kyrgyzstan.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Pakistan, and Central Asia."
+ },
+ {
+  "path": "countries.Kyrgyzstan.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Pakistan, Syria, Türkiye, and Central Asia."
+ },
+ {
+  "path": "countries.Uzbekistan.ftog",
+  "new": [
+   "Islamic Jihad Union (IJU)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/uzbekistan/",
+  "quote": "Terrorist organizations Katibat al Tawhid wal Jihad (KTJ), the Islamic Movement of Uzbekistan, the Islamic Jihad Union, and Jamaat Ansarullah all have Uzbekistani members."
+ },
+ {
+  "path": "countries.Uzbekistan.ftog",
+  "new": [
+   "Islamic Jihad Union (IJU)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Pakistan, Syria, Türkiye, and Central Asia."
+ },
+ {
+  "path": "countries.India.ftog",
+  "new": [
+   "ISIS",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Hizbul Mujahideen (HM)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Harakat ul-Jihad-i-Islami (HUJI)",
+   "Indian Mujahedeen (IM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/india/",
+  "quote": "India’s counterterrorism efforts addressed domestic threats and Pakistan-based terror groups."
+ },
+ {
+  "path": "countries.India.ftog",
+  "new": [
+   "ISIS",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Hizbul Mujahideen (HM)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Harakat ul-Jihad-i-Islami (HUJI)",
+   "Indian Mujahedeen (IM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Syria, Türkiye, Uzbekistan, and Europe."
+ },
+ {
+  "path": "countries.India.ftog",
+  "new": [
+   "ISIS",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Hizbul Mujahideen (HM)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Harakat ul-Jihad-i-Islami (HUJI)",
+   "Indian Mujahedeen (IM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Pakistan."
+ },
+ {
+  "path": "countries.Pakistan.ftog",
+  "new": [
+   "Tehrik-e Taliban Pakistan (TTP)",
+   "Balochistan Liberation Army (BLA)",
+   "Islamic State's Khorasan Province (ISIS-K)",
+   "al-Qa'ida (AQ)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Lashkar i Jhangvi (LJ)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Jaysh al-Adl (formerly Jundallah)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/pakistan/",
+  "quote": "Pakistani authorities increased counterterrorism operations in response to escalating terrorist attacks across the country, including attacks against Chinese nationals and CCP-backed interests."
+ },
+ {
+  "path": "countries.Pakistan.ftog",
+  "new": [
+   "Tehrik-e Taliban Pakistan (TTP)",
+   "Balochistan Liberation Army (BLA)",
+   "Islamic State's Khorasan Province (ISIS-K)",
+   "al-Qa'ida (AQ)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Lashkar i Jhangvi (LJ)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Jaysh al-Adl (formerly Jundallah)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Syria, Türkiye, Uzbekistan, and Europe."
+ },
+ {
+  "path": "countries.Paraguay.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/paraguay/",
+  "quote": "In 2024, Paraguay lacked effective immigration, customs, financial, and law enforcement controls nationwide."
+ },
+ {
+  "path": "countries.Paraguay.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Lebanon and Syria."
+ },
+ {
+  "path": "countries.Paraguay.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/paraguay/",
+  "quote": "In 2024, Paraguay lacked effective immigration, customs, financial, and law enforcement controls nationwide."
+ },
+ {
+  "path": "countries.Paraguay.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Lebanon and Syria."
+ },
+ {
+  "path": "countries.Trinidad and Tobago.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/trinidad-and-tobago/",
+  "quote": "Trinidad and Tobago viewed the threat of domestic recruitment and the potential return of individuals who traveled or attempted to travel to Syria or Iraq to join ISIS as their primary terrorism concerns."
+ },
+ {
+  "path": "countries.Trinidad and Tobago.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Trinidad and Tobago.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/trinidad-and-tobago/",
+  "quote": "Trinidad and Tobago viewed the threat of domestic recruitment and the potential return of individuals who traveled or attempted to travel to Syria or Iraq to join ISIS as their primary terrorism concerns."
+ },
+ {
+  "path": "countries.Trinidad and Tobago.ftog",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Burkina Faso.ftog",
+  "new": [
+   "ISIS in the Greater Sahara (ISIS-GS)",
+   "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/burkina-faso/",
+  "quote": "ISIS-GS and al-Qa’ida-affiliated JNIM operated freely across large portions of Burkina Faso."
+ },
+ {
+  "path": "countries.Burkina Faso.ftog",
+  "new": [
+   "ISIS in the Greater Sahara (ISIS-GS)",
+   "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Mali."
+ },
+ {
+  "path": "countries.Egypt.ftog",
+  "new": [
+   "ISIS-Sinai Province",
+   "Harakat Sawa'd Misr (HASM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/egypt/",
+  "quote": "Egypt reported a decrease in terrorist activity in 2024."
+ },
+ {
+  "path": "countries.Egypt.ftog",
+  "new": [
+   "ISIS-Sinai Province",
+   "Harakat Sawa'd Misr (HASM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Afghanistan, Iran, North Africa, West Africa, Pakistan, Somalia, Syria, and Yemen."
+ },
+ {
+  "path": "countries.Morocco.ftog",
+  "new": [
+   "ISIS"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/morocco/",
+  "quote": "Morocco continued to face sporadic threats from lone actors and small terrorist cells, the majority of which claimed to be inspired by or affiliated with ISIS."
+ },
+ {
+  "path": "countries.Morocco.ftog",
+  "new": [
+   "ISIS"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Algeria, Burkina Faso, Côte d’Ivoire, Libya, Mali, and Tunisia."
+ },
+ {
+  "path": "countries.Tunisia.ftog",
+  "new": [
+   "Ansar al-Shari'a in Tunisia",
+   "al-Qa'ida in the Islamic Maghreb (AQIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/tunisia/",
+  "quote": "Tunisia continued to cooperate with U.S. law enforcement to prevent acts of terrorism against U.S. citizens or interests in the country; however, because of internal government dynamics, broader cooperation remained challenging and inefficient."
+ },
+ {
+  "path": "countries.Tunisia.ftog",
+  "new": [
+   "Ansar al-Shari'a in Tunisia",
+   "al-Qa'ida in the Islamic Maghreb (AQIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Iraq and Syria, with branches and networks around the world."
+ },
+ {
+  "path": "countries.Israel.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "PFLP-General Command (PFLP-GC)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/israel-the-west-bank-and-gaza/",
+  "quote": "Hizballah fired a rocket from Lebanon that impacted near a soccer field in the Druze town of Majdal Shams in the Golan Heights"
+ },
+ {
+  "path": "countries.Israel.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "PFLP-General Command (PFLP-GC)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Lebanon and Syria."
+ },
+ {
+  "path": "countries.Palestine.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "PFLP-General Command (PFLP-GC)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/israel-the-west-bank-and-gaza/",
+  "quote": "Israel expanded and intensified its war against Hamas in Gaza, taking control of territory and degrading the group’s ability to attack, resulting in the elimination of much of its leadership."
+ },
+ {
+  "path": "countries.Palestine.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "PFLP-General Command (PFLP-GC)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/",
+  "quote": "Location/Area of Operation:  Lebanon and Syria."
+ }
+]

@@ -1,0 +1,783 @@
+[
+ {
+  "path": "countries.Burkina Faso.ftog",
+  "new": [
+   "ISIS in the Greater Sahara (ISIS-GS)",
+   "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Ansar al-Dine (AAD)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "AAD's Ch4 location line is 'Mali.' only, AAD claimed no attacks in 2024, and the Burkina Faso chapter does not mention AAD (it is described only as a component of JNIM)."
+ },
+ {
+  "path": "countries.Côte d'Ivoire.ftog",
+  "new": [
+   "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/cote-divoire/",
+  "quote": "Côte d’Ivoire conducted a joint investigation with U.S. and Ivoirian law enforcement authorities that resulted in the arrest of six ISIS members.",
+  "removed_group": "ISIS",
+  "basis": "D1 Arrests of people described as members",
+  "rationale": "The only link is the arrest of six 'ISIS members'. The question is whether that is an organized presence or just arrests of individuals (excluded). Also, which ISIS entity is meant (core vs. a Sahel branch) is not stated."
+ },
+ {
+  "path": "countries.Kenya.ftog",
+  "new": [
+   "al-Shabaab"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kenya/",
+  "quote": "Security services responded to numerous terrorist incidents and disrupted al-Shabaab and ISIS attack planning, recruitment, and travel.",
+  "removed_group": "ISIS",
+  "basis": "D1 Arrests of people described as members",
+  "rationale": "Kenya disrupted ISIS planning and recruitment, and there are convictions of ISIS-linked individuals, but no ISIS network or presence in Kenya is described. Ch1 also refers to 'ISIS-East Africa', not core ISIS. It turns on whether disrupted recruitment counts as a network; convictions and FTF travel are excluded."
+ },
+ {
+  "path": "countries.Mali.ftog",
+  "new": [
+   "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+   "ISIS in the Greater Sahara (ISIS-GS)",
+   "Ansar al-Dine (AAD)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Al-Murabitoun became a component of JNIM and was designated as an FTO on December 19, 2013, originally under the name al-Mulathamun Battalion.",
+  "removed_group": "al-Mulathamun Battalion (al-Murabitoun)",
+  "basis": "D7 Dissolved or dormant groups",
+  "rationale": "Al-Murabitoun's Ch4 location line ('Primarily Algeria; also operated in Burkina Faso, Libya, and Niger') omits Mali, it claimed no 2024 attacks, and the Mali chapter does not name it. The only Mali link is historical (its MUJAO merger) plus being a JNIM component. It turns on whether JNIM's presence counts for its components."
+ },
+ {
+  "path": "countries.Nigeria.ftog",
+  "new": [
+   "ISIS-West Africa",
+   "Boko Haram",
+   "Ansaru"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/nigeria/",
+  "quote": "Reports indicated JNIM also began infiltrating areas along the Benin border.",
+  "removed_group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Ch1 gives only reported 'infiltrating areas along the Benin border' (border activity is excluded), and JNIM's Ch4 location line omits Nigeria. However, the regional overview attributes 'dozens of terrorist attacks in Benin and Nigeria' jointly to JNIM and ISIS-GS without a country split."
+ },
+ {
+  "path": "countries.Sudan.ftog",
+  "new": [
+   "Sudanese Muslim Brotherhood"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sudan/",
+  "quote": "ISIS and al-Qa’ida continued communicating with parent organizations from within Sudan.",
+  "removed_group": "ISIS",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Ch1 implies unnamed ISIS-linked entities inside Sudan were in contact with the parent group and trying to use Sudan as a facilitation hub, but says 'most efforts likely stalled'. It turns on whether stalled, unnamed entities amount to an organized presence or network."
+ },
+ {
+  "path": "countries.Sudan.ftog",
+  "new": [
+   "Sudanese Muslim Brotherhood"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sudan/",
+  "quote": "ISIS and al-Qa’ida continued communicating with parent organizations from within Sudan.",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Same as ISIS: AQ-linked entities were communicating from within Sudan with facilitation-hub aims that 'likely stalled', and AQ's Ch4 location line does not name Sudan."
+ },
+ {
+  "path": "countries.Albania.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/albania/",
+  "quote": "The terrorism threat in Albania included attempts by ISIS sympathizers to radicalize Albanians to violence",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only ISIS sympathizers radicalizing, unattributed terrorist transit of money/material, and Albanian FTFs detained abroad; no organized ISIS presence described."
+ },
+ {
+  "path": "countries.Albania.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/albania/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Austria.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/austria/",
+  "quote": "This includes a plot by a 19-year-old Austrian who swore an oath to ISIS to bomb the August 8-10 Taylor Swift concerts.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Single foiled plot by an individual who pledged to ISIS (isolated/inspired plot); otherwise only returnees and FTFs in conflict zones."
+ },
+ {
+  "path": "countries.Austria.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/austria/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Belgium.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/belgium/",
+  "quote": "In July, Belgian federal police arrested seven suspects of Chechen descent on terrorism grounds, formally charging three the next day for material support to ISIS and terrorism attack plotting.",
+  "removed_group": "ISIS",
+  "basis": "D1 Arrests of people described as members",
+  "rationale": "Question is whether arrests of a small group charged with material support to ISIS, plotting and one financing charge amount to an organized ISIS support network; chapter frames Belgium's main threat as lone-actor homegrown terrorism."
+ },
+ {
+  "path": "countries.Belgium.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/belgium/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.France.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/france/",
+  "quote": "",
+  "removed_group": "ISIS",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "France chapter never names ISIS; only regional Europe language (ISIS recruiting/inspiring in European countries) and an ISIS-K threat against the Paris Olympics, which is a different entity and a threat only."
+ },
+ {
+  "path": "countries.France.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/france/",
+  "quote": "",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "No CRT text links al-Qa'ida to France; only Ansar al-Dine videos threatening France (a threat, different group); AQ profile location omits France."
+ },
+ {
+  "path": "countries.France.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/france/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Germany.ftog",
+  "new": [
+   "Antifa Ost (Hammerbande)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/germany/",
+  "quote": "In August, a Syrian refugee attacked festival goers in Solingen, for which ISIS claimed responsibility.",
+  "removed_group": "ISIS",
+  "basis": "D2 A single attack, claimed or coordinated, with no ongoing presence",
+  "rationale": "ISIS claimed one attack carried out by an individual; question is whether a claimed lone-attacker attack counts as ISIS operating in Germany or as inspired activity (Munich case is only ISIS propaganda on a phone)."
+ },
+ {
+  "path": "countries.Italy.ftog",
+  "new": [
+   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/italy/",
+  "quote": "",
+  "removed_group": "ISIS",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "Italy chapter names ISIS only in connection with Italy's role in the Global Coalition to Defeat ISIS; threats are listed generically (North African terrorists, returning fighters, anarchists, homegrown groups)."
+ },
+ {
+  "path": "countries.Italy.ftog",
+  "new": [
+   "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/italy/",
+  "quote": "",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "No CRT text connects al-Qa'ida to Italy."
+ },
+ {
+  "path": "countries.Macedonia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/north-macedonia/",
+  "quote": "arrested four individuals on charges of “terrorist association,” spreading ISIS propaganda, and attempting to recruit new members.",
+  "removed_group": "ISIS",
+  "basis": "D1 Arrests of people described as members",
+  "rationale": "Question is whether a four-person group arrested for ISIS propaganda, recruitment and plotting (plus 'former ISIS members and sympathizers' and returnees) is an organized ISIS presence or sympathizer/returnee activity."
+ },
+ {
+  "path": "countries.Macedonia.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/north-macedonia/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Netherlands.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/netherlands/",
+  "quote": "Dutch authorities view ISIS’s online mobilization of youth and anti-authority violence as ongoing concerns.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "ISIS link is online recruitment/mobilization only, plus repatriated women and FTFs; the Rotterdam attack is not attributed to ISIS."
+ },
+ {
+  "path": "countries.Netherlands.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/netherlands/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Russia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/russia/",
+  "quote": "On March 22, ISIS-K coordinated a terrorist attack against civilians at the Crocus Concert Hall music venue using small arms and incendiary devices, resulting in at least 145 deaths and over 600 injuries.",
+  "removed_group": "Islamic State's Khorasan Province (ISIS-K)",
+  "basis": "D2 A single attack, claimed or coordinated, with no ongoing presence",
+  "rationale": "The report describes one ISIS-K-coordinated attack in Russia (literally 'carried out an attack') but no ongoing operations, cells, base or network there, and the ISIS-K profile location is 'Afghanistan, Pakistan, and Central Asia'; whether a single external attack equals operating in Russia is interpretive."
+ },
+ {
+  "path": "countries.Russia.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/russia/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Spain.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/spain/",
+  "quote": "Spanish authorities identified ISIS and al-Qa’ida as Spain’s primary terrorist threats.",
+  "removed_group": "ISIS",
+  "basis": "D4 Generic threat language",
+  "rationale": "Generic threat language only; 88 arrests are described as 'jihadist-related' without group attribution; ISIS profile mention concerns Spanish nationals killed in Afghanistan."
+ },
+ {
+  "path": "countries.Spain.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/spain/",
+  "quote": "Spanish authorities identified ISIS and al-Qa’ida as Spain’s primary terrorist threats.",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "D4 Generic threat language",
+  "rationale": "Generic threat language only; no AQ operations, cells or networks in Spain are described."
+ },
+ {
+  "path": "countries.Spain.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/spain/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Sweden.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sweden/",
+  "quote": "Swedish citizen Lina Laina Ishaq stood trial for genocide, crimes against humanity, and war crimes for enslaving Yazidi women and children in Syria between 2014 and 2016.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only a prosecution for conduct in Syria and Swedish FTFs remaining in Iraq/Syria; chapter says threats come from lone actors and small cells often without ties to formal organizations."
+ },
+ {
+  "path": "countries.Sweden.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sweden/",
+  "quote": "On November 27, a Syrian man in Stockholm was sentenced to one year in prison for financing terrorist activities in Syria, supporting al-Qa’ida and Hayat Tahrir al-Sham through cryptocurrency.",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "D3 A single financier or financial trace",
+  "rationale": "One individual convicted of financing AQ from Stockholm; question is whether a single convicted financier constitutes an AQ financing network in Sweden."
+ },
+ {
+  "path": "countries.Sweden.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/sweden/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.United Kingdom.ftog",
+  "new": [
+   "Continuity Irish Republican Army (CIRA)",
+   "New Irish Republican Army"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/united-kingdom/",
+  "quote": "There are about 20 detained and 22 displaced British nationals in northeast Syria, including alleged ISIS fighters and their associated family members.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only ISIS link is British nationals detained abroad; UK chapter otherwise speaks of 'Islamist terrorism' generically."
+ },
+ {
+  "path": "countries.Argentina.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/argentina/",
+  "quote": "The ruling determined that the Iranian government orchestrated the attack through Hizballah.",
+  "removed_group": "Hizballah",
+  "basis": "D3 A single financier or financial trace",
+  "rationale": "Only links are a 2024 court ruling on the 1992/1994 Buenos Aires bombings (historical attacks) and unattributed 'suspected terrorist financing networks' in the Tri-Border Area; question is whether a historical attack plus an unnamed TBA financing network shows current Hizballah presence or financing in Argentina (regional list of Hizballah supporter countries omits Argentina)."
+ },
+ {
+  "path": "countries.Argentina.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/argentina/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Mexico.ftog",
+  "new": [
+   "Cartel de Sinaloa",
+   "Cartel de Jalisco Nueva Generacion (CJNG)",
+   "Cartel del Noreste",
+   "La Nueva Familia Michoacana",
+   "Cartel del Golfo (Gulf Cartel)",
+   "Carteles Unidos",
+   "Mara Salvatrucha (MS-13)",
+   "Juarez Cartel (La Linea)",
+   "Los Viagras"
+  ],
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/12/terrorist-designations-of-clan-del-golfo",
+  "quote": "Based in Colombia, Clan del Golfo is a violent and powerful criminal organization with thousands of members. (Nothing in the statement or the report places it in Mexico.)",
+  "removed_group": "Clan del Golfo",
+  "basis": "Not supported: POST_REPORT",
+  "rationale": "Report never mentions Clan del Golfo (a Colombian group, absent even from the disclaimer); no CRT 2024 basis for Mexico."
+ },
+ {
+  "path": "countries.Mexico.ftog",
+  "new": [
+   "Cartel de Sinaloa",
+   "Cartel de Jalisco Nueva Generacion (CJNG)",
+   "Cartel del Noreste",
+   "La Nueva Familia Michoacana",
+   "Cartel del Golfo (Gulf Cartel)",
+   "Carteles Unidos",
+   "Mara Salvatrucha (MS-13)",
+   "Juarez Cartel (La Linea)",
+   "Los Viagras"
+  ],
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/terrorist-designations-of-cartel-de-los-soles/",
+  "quote": "Based in Venezuela, the Cartel de los Soles is headed by Nicolás Maduro (Nothing in the statement or the report places it in Mexico.)",
+  "removed_group": "Cartel de los Soles",
+  "basis": "Not supported: POST_REPORT",
+  "rationale": "Report mentions CdlS only in Venezuela (ch1) and the disclaimer; nothing ties it to Mexico."
+ },
+ {
+  "path": "countries.Mexico.ftog",
+  "new": [
+   "Cartel de Sinaloa",
+   "Cartel de Jalisco Nueva Generacion (CJNG)",
+   "Cartel del Noreste",
+   "La Nueva Familia Michoacana",
+   "Cartel del Golfo (Gulf Cartel)",
+   "Carteles Unidos",
+   "Mara Salvatrucha (MS-13)",
+   "Juarez Cartel (La Linea)",
+   "Los Viagras"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/mexico/",
+  "quote": "some of whom may have been facilitated into the United States by an ISIS-linked facilitation network",
+  "removed_group": "ISIS",
+  "basis": "D6 Transit or destination",
+  "rationale": "Link is individuals with a possible ISIS nexus transiting Mexico, some possibly moved by an 'ISIS-linked' network whose location the report does not state; question is whether that counts as a facilitation network in Mexico (FIN) or only transit (EXCLUDED); leans EXCLUDED, and 'ISIS-linked' is not the core ISIS entity."
+ },
+ {
+  "path": "countries.Paraguay.ftog",
+  "new": [],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Hizballah",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "Paraguay ch1 never mentions Hizballah, and the regional overview's list of countries where Hizballah supporters were identified omits Paraguay; 'across Latin America' fundraising is regional only."
+ },
+ {
+  "path": "countries.Paraguay.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/paraguay/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Trinidad and Tobago.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/trinidad-and-tobago/",
+  "quote": "Trinidad and Tobago viewed the threat of domestic recruitment and the potential return of individuals who traveled or attempted to travel to Syria or Iraq to join ISIS as their primary terrorism concerns.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only link is nationals who went to Syria/Iraq (FTFs/returnees) plus a perceived 'threat of domestic recruitment' with no organized ISIS network described in the country."
+ },
+ {
+  "path": "countries.Trinidad and Tobago.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/trinidad-and-tobago/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Algeria.ftog",
+  "new": [
+   "al-Qa'ida in the Islamic Maghreb (AQIM)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/algeria/",
+  "quote": "groups like Al-Qa’ida in the Islamic Maghreb (AQIM) and ISIS's Algeria branch, Jund al-Khilafah, failed to identify new recruits or resources",
+  "removed_group": "ISIS",
+  "basis": "D5 A branch operating, counted for core ISIS",
+  "rationale": "Only link is to ISIS's Algeria branch Jund al-Khilafah (which 'failed to identify new recruits or resources'); question is whether a degraded branch supports the core ISIS entry."
+ },
+ {
+  "path": "countries.Egypt.ftog",
+  "new": [
+   "ISIS-Sinai Province",
+   "Harakat Sawa'd Misr (HASM)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "AQ profile lists only 'North Africa' regionally; the only Egypt link is the historical 2001 merger with Egyptian Islamic Jihad, and the Egypt chapter does not mention AQ."
+ },
+ {
+  "path": "countries.Israel.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/israel-the-west-bank-and-gaza/",
+  "quote": "Hizballah fired a rocket from Lebanon that impacted near a soccer field in the Druze town of Majdal Shams in the Golan Heights",
+  "removed_group": "Hizballah",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only links are cross-border rocket/drone fire from Lebanon (and attacks on the 'Israeli-occupied' Golan); profile Location is Lebanon and Syria."
+ },
+ {
+  "path": "countries.Israel.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "PFLP-General Command (PFLP-GC)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "PFLP-GC profile places it in Syria, Lebanon and Gaza, with 2024 attacks in the West Bank and Gaza only; nothing places it in Israel proper."
+ },
+ {
+  "path": "countries.Jordan.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/jordan/",
+  "quote": "The media reported that Jordanian banks had frozen accounts associated with U.S.-sanctioned Hamas members and some of their family members.",
+  "removed_group": "HAMAS",
+  "basis": "D3 A single financier or financial trace",
+  "rationale": "Only link is media reporting of frozen Jordanian bank accounts of sanctioned Hamas members; question is whether this shows a financing network in Jordan or just individual accounts. The 2024 attacks by Jordanians are not attributed to Hamas."
+ },
+ {
+  "path": "countries.Jordan.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/jordan/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Kuwait.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kuwait/",
+  "quote": "In January, prosecutors charged three people with joining ISIS and planning an attack on Shiite places of worship.",
+  "removed_group": "ISIS",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "Only arrests of 'suspected ISIS-related terrorists' and a foiled plot; FATF note says terrorist groups operate outside the country."
+ },
+ {
+  "path": "countries.Kuwait.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kuwait/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Lebanon.ftog",
+  "new": [
+   "Hizballah",
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "ISIS",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "Asbat al-Ansar (AAA)",
+   "Lebanese Muslim Brotherhood"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "AAB announced its dissolution in 2019 and did not claim responsibility for any attacks in 2024.",
+  "removed_group": "Abdallah Azzam Brigades",
+  "basis": "D7 Dissolved or dormant groups",
+  "rationale": "Profile Location line is 'Lebanon' (Lebanon-based), but the same profile says the group dissolved in 2019; question is whether a dissolved group can count as present."
+ },
+ {
+  "path": "countries.Morocco.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/morocco/",
+  "quote": "Morocco continued to face sporadic threats from lone actors and small terrorist cells, the majority of which claimed to be inspired by or affiliated with ISIS.",
+  "removed_group": "ISIS",
+  "basis": "D1 Arrests of people described as members",
+  "rationale": "Arrests of 29 'ISIS-inspired' plotters, some in cells; question is whether cells that 'claimed to be inspired by or affiliated with ISIS' amount to organized presence rather than excluded inspired activity."
+ },
+ {
+  "path": "countries.Morocco.ftog",
+  "new": [],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "al-Qa'ida in the Islamic Maghreb (AQIM)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "Morocco chapter does not mention AQIM and AQIM's profile Location line does not list Morocco."
+ },
+ {
+  "path": "countries.Morocco.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/morocco/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Oman.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/oman/",
+  "quote": "On July 15, three ISIS-inspired Omani citizens attacked a Shia Mosque in a predominantly Pakistani neighborhood in Muscat.",
+  "removed_group": "ISIS",
+  "basis": "D2 A single attack, claimed or coordinated, with no ongoing presence",
+  "rationale": "Single attack by ISIS-inspired citizens (isolated, inspired); ISIS later claimed it, which some may read as an operation."
+ },
+ {
+  "path": "countries.Oman.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/oman/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Palestine.ftog",
+  "new": [
+   "HAMAS",
+   "Palestine Islamic Jihad (PIJ)",
+   "Al-Aqsa Martyrs Brigade (AAMB)",
+   "Popular Front for the Liberation of Palestine (PFLP)",
+   "PFLP-General Command (PFLP-GC)",
+   "Army of Islam (AOI)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Hizballah",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "No text places Hizballah in Gaza or the West Bank; links are only Hizballah facilitators funding AAMB and joint operations with PIJ, without location."
+ },
+ {
+  "path": "countries.Syria.ftog",
+  "new": [
+   "ISIS",
+   "al-Qa'ida (AQ)",
+   "Hizballah",
+   "Kata'ib Hizballah (KH)",
+   "Asa'ib Ahl al-Haq (AAH)",
+   "Ansar al-Islam (AAI)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In Iraq and Syria, Iran supported various IAMGs in 2024, including the U.S.-designated terrorist groups Kata'ib Hizballah, Harakat al-Nujaba, Kata'ib Sayyid al-Shuhada",
+  "removed_group": "Harakat al-Nujaba (HAN)",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Named only in a joint 'Iraq and Syria' list of Iran-supported IAMGs; no Ch4 profile; Ch2 says only 'some' Iraqi IAMGs travelled to Syria, so whether HAN itself operated in Syria is not stated. State's 2025 designation statement places KSS's threats in 'Iraq and Syria' and does not place HAN or HAAA in Syria."
+ },
+ {
+  "path": "countries.Syria.ftog",
+  "new": [
+   "ISIS",
+   "al-Qa'ida (AQ)",
+   "Hizballah",
+   "Kata'ib Hizballah (KH)",
+   "Asa'ib Ahl al-Haq (AAH)",
+   "Ansar al-Islam (AAI)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In Iraq and Syria, Iran supported various IAMGs in 2024, including the U.S.-designated terrorist groups Kata'ib Hizballah, Harakat al-Nujaba, Kata'ib Sayyid al-Shuhada",
+  "removed_group": "Kata'ib Sayyid al-Shuhada (KSS)",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Named only in a joint 'Iraq and Syria' list of Iran-supported IAMGs; no Ch4 profile; the text does not say KSS itself operated in Syria. State's 2025 designation statement places KSS's threats in 'Iraq and Syria' and does not place HAN or HAAA in Syria."
+ },
+ {
+  "path": "countries.Syria.ftog",
+  "new": [
+   "ISIS",
+   "al-Qa'ida (AQ)",
+   "Hizballah",
+   "Kata'ib Hizballah (KH)",
+   "Asa'ib Ahl al-Haq (AAH)",
+   "Ansar al-Islam (AAI)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Harakat Ansar Allah al- Awfiya, and Asa'ib Ahl al-Haq, with sophisticated weapons",
+  "removed_group": "Harakat Ansar Allah al-Awfiya (HAAA)",
+  "basis": "D8 Named only in a combined or reported mention",
+  "rationale": "Named only in a joint 'Iraq and Syria' list of Iran-supported IAMGs; no Ch4 profile; the text does not say HAAA itself operated in Syria. State's 2025 designation statement places KSS's threats in 'Iraq and Syria' and does not place HAN or HAAA in Syria."
+ },
+ {
+  "path": "countries.Tunisia.ftog",
+  "new": [
+   "Ansar al-Shari'a in Tunisia",
+   "al-Qa'ida in the Islamic Maghreb (AQIM)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "ISIS",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "Tunisia chapter names no group, and no ISIS passage places ISIS in Tunisia."
+ },
+ {
+  "path": "countries.India.ftog",
+  "new": [
+   "ISIS",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Hizbul Mujahideen (HM)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Harakat ul-Jihad-i-Islami (HUJI)",
+   "Indian Mujahedeen (IM)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Islamic Jihad Union (IJU)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "IJU's Location line is Afghanistan, Syria, Türkiye, Uzbekistan and Europe, and the report never connects IJU to India."
+ },
+ {
+  "path": "countries.India.ftog",
+  "new": [
+   "ISIS",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Hizbul Mujahideen (HM)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Harakat ul-Jihad-i-Islami (HUJI)",
+   "Indian Mujahedeen (IM)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Lashkar i Jhangvi (LJ)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "LJ's Location line is Pakistan only, and the report never connects LJ to India."
+ },
+ {
+  "path": "countries.Indonesia.ftog",
+  "new": [
+   "Jemaah Anshorut Tauhid (JAT)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Indonesia, Malaysia, and the Philippines.",
+  "removed_group": "Jemaah Islamiya (JI)",
+  "basis": "D7 Dissolved or dormant groups",
+  "rationale": "Location line names Indonesia. Caveat: in 2024 JI's leadership called on members to disband and about 8,000 pledged to do so; the INP 'announced the formal disbandment' and the ASG profile calls JI 'now disbanded'. NOTE: the report states JI disbanded in 2024."
+ },
+ {
+  "path": "countries.Kyrgyzstan.ftog",
+  "new": [],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Islamic State's Khorasan Province (ISIS-K)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "The Kyrgyz Republic chapter never names ISIS-K. ISIS-K's Location line says only 'Central Asia' (regional), and the regional overview mentions only ISIS-K recruitment in Central Asia generally."
+ },
+ {
+  "path": "countries.Kyrgyzstan.ftog",
+  "new": [],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Islamic Movement of Uzbekistan (IMU)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "The Kyrgyz chapter never names IMU. IMU's Location line says only 'Central Asia', and its recruitment 'from other Central Asian states' is regional."
+ },
+ {
+  "path": "countries.Kyrgyzstan.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/kyrgyz-republic/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Malaysia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/malaysia/",
+  "quote": "Malaysian authorities reported that the country remained a transit point, and in some cases a destination, for members of terrorist groups including ISIS, the Abu Sayyaf Group (ASG), and al-Qa’ida.",
+  "removed_group": "ISIS",
+  "basis": "D6 Transit or destination",
+  "rationale": "Transit is excluded. The open question is whether being 'in some cases a destination' for ISIS members counts as presence. The May Johor attack was lone-actor and ISIS-inspired, which is also excluded."
+ },
+ {
+  "path": "countries.Malaysia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/malaysia/",
+  "quote": "Malaysian authorities reported that the country remained a transit point, and in some cases a destination, for members of terrorist groups including ISIS, the Abu Sayyaf Group (ASG), and al-Qa’ida.",
+  "removed_group": "Abu Sayyaf Group (ASG)",
+  "basis": "D6 Transit or destination",
+  "rationale": "This is mostly transit (Sabah-Sulu travel). Ch3 says smuggling 'could provide' financial support to ASG, which is hypothetical. ASG's Location line is the Philippines only."
+ },
+ {
+  "path": "countries.Malaysia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/malaysia/",
+  "quote": "Malaysian authorities reported that the country remained a transit point, and in some cases a destination, for members of terrorist groups including ISIS, the Abu Sayyaf Group (ASG), and al-Qa’ida.",
+  "removed_group": "al-Qa'ida (AQ)",
+  "basis": "D6 Transit or destination",
+  "rationale": "The only link is transit/'destination' language; the AQ profile does not name Malaysia."
+ },
+ {
+  "path": "countries.Malaysia.ftog",
+  "new": [],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Indonesia, Malaysia, and the Philippines.",
+  "removed_group": "Jemaah Islamiya (JI)",
+  "basis": "D7 Dissolved or dormant groups",
+  "rationale": "Location line names Malaysia, but JI disbanded in 2024 and the Malaysia chapter does not mention it. NOTE: the report states JI disbanded in 2024."
+ },
+ {
+  "path": "countries.Malaysia.fto",
+  "new": "n",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/malaysia/",
+  "quote": "",
+  "basis": "No group remains supported after the removals above"
+ },
+ {
+  "path": "countries.Pakistan.ftog",
+  "new": [
+   "Tehrik-e Taliban Pakistan (TTP)",
+   "Balochistan Liberation Army (BLA)",
+   "Islamic State's Khorasan Province (ISIS-K)",
+   "al-Qa'ida (AQ)",
+   "al-Qa'ida in the Indian Subcontinent (AQIS)",
+   "Lashkar-e-Tayyiba (LeT)",
+   "Jaish-e-Mohammed (JEM)",
+   "Lashkar i Jhangvi (LJ)",
+   "Harakat ul-Mujahidin (HUM)",
+   "Jaysh al-Adl (formerly Jundallah)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "",
+  "removed_group": "Islamic Jihad Union (IJU)",
+  "basis": "Not supported: NOT_FOUND",
+  "rationale": "IJU's Location line is Afghanistan, Syria, Türkiye, Uzbekistan and Europe, and the report never connects IJU to Pakistan."
+ },
+ {
+  "path": "countries.Philippines.ftog",
+  "new": [
+   "Abu Sayyaf Group (ASG)",
+   "ISIS-Philippines",
+   "Communist Party of the Philippines/New People's Army (CPP/NPA)"
+  ],
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Indonesia, Malaysia, and the Philippines.",
+  "removed_group": "Jemaah Islamiya (JI)",
+  "basis": "D7 Dissolved or dormant groups",
+  "rationale": "The Location line names the Philippines, but JI disbanded in 2024 (the ASG profile calls it 'now disbanded'), and the Philippines chapter does not mention JI. NOTE: the report states JI disbanded in 2024."
+ },
+ {
+  "path": "countries.Uzbekistan.ftog",
+  "new": [
+   "Islamic Jihad Union (IJU)"
+  ],
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/uzbekistan/",
+  "quote": "Terrorist organizations Katibat al Tawhid wal Jihad (KTJ), the Islamic Movement of Uzbekistan, the Islamic Jihad Union, and Jamaat Ansarullah all have Uzbekistani members.",
+  "removed_group": "Islamic Movement of Uzbekistan (IMU)",
+  "basis": "Not supported: EXCLUDED",
+  "rationale": "The only link is that IMU has Uzbekistani nationals as members. The report says IMU operates in northern Afghanistan, its Location line says only 'Central Asia' (regional), and its diaspora support is abroad."
+ }
+]

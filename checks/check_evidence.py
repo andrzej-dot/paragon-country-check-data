@@ -7,7 +7,8 @@ Usage (from the repository root, inside a pull request checkout):
 What it enforces
 1. Every changed data value (countries.<key>.<field>, fto_listings.<group>, fatf_evaluations.<key>, crt_links.<key>)
    is covered by an evidence entry whose "new" equals the value now in the file.
-2. Every quoted passage actually appears, word for word, in the official page it cites (fetched here, fresh;
+2. Every source URL is on an official government or intergovernmental site (OFFICIAL_HOSTS; standing decision 11),
+   and every quoted passage actually appears, word for word, in the official page it cites (fetched here, fresh;
    if the site refuses plain server requests, the page is opened in a headless browser; there is no third-party
    fallback, so a page that cannot be read fails the check and the change is held).
 3. Strict changes (any removal, any FTO presence or group change, or more than five countries) need two
@@ -50,6 +51,15 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fetch import norm, page_text  # plain request, then a real browser; official pages only
 
+# Standing decision 11 (2 Nov 2026): official sources only, read on the publishing body's own site.
+OFFICIAL_HOSTS = (".gov", ".gov.uk", ".gc.ca", "canada.ca", ".admin.ch", ".gov.au",
+                  "un.org", "europa.eu", "sanctionsmap.eu", "fatf-gafi.org", "worldbank.org")
+def is_official(url):
+    m = re.match(r"https://([^/:]+)", url or "")
+    if not m: return False
+    h = m.group(1).lower()
+    return any(h == d.lstrip(".") or h.endswith(d if d.startswith(".") else "." + d) for d in OFFICIAL_HOSTS)
+
 def check_entries(entries, changes, who, errors, need_verdict=False):
     by_path = {}
     for e in entries:
@@ -63,6 +73,8 @@ def check_entries(entries, changes, who, errors, need_verdict=False):
         q, u = norm(e.get("quote") or ""), e.get("url") or ""
         if len(q) < 15 or not u.startswith("https://"):
             errors.append(f"{who}: {p} needs an https source URL and a quote of at least 15 characters"); continue
+        if not is_official(u):
+            errors.append(f"{who}: {p} source is not an official government or intergovernmental site (standing decision 11): {u}"); continue
         txt, src = page_text(u)
         if txt is None:
             errors.append(f"{who}: {p} source could not be read (plain request or browser): {u}"); continue

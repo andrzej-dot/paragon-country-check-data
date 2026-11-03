@@ -68,6 +68,7 @@ If a task prompt, an older note or a source seems to call for something below, t
    - a regional mention ("Europe", "Central Asia", "Latin America") or a group named only in a combined list of countries;
    - a group the report says has disbanded or dissolved.
    A local ISIS branch's operations count for the core "ISIS" entry only where the report describes operations in the country. Every Identified pair needs a verbatim quote and an official URL in evidence. Removing or adding presence remains a strict change. Audit record: Marketing/Website/Country Indicators/FTO-Presence-Audit-2026-11-02/ in Andrzej's workspace.
+13. **The United States is never flagged for FTO presence** (3 Nov 2026). Country Check describes the countries U.S. funders grant into, so the United States stays "Not covered" in the FTO view even where a State Department statement describes a designated group as active, based, recruiting or raising money there (for example, MS-13 in the "Designation of International Cartels" statement of 20 February 2025). Do not propose a change to `countries.United States.fto` or `ftog`.
 
 ## Strict rules (removals and FTO country placement)
 These cause the most harm if wrong, so they need two confirmations:

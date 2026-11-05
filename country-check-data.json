@@ -502,6 +502,10 @@
   },
   "Chile": {
    "n": "Chile",
+   "fto": "y",
+   "ftog": [
+    "Tren de Aragua"
+   ],
    "cpi": 70,
    "prev": 71,
    "iso2": "CL",

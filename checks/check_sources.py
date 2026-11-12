@@ -199,6 +199,30 @@ try:
             R["due"].append(f"{v}: {e.get('event')} (check from {cf}, {days} day(s) ago; grace {e.get('grace_days', 7)} days). Source: {e.get('source', '')}")
 except Exception as e: W(f"meta.next_events: {e}")
 
+# 9. Sanctions coverage (added 12 Nov 2026, standing decision 14). Governments file measures differently: Canada lists its
+# Taliban regulations under "Terrorism", not Afghanistan, and that entry was missed. Two mechanical flags, warnings only
+# (a real-world gap, such as a government that has not yet implemented a new UN regime, must not block every merge):
+# (a) a UN regime binds every UN member, so a country with a UN entry should have an entry for all five below;
+# (b) where three or more of the five have a measure, a missing one is flagged.
+# Pairs confirmed to have no measure live in checks/coverage_reviewed.json (a system file Andrzej merges).
+NAT = {"eu": "EU", "uk": "UK", "ca": "Canada", "ch": "Switzerland", "au": "Australia"}
+try:
+    REVIEWED = json.load(open("checks/coverage_reviewed.json", encoding="utf-8"))
+except Exception as e:
+    REVIEWED = {}; W(f"checks/coverage_reviewed.json could not be read ({e}); every coverage gap is shown")
+for k, o in sorted(C.items()):
+    have = [j for j in NAT if o.get(j)]
+    if not (o.get("un") or len(have) >= 3): continue
+    why = "has a UN Security Council regime, which every UN member implements" if o.get("un") else "has measures from " + ", ".join(NAT[j] for j in have)
+    for j in NAT:
+        if j in have or f"{k}|{j}" in REVIEWED: continue
+        W(f"Coverage {o.get('n', k)}: {NAT[j]} shows no measure, but the country {why}. Proposer to resolve (standing decision 14): look for a {NAT[j]} measure aimed at {o.get('n', k)} or its government or de facto authorities under any heading, including thematic ones. If one exists, open a data pull request; if the official sources show none, create a Notion task to add '{k}|{j}' to checks/coverage_reviewed.json.")
+for key in REVIEWED:
+    if key.startswith("_"): continue
+    k, _, j = key.partition("|")
+    if k not in C or j not in NAT: W(f"checks/coverage_reviewed.json: '{key}' is not a country and jurisdiction pair in the file")
+    elif C[k].get(j): W(f"checks/coverage_reviewed.json: '{key}' is recorded as having no measure, but the file now has one; remove the entry")
+
 json.dump(R, open("checks/report.json", "w"), indent=1)
 for k in ("errors", "due", "warnings", "watch", "unreachable", "info"):
     print(f"\n{k.upper()} ({len(R[k])})")

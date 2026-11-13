@@ -2,7 +2,7 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-10-29",
+  "updated": "2026-11-12",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 28 to 30 October 2026",
@@ -22,36 +22,52 @@
    "asof": {
     "cpi": "World Bank release of 25 September 2026",
     "fatf": "As of the October 2026 FATF Plenary",
-    "fto": "Designations current through 3 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
-    "sanc": "Checked 3 November 2026"
+    "fto": "Designations current through 12 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
+    "sanc": "Checked 12 November 2026"
    },
    "layers": {
     "cpi": {
-     "checked": "2026-11-03",
+     "checked": "2026-11-13",
      "when": "World Bank, Worldwide Governance Indicators, 2025 data"
     },
     "fatf": {
-     "checked": "2026-10-30",
+     "checked": "2026-11-13",
      "when": "FATF Plenary, 28 to 30 October 2026"
     },
     "fto": {
-     "checked": "2026-11-03",
-     "when": "current through 3 November 2026"
+     "checked": "2026-11-12",
+     "when": "current through 12 November 2026"
     },
     "sanc": {
-     "checked": "2026-11-03",
-     "when": "checked 3 November 2026"
+     "checked": "2026-11-12",
+     "when": "checked 12 November 2026"
     }
    },
    "text": {
-    "cpi_src": "accessed 3 November 2026",
+    "cpi_src": "accessed 13 November 2026",
     "fatf_cite": "October 2026",
     "fatf_src": "as of the FATF Plenary of 28 to 30 October 2026",
     "fatf_key": "October 2026 Plenary",
-    "fto_src": "current through 3 November 2026",
-    "sanc_src": "Checked 3 November 2026"
+    "fto_src": "current through 12 November 2026",
+    "sanc_src": "Checked 12 November 2026"
    }
-  }
+  },
+  "next_events": [
+   {
+    "view": "fatf",
+    "event": "Next FATF Plenary (February 2027; exact dates not yet announced by FATF)",
+    "check_from": "2027-02-15",
+    "grace_days": 14,
+    "source": "https://www.fatf-gafi.org/en/publications.html (Outcomes FATF Plenary, and the two list publications)"
+   },
+   {
+    "view": "cpi",
+    "event": "World Bank Worldwide Governance Indicators annual update (last released 25 September 2026)",
+    "check_from": "2027-09-01",
+    "grace_days": 45,
+    "source": "World Bank WGI API (checks/check_sources.py section 5)"
+   }
+  ]
  },
  "countries": {
   "Afghanistan": {
@@ -92,6 +108,12 @@
      "https://www.gov.uk/government/publications/afghanistan-sanctions-guidance"
     ]
    ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on Taliban, ISIL (Da'esh) and Al-Qaida",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-99-444/"
+    ]
+   ],
    "ch": [
     [
      "Ordinance on Measures against Certain Persons and Groups Associated with the Taliban",
@@ -109,10 +131,7 @@
   },
   "Albania": {
    "n": "Albania",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "us": "t",
    "usp": [
     [
@@ -129,8 +148,7 @@
    "n": "Algeria",
    "fto": "y",
    "ftog": [
-    "al-Qa'ida in the Islamic Maghreb (AQIM)",
-    "ISIS"
+    "al-Qa'ida in the Islamic Maghreb (AQIM)"
    ],
    "cpi": 37,
    "prev": 37,
@@ -147,10 +165,7 @@
   },
   "Argentina": {
    "n": "Argentina",
-   "fto": "y",
-   "ftog": [
-    "Hizballah"
-   ],
+   "fto": "n",
    "cpi": 40,
    "prev": 41,
    "iso2": "AR",
@@ -367,8 +382,7 @@
    "fto": "y",
    "ftog": [
     "ISIS in the Greater Sahara (ISIS-GS)",
-    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
-    "Ansar al-Dine (AAD)"
+    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
    ],
    "cpi": 44,
    "prev": 43,
@@ -494,6 +508,10 @@
   },
   "Chile": {
    "n": "Chile",
+   "fto": "y",
+   "ftog": [
+    "Tren de Aragua"
+   ],
    "cpi": 70,
    "prev": 71,
    "iso2": "CL",
@@ -571,7 +589,6 @@
    "n": "Côte d'Ivoire",
    "fto": "y",
    "ftog": [
-    "ISIS",
     "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
    ],
    "cpi": 43,
@@ -614,11 +631,7 @@
   },
   "Sweden": {
    "n": "Sweden",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)"
-   ],
+   "fto": "n",
    "cpi": 87,
    "prev": 87,
    "iso2": "SE",
@@ -680,10 +693,7 @@
   },
   "Netherlands": {
    "n": "Netherlands",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 86,
    "prev": 87,
    "iso2": "NL",
@@ -730,7 +740,6 @@
    "fto": "y",
    "ftog": [
     "ISIS-Sinai Province",
-    "al-Qa'ida (AQ)",
     "Harakat Sawa'd Misr (HASM)"
    ],
    "cpi": 34,
@@ -841,7 +850,6 @@
    "n": "Germany",
    "fto": "y",
    "ftog": [
-    "ISIS",
     "Antifa Ost (Hammerbande)"
    ],
    "cpi": 82,
@@ -861,8 +869,7 @@
    "fto": "y",
    "ftog": [
     "Continuity Irish Republican Army (CIRA)",
-    "New Irish Republican Army",
-    "ISIS"
+    "New Irish Republican Army"
    ],
    "cpi": 79,
    "prev": 78,
@@ -1062,10 +1069,7 @@
   },
   "Belgium": {
    "n": "Belgium",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 76,
    "prev": 77,
    "iso2": "BE",
@@ -1073,10 +1077,7 @@
   },
   "Austria": {
    "n": "Austria",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 74,
    "prev": 74,
    "iso2": "AT",
@@ -1091,10 +1092,8 @@
     "Jaish-e-Mohammed (JEM)",
     "Hizbul Mujahideen (HM)",
     "al-Qa'ida in the Indian Subcontinent (AQIS)",
-    "Islamic Jihad Union (IJU)",
     "Harakat ul-Mujahidin (HUM)",
     "Harakat ul-Jihad-i-Islami (HUJI)",
-    "Lashkar i Jhangvi (LJ)",
     "Indian Mujahedeen (IM)"
    ],
    "cpi": 42,
@@ -1106,8 +1105,7 @@
    "n": "Indonesia",
    "fto": "y",
    "ftog": [
-    "Jemaah Anshorut Tauhid (JAT)",
-    "Jemaah Islamiya (JI)"
+    "Jemaah Anshorut Tauhid (JAT)"
    ],
    "cpi": 38,
    "prev": 37,
@@ -1252,11 +1250,7 @@
   },
   "France": {
    "n": "France",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)"
-   ],
+   "fto": "n",
    "cpi": 73,
    "prev": 73,
    "iso2": "FR",
@@ -1269,10 +1263,8 @@
    "ftog": [
     "HAMAS",
     "Palestine Islamic Jihad (PIJ)",
-    "Hizballah",
     "Al-Aqsa Martyrs Brigade (AAMB)",
     "Popular Front for the Liberation of Palestine (PFLP)",
-    "PFLP-General Command (PFLP-GC)",
     "Army of Islam (AOI)"
    ],
    "cpi": 67,
@@ -1303,10 +1295,7 @@
   },
   "Jordan": {
    "n": "Jordan",
-   "fto": "y",
-   "ftog": [
-    "HAMAS"
-   ],
+   "fto": "n",
    "cpi": 54,
    "prev": 54,
    "iso2": "JO",
@@ -1325,8 +1314,7 @@
    "fatf": "grey",
    "fto": "y",
    "ftog": [
-    "al-Shabaab",
-    "ISIS"
+    "al-Shabaab"
    ],
    "cpi": 31,
    "prev": 32,
@@ -1413,10 +1401,7 @@
   "Kuwait": {
    "n": "Kuwait",
    "fatf": "grey",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 54,
    "prev": 52,
    "iso2": "KW",
@@ -1424,11 +1409,7 @@
   },
   "Kyrgyzstan": {
    "n": "Kyrgyzstan",
-   "fto": "y",
-   "ftog": [
-    "Islamic State's Khorasan Province (ISIS-K)",
-    "Islamic Movement of Uzbekistan (IMU)"
-   ],
+   "fto": "n",
    "cpi": 26,
    "prev": 25,
    "iso2": "KG",
@@ -1467,8 +1448,7 @@
     "ISIS",
     "Popular Front for the Liberation of Palestine (PFLP)",
     "Asbat al-Ansar (AAA)",
-    "Lebanese Muslim Brotherhood",
-    "Abdallah Azzam Brigades"
+    "Lebanese Muslim Brotherhood"
    ],
    "us": "t",
    "usp": [
@@ -1639,13 +1619,7 @@
   },
   "Malaysia": {
    "n": "Malaysia",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "Abu Sayyaf Group (ASG)",
-    "al-Qa'ida (AQ)",
-    "Jemaah Islamiya (JI)"
-   ],
+   "fto": "n",
    "cpi": 59,
    "prev": 57,
    "iso2": "MY",
@@ -1665,7 +1639,6 @@
    "ftog": [
     "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
     "ISIS in the Greater Sahara (ISIS-GS)",
-    "al-Mulathamun Battalion (al-Murabitoun)",
     "Ansar al-Dine (AAD)"
    ],
    "us": "t",
@@ -1726,11 +1699,8 @@
     "Cartel del Golfo (Gulf Cartel)",
     "Carteles Unidos",
     "Mara Salvatrucha (MS-13)",
-    "Clan del Golfo",
-    "Cartel de los Soles",
     "Juarez Cartel (La Linea)",
-    "Los Viagras",
-    "ISIS"
+    "Los Viagras"
    ],
    "cpi": 29,
    "prev": 29,
@@ -1789,11 +1759,7 @@
   },
   "Morocco": {
    "n": "Morocco",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "al-Qa'ida in the Islamic Maghreb (AQIM)"
-   ],
+   "fto": "n",
    "cpi": 38,
    "prev": 38,
    "iso2": "MA",
@@ -1948,8 +1914,7 @@
    "ftog": [
     "ISIS-West Africa",
     "Boko Haram",
-    "Ansaru",
-    "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)"
+    "Ansaru"
    ],
    "cpi": 27,
    "prev": 26,
@@ -1958,10 +1923,7 @@
   },
   "Macedonia": {
    "n": "North Macedonia",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "us": "t",
    "usp": [
     [
@@ -1976,11 +1938,7 @@
   },
   "Spain": {
    "n": "Spain",
-   "fto": "y",
-   "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)"
-   ],
+   "fto": "n",
    "cpi": 61,
    "prev": 63,
    "iso2": "ES",
@@ -1988,10 +1946,7 @@
   },
   "Oman": {
    "n": "Oman",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 58,
    "prev": 58,
    "iso2": "OM",
@@ -2009,7 +1964,6 @@
     "Lashkar-e-Tayyiba (LeT)",
     "Jaish-e-Mohammed (JEM)",
     "Lashkar i Jhangvi (LJ)",
-    "Islamic Jihad Union (IJU)",
     "Harakat ul-Mujahidin (HUM)",
     "Jaysh al-Adl (formerly Jundallah)"
    ],
@@ -2036,10 +1990,7 @@
   },
   "Paraguay": {
    "n": "Paraguay",
-   "fto": "y",
-   "ftog": [
-    "Hizballah"
-   ],
+   "fto": "n",
    "cpi": 28,
    "prev": 28,
    "iso2": "PY",
@@ -2062,8 +2013,7 @@
    "ftog": [
     "Abu Sayyaf Group (ASG)",
     "ISIS-Philippines",
-    "Communist Party of the Philippines/New People's Army (CPP/NPA)",
-    "Jemaah Islamiya (JI)"
+    "Communist Party of the Philippines/New People's Army (CPP/NPA)"
    ],
    "cpi": 36,
    "prev": 36,
@@ -2074,8 +2024,6 @@
    "n": "Italy",
    "fto": "y",
    "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)",
     "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)"
    ],
    "cpi": 60,
@@ -2113,10 +2061,7 @@
   },
   "Russia": {
    "n": "Russia",
-   "fto": "y",
-   "ftog": [
-    "Islamic State's Khorasan Province (ISIS-K)"
-   ],
+   "fto": "n",
    "us": "t",
    "usp": [
     [
@@ -2428,8 +2373,6 @@
    "n": "Sudan",
    "fto": "y",
    "ftog": [
-    "ISIS",
-    "al-Qa'ida (AQ)",
     "Sudanese Muslim Brotherhood"
    ],
    "us": "t",
@@ -2519,9 +2462,6 @@
     "al-Qa'ida (AQ)",
     "Hizballah",
     "Kata'ib Hizballah (KH)",
-    "Harakat al-Nujaba (HAN)",
-    "Kata'ib Sayyid al-Shuhada (KSS)",
-    "Harakat Ansar Allah al-Awfiya (HAAA)",
     "Asa'ib Ahl al-Haq (AAH)",
     "Ansar al-Islam (AAI)"
    ],
@@ -2639,10 +2579,7 @@
   },
   "Trinidad and Tobago": {
    "n": "Trinidad and Tobago",
-   "fto": "y",
-   "ftog": [
-    "ISIS"
-   ],
+   "fto": "n",
    "cpi": 41,
    "prev": 41,
    "iso2": "TT",
@@ -2652,7 +2589,6 @@
    "n": "Tunisia",
    "fto": "y",
    "ftog": [
-    "ISIS",
     "Ansar al-Shari'a in Tunisia",
     "al-Qa'ida in the Islamic Maghreb (AQIM)"
    ],
@@ -2795,7 +2731,6 @@
    "n": "Uzbekistan",
    "fto": "y",
    "ftog": [
-    "Islamic Movement of Uzbekistan (IMU)",
     "Islamic Jihad Union (IJU)"
    ],
    "cpi": 34,
@@ -2988,7 +2923,6 @@
    "ftog": [
     "HAMAS",
     "Palestine Islamic Jihad (PIJ)",
-    "Hizballah",
     "Al-Aqsa Martyrs Brigade (AAMB)",
     "Popular Front for the Liberation of Palestine (PFLP)",
     "PFLP-General Command (PFLP-GC)",

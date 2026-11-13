@@ -1,0 +1,41 @@
+name: Fetch sources
+# Lets the scheduled Claude tasks read official pages their own sessions cannot open (fatf-gafi.org, state.gov on
+# some days). A task starts this with:
+#   gh api -X POST repos/andrzej-dot/paragon-country-check-data/actions/workflows/fetch-sources.yml/dispatches -f ref=main -f "inputs[urls]=URL1 URL2"
+# then downloads the "pages" artifact. Page text is kept for one day only and is never committed: the repository is
+# public and some sources (FATF) reserve their rights. The log shows only how each page was read and its length.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated official URLs to read"
+        required: true
+  pull_request:
+    paths: [".github/workflows/fetch-sources.yml", "checks/fetch.py"]
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - name: Read the pages
+        env:
+          URLS: ${{ github.event.inputs.urls || 'https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2026.html https://www.state.gov/foreign-terrorist-organizations' }}
+        run: |
+          mkdir -p pages
+          python - <<'P'
+          import os, re, sys, hashlib
+          sys.path.insert(0, "checks")
+          from fetch import page_text
+          for u in os.environ["URLS"].split():
+              t, how = page_text(u, raw=True)
+              name = re.sub(r"[^A-Za-z0-9]+", "-", u.split("//", 1)[-1])[:120] + ".txt"
+              open(os.path.join("pages", name), "w", encoding="utf-8").write(f"URL: {u}\nREAD: {how or 'FAILED'}\n\n{t or ''}")
+              print(f"{u}: {how or 'FAILED'}, {len(t or '')} characters")
+          P
+      - uses: actions/upload-artifact@v4
+        with: {name: pages, path: pages/, retention-days: 1}

@@ -7,8 +7,10 @@ Usage (from the repository root, inside a pull request checkout):
 What it enforces
 1. Every changed data value (countries.<key>.<field>, fto_listings.<group>, fatf_evaluations.<key>, crt_links.<key>)
    is covered by an evidence entry whose "new" equals the value now in the file.
-2. Every quoted passage actually appears, word for word, in the official page it cites (fetched here, fresh;
-   if the site refuses servers, the latest Internet Archive copy is used).
+2. Every source URL is on an official government or intergovernmental site (OFFICIAL_HOSTS; standing decision 11),
+   and every quoted passage actually appears, word for word, in the official page it cites (fetched here, fresh;
+   if the site refuses plain server requests, the page is opened in a headless browser; there is no third-party
+   fallback, so a page that cannot be read fails the check and the change is held).
 3. Strict changes (any removal, any FTO presence or group change, or more than five countries) need two
    different source URLs.
 4. Verifier mode: the verifier's comment (marker <!-- country-check-verifier -->) must mark every changed value
@@ -16,9 +18,8 @@ What it enforces
 Evidence entry: {"path": "countries.AFG.eu", "new": <value>, "url": "https://...", "quote": "..."}
 Proposer evidence lives in evidence/*.json files added by the pull request.
 """
-import json, re, sys, html, subprocess, urllib.request, unicodedata
+import json, re, sys, subprocess
 
-UA = {"User-Agent": "Mozilla/5.0 (Paragon Country Check evidence check)"}
 MARK = "<!-- country-check-verifier -->"
 EXEMPT = ("meta", "fto_listing_evidence")
 
@@ -46,36 +47,18 @@ def is_removal(o, n):
     if isinstance(o, list) and isinstance(n, list): return any(x not in n for x in o)
     return False
 
-def norm(t):
-    t = unicodedata.normalize("NFKC", t)
-    t = t.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "–": "-", "—": "-", " ": " "}))
-    return re.sub(r"\s+", " ", t).strip().lower()
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fetch import norm, page_text  # plain request, then a real browser; official pages only
 
-_cache = {}
-def page_text(url):
-    if url in _cache: return _cache[url]
-    txt, src = None, None
-    for u, label in ((url, "live"), ("https://web.archive.org/web/2id_/" + url, "archive")):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
-                raw = r.read().decode("utf-8", "ignore")
-            raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
-            txt, src = norm(html.unescape(re.sub(r"<[^>]+>", " ", raw))), label
-            break
-        except Exception:
-            continue
-    if txt is None and not url.startswith("https://web.archive.org/"):
-        # The site refuses servers and no archive copy exists yet: ask the Internet Archive to capture it, then read that copy.
-        try:
-            urllib.request.urlopen(urllib.request.Request("https://web.archive.org/save/" + url, headers=UA), timeout=120).read()
-            with urllib.request.urlopen(urllib.request.Request("https://web.archive.org/web/2id_/" + url, headers=UA), timeout=60) as r:
-                raw = r.read().decode("utf-8", "ignore")
-            raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
-            txt, src = norm(html.unescape(re.sub(r"<[^>]+>", " ", raw))), "archive (captured now)"
-        except Exception:
-            pass
-    _cache[url] = (txt, src)
-    return txt, src
+# Standing decision 11 (2 Nov 2026): official sources only, read on the publishing body's own site.
+OFFICIAL_HOSTS = (".gov", ".gov.uk", ".gc.ca", "canada.ca", ".admin.ch", ".gov.au",
+                  "un.org", "europa.eu", "sanctionsmap.eu", "fatf-gafi.org", "worldbank.org")
+def is_official(url):
+    m = re.match(r"https://([^/:]+)", url or "")
+    if not m: return False
+    h = m.group(1).lower()
+    return any(h == d.lstrip(".") or h.endswith(d if d.startswith(".") else "." + d) for d in OFFICIAL_HOSTS)
 
 def check_entries(entries, changes, who, errors, need_verdict=False):
     by_path = {}
@@ -90,9 +73,11 @@ def check_entries(entries, changes, who, errors, need_verdict=False):
         q, u = norm(e.get("quote") or ""), e.get("url") or ""
         if len(q) < 15 or not u.startswith("https://"):
             errors.append(f"{who}: {p} needs an https source URL and a quote of at least 15 characters"); continue
+        if not is_official(u):
+            errors.append(f"{who}: {p} source is not an official government or intergovernmental site (standing decision 11): {u}"); continue
         txt, src = page_text(u)
         if txt is None:
-            errors.append(f"{who}: {p} source could not be fetched (live or archive): {u}"); continue
+            errors.append(f"{who}: {p} source could not be read (plain request or browser): {u}"); continue
         if q not in txt:
             errors.append(f"{who}: {p} quote not found word for word in {u} ({src} copy): \"{e.get('quote')}\""); continue
         by_path.setdefault(p, set()).add(u)

@@ -8,8 +8,8 @@
  {
   "path": "fto_listings.Liberation Tigers of Tamil Eelam (LTTE)",
   "new": [],
-  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
-  "quote": "\"Liberation Tigers of Tamil Eelam\",\"LTTE\""
+  "url": "https://www.govinfo.gov/content/pkg/FR-2016-08-10/html/2016-19022.htm",
+  "quote": "In the Matter of the Review of the Designation of Liberation Tigers of Tamil Eelam (and Other Aliases) as a Foreign Terrorist Organization"
  },
  {
   "path": "fto_listings.Palestine Liberation Front (PLF)",
@@ -20,7 +20,7 @@
  {
   "path": "fto_listings.Palestine Liberation Front (PLF)",
   "new": [],
-  "url": "https://data.opensanctions.org/datasets/latest/us_state_terrorist_orgs/targets.simple.csv",
-  "quote": "\"Palestine Liberation Front\",\"PLF\""
+  "url": "https://www.govinfo.gov/content/pkg/FR-2016-03-10/html/2016-05398.htm",
+  "quote": "In the Matter of the Review of the Designation of the Palestine Liberation Front (PLF) (and other aliases) as a Foreign Terrorist Organization"
  }
 ]

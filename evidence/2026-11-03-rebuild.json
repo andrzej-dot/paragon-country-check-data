@@ -1,14 +1,22 @@
 [
   {
     "path": "fatf_evaluations.Russia",
-    "new": ["2019-12", "2024-02", "FATF/EAG/MONEYVAL"],
-    "url": "https://www.fatf-gafi.org/publications/mutualevaluations/documents/mer-russian-federation-2019.html",
-    "quote": "The Financial Action Task Force (FATF), the Eurasian Group and MONEYVAL, assessed Russia's"
+    "new": [
+      "2019-12",
+      "2024-02",
+      "FATF/EAG/MONEYVAL"
+    ],
+    "url": "https://www.fatf-gafi.org/en/publications/Mutualevaluations/Mer-russian-federation-2019.html",
+    "quote": "The Financial Action Task Force (FATF), the Eurasian Group and MONEYVAL, assessed Russia"
   },
   {
     "path": "fatf_evaluations.Russia",
-    "new": ["2019-12", "2024-02", "FATF/EAG/MONEYVAL"],
-    "url": "https://www.coe.int/en/web/moneyval/-/the-russian-federation-s-measures-to-combat-money-laundering-and-terrorist-financing",
-    "quote": "The Financial Action Task Force (FATF), the Eurasian Group and MONEYVAL, assessed Russia's"
+    "new": [
+      "2019-12",
+      "2024-02",
+      "FATF/EAG/MONEYVAL"
+    ],
+    "url": "https://www.fatf-gafi.org/en/countries/detail/Russian-Federation.html",
+    "quote": "The Financial Action Task Force (FATF), the Eurasian Group and MONEYVAL, assessed Russia"
   }
 ]

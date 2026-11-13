@@ -54,6 +54,9 @@ if cnt.get("fatf_black") != nb or cnt.get("fatf_grey") != ng: err(f"meta.counts 
 # is how such a change is noticed.
 COMPREHENSIVE = {"Cuba", "Iran", "North Korea"}
 REGION_NOTES = {"Ukraine": ("Crimea", "Donetsk", "Luhansk")}
+# Notes that must stay on a targeted program because they carry the same practical weight (Andrzej, plan item C12):
+# Venezuela's Government is blocked under E.O. 13884 (PR #11, 30 Oct 2026). Changing it needs Andrzej's edit here.
+NOTE_LOCKS = {"Venezuela": ("Executive Order 13884", "Government of Venezuela")}
 for k in sorted(COMPREHENSIVE):
     if k not in C: err(f"locked: {k} is missing from countries")
     elif C[k].get("us") != "c": err(f"locked: {k} must show a comprehensive U.S. embargo (us = c); lifting it needs Andrzej's edit to COMPREHENSIVE in validate.py")
@@ -64,6 +67,10 @@ for k, words in REGION_NOTES.items():
     note = (C.get(k) or {}).get("usn") or ""
     for w in words:
         if w not in note: err(f"locked: {k} usn must name {w} (comprehensive embargo on occupied regions); changing it needs Andrzej's edit to REGION_NOTES in validate.py")
+for k, words in NOTE_LOCKS.items():
+    note = (C.get(k) or {}).get("usn") or ""
+    for w in words:
+        if w not in note: err(f"locked: {k} usn must name {w}; changing it needs Andrzej's edit to NOTE_LOCKS in validate.py")
 
 # Every country needs ISO codes so automated checks can match it to official datasets
 for k, o in C.items():

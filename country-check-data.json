@@ -557,7 +557,8 @@
     "National Liberation Army (ELN)",
     "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
     "Segunda Marquetalia",
-    "Clan del Golfo"
+    "Clan del Golfo",
+    "Tren de Aragua"
    ],
    "cpi": 42,
    "prev": 42,
@@ -2000,7 +2001,8 @@
    "n": "Peru",
    "fto": "y",
    "ftog": [
-    "Shining Path (Sendero Luminoso, SL)"
+    "Shining Path (Sendero Luminoso, SL)",
+    "Tren de Aragua"
    ],
    "cpi": 33,
    "prev": 34,

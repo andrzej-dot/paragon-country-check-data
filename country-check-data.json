@@ -2,7 +2,7 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-11-03",
+  "updated": "2026-11-12",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 28 to 30 October 2026",
@@ -106,6 +106,12 @@
     [
      "Afghanistan sanctions regime",
      "https://www.gov.uk/government/publications/afghanistan-sanctions-guidance"
+    ]
+   ],
+   "ca": [
+    [
+     "Regulations Implementing the United Nations Resolutions on Taliban, ISIL (Da'esh) and Al-Qaida",
+     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-99-444/"
     ]
    ],
    "ch": [

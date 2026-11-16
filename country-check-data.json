@@ -2,7 +2,7 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 28 to 30 October 2026",
@@ -888,7 +888,8 @@
    "fto": "y",
    "ftog": [
     "Mara Salvatrucha (MS-13)",
-    "Barrio 18"
+    "Barrio 18",
+    "Los Lorenzanas"
    ],
    "eu": [
     [
@@ -3212,7 +3213,8 @@
   "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)": [],
   "Jaysh al-Adl (formerly Jundallah)": [],
   "Liberation Tigers of Tamil Eelam (LTTE)": [],
-  "Palestine Liberation Front (PLF)": []
+  "Palestine Liberation Front (PLF)": [],
+  "Los Lorenzanas": []
  },
  "fatf_evaluations": {
   "Albania": [

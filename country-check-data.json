@@ -23,15 +23,15 @@
     "cpi": "World Bank release of 25 September 2026",
     "fatf": "As of the October 2026 FATF Plenary",
     "fto": "Designations current through 12 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
-    "sanc": "Checked 12 November 2026"
+    "sanc": "Checked 16 November 2026"
    },
    "layers": {
     "cpi": {
-     "checked": "2026-11-13",
+     "checked": "2026-11-16",
      "when": "World Bank, Worldwide Governance Indicators, 2025 data"
     },
     "fatf": {
-     "checked": "2026-11-13",
+     "checked": "2026-11-16",
      "when": "FATF Plenary, 28 to 30 October 2026"
     },
     "fto": {
@@ -39,17 +39,17 @@
      "when": "current through 12 November 2026"
     },
     "sanc": {
-     "checked": "2026-11-12",
-     "when": "checked 12 November 2026"
+     "checked": "2026-11-16",
+     "when": "checked 16 November 2026"
     }
    },
    "text": {
-    "cpi_src": "accessed 13 November 2026",
+    "cpi_src": "accessed 16 November 2026",
     "fatf_cite": "October 2026",
     "fatf_src": "as of the FATF Plenary of 28 to 30 October 2026",
     "fatf_key": "October 2026 Plenary",
     "fto_src": "current through 12 November 2026",
-    "sanc_src": "Checked 12 November 2026"
+    "sanc_src": "Checked 16 November 2026"
    }
   },
   "next_events": [

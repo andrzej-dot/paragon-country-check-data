@@ -1,0 +1,44 @@
+[
+  {
+    "path": "countries.Colombia.ftog",
+    "new": [
+      "National Liberation Army (ELN)",
+      "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+      "Segunda Marquetalia",
+      "Clan del Golfo",
+      "Tren de Aragua"
+    ],
+    "url": "https://www.state.gov/designation-of-international-cartels/",
+    "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile"
+  },
+  {
+    "path": "countries.Colombia.ftog",
+    "new": [
+      "National Liberation Army (ELN)",
+      "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+      "Segunda Marquetalia",
+      "Clan del Golfo",
+      "Tren de Aragua"
+    ],
+    "url": "https://home.treasury.gov/news/press-releases/sb0327",
+    "quote": "the reported financial and logistics chief for TdA in Bogota, Colombia"
+  },
+  {
+    "path": "countries.Peru.ftog",
+    "new": [
+      "Shining Path (Sendero Luminoso, SL)",
+      "Tren de Aragua"
+    ],
+    "url": "https://www.state.gov/designation-of-international-cartels/",
+    "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile"
+  },
+  {
+    "path": "countries.Peru.ftog",
+    "new": [
+      "Shining Path (Sendero Luminoso, SL)",
+      "Tren de Aragua"
+    ],
+    "url": "https://www.ice.gov/news/releases/ice-hsi-assists-perus-national-police-large-joint-operation-arrest-tren-de-aragua",
+    "quote": "dismantle the illicit activities of Tren de Aragua members in the country"
+  }
+]

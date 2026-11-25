@@ -2,7 +2,7 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 28 to 30 October 2026",
@@ -22,34 +22,34 @@
    "asof": {
     "cpi": "World Bank release of 25 September 2026",
     "fatf": "As of the October 2026 FATF Plenary",
-    "fto": "Designations current through 12 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
-    "sanc": "Checked 12 November 2026"
+    "fto": "Designations current through 24 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
+    "sanc": "Checked 24 November 2026"
    },
    "layers": {
     "cpi": {
-     "checked": "2026-11-13",
+     "checked": "2026-11-24",
      "when": "World Bank, Worldwide Governance Indicators, 2025 data"
     },
     "fatf": {
-     "checked": "2026-11-13",
+     "checked": "2026-11-24",
      "when": "FATF Plenary, 28 to 30 October 2026"
     },
     "fto": {
-     "checked": "2026-11-12",
-     "when": "current through 12 November 2026"
+     "checked": "2026-11-24",
+     "when": "current through 24 November 2026"
     },
     "sanc": {
-     "checked": "2026-11-12",
-     "when": "checked 12 November 2026"
+     "checked": "2026-11-24",
+     "when": "checked 24 November 2026"
     }
    },
    "text": {
-    "cpi_src": "accessed 13 November 2026",
+    "cpi_src": "accessed 24 November 2026",
     "fatf_cite": "October 2026",
     "fatf_src": "as of the FATF Plenary of 28 to 30 October 2026",
     "fatf_key": "October 2026 Plenary",
-    "fto_src": "current through 12 November 2026",
-    "sanc_src": "Checked 12 November 2026"
+    "fto_src": "current through 24 November 2026",
+    "sanc_src": "Checked 24 November 2026"
    }
   },
   "next_events": [
@@ -557,7 +557,8 @@
     "National Liberation Army (ELN)",
     "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
     "Segunda Marquetalia",
-    "Clan del Golfo"
+    "Clan del Golfo",
+    "Tren de Aragua"
    ],
    "cpi": 42,
    "prev": 42,
@@ -888,7 +889,8 @@
    "fto": "y",
    "ftog": [
     "Mara Salvatrucha (MS-13)",
-    "Barrio 18"
+    "Barrio 18",
+    "Los Lorenzanas"
    ],
    "eu": [
     [
@@ -2000,7 +2002,8 @@
    "n": "Peru",
    "fto": "y",
    "ftog": [
-    "Shining Path (Sendero Luminoso, SL)"
+    "Shining Path (Sendero Luminoso, SL)",
+    "Tren de Aragua"
    ],
    "cpi": 33,
    "prev": 34,
@@ -3212,7 +3215,8 @@
   "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)": [],
   "Jaysh al-Adl (formerly Jundallah)": [],
   "Liberation Tigers of Tamil Eelam (LTTE)": [],
-  "Palestine Liberation Front (PLF)": []
+  "Palestine Liberation Front (PLF)": [],
+  "Los Lorenzanas": []
  },
  "fatf_evaluations": {
   "Albania": [
@@ -3973,7 +3977,7 @@
   "Russia": [
    "2019-12",
    "2024-02",
-   "EAG"
+   "FATF/EAG/MONEYVAL"
   ],
   "Rwanda": [
    "2024-07",

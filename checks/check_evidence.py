@@ -70,6 +70,16 @@ def check_entries(entries, changes, who, errors, need_verdict=False):
             errors.append(f"{who}: {p} marked '{e.get('verdict')}': {e.get('reason', '')}"); continue
         if not need_verdict and e.get("new") != changes[p][1]:
             errors.append(f"{who}: {p} evidence says new value {e.get('new')!r} but the file has {changes[p][1]!r}"); continue
+        # A removed link whose page no longer exists cannot be quoted (24 Nov 2026). For crt_links removals only, an
+        # entry {"path", "new": null, "url": <the removed page>, "gone": true} is accepted when code confirms the page
+        # opens neither to a plain request nor in a real browser.
+        if e.get("gone") and p.startswith("crt_links.") and changes[p][1] is None:
+            u = e.get("url") or ""
+            if not u.startswith("https://www.state.gov/reports/"): errors.append(f"{who}: {p} gone entry must name the State Department page"); continue
+            txt, src = page_text(u)
+            if txt is not None and len(txt) > 2000 and "page not found" not in txt:
+                errors.append(f"{who}: {p} says the page is gone but it opens: {u}"); continue
+            by_path.setdefault(p, set()).update({u, u + "#gone"}); continue
         q, u = norm(e.get("quote") or ""), e.get("url") or ""
         if len(q) < 15 or not u.startswith("https://"):
             errors.append(f"{who}: {p} needs an https source URL and a quote of at least 15 characters"); continue
@@ -99,6 +109,11 @@ def main():
     errors = []
     if mode == "proposer":
         files = subprocess.check_output(["git", "diff", "--name-only", "--diff-filter=AM", f"{base}...HEAD", "--", "evidence/"]).decode().split()
+        # Read logs and the FTO presence basis have their own formats and checks (validate.py, check_basis.py).
+        files = [f for f in files if not f.startswith(("evidence/reads/", "evidence/basis/"))]
+        # A change to a data value must also move meta.updated forward (it was left at 16 Nov after the 17 Nov merges).
+        if load_base(base).get("meta", {}).get("updated", "") >= new.get("meta", {}).get("updated", ""):
+            errors.append("proposer: data values changed but meta.updated did not move forward; set it to today")
         entries = []
         for f in files:
             try: entries += json.load(open(f, encoding="utf-8"))

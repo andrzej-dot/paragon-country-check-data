@@ -43,3 +43,23 @@ add_action( 'wp_head', function () {
 	if ( ! $d ) return; // page falls back to "being updated"
 	echo '<script id="ppcc-data">window.PPCC_DATA=' . wp_json_encode( $d, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE ) . ';</script>' . "\n";
 }, 1 );
+
+/**
+ * Dated phrases in the page's static HTML (added 24 Nov 2026, audit SE-94). The page's script replaces each
+ * <span data-ppcc="key"> with meta.page.text[key] once it runs, but search engines, link previews and visitors
+ * without JavaScript read the HTML as delivered, which still carried the dates the page was built with
+ * (for example "June 2026" for FATF). This writes the current phrases into the HTML on the server, so every
+ * reader gets the same dates as the data file.
+ */
+add_action( 'template_redirect', function () {
+	if ( ! is_page( PPCC_PAGE ) ) return;
+	$d = get_option( 'ppcc_data' );
+	$t = $d['meta']['page']['text'] ?? null;
+	if ( ! is_array( $t ) ) return;
+	ob_start( function ( $html ) use ( $t ) {
+		return preg_replace_callback( '/(<span[^>]*\bdata-ppcc="([a-z_]+)"[^>]*>)(.*?)(<\/span>)/s', function ( $m ) use ( $t ) {
+			return isset( $t[ $m[2] ] ) && is_string( $t[ $m[2] ] ) ? $m[1] . esc_html( $t[ $m[2] ] ) . $m[4] : $m[0];
+		}, $html );
+	} );
+}, 1 );
+

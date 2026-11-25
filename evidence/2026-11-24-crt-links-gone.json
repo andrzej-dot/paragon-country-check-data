@@ -1,0 +1,23 @@
+[
+ {
+  "path": "crt_links.Argentina",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/argentina/",
+  "gone": true,
+  "quote": ""
+ },
+ {
+  "path": "crt_links.Colombia",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/colombia/",
+  "gone": true,
+  "quote": ""
+ },
+ {
+  "path": "crt_links.Côte d'Ivoire",
+  "new": null,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/cote-divoire/",
+  "gone": true,
+  "quote": ""
+ }
+]

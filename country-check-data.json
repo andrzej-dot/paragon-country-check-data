@@ -2,27 +2,25 @@
  "meta": {
   "schema_version": 1,
   "description": "Master data for Country Check (paragonphilanthropy.com/country-indicators/). Edit only through an approved pull request.",
-  "updated": "2026-11-16",
+  "updated": "2026-11-24",
   "as_of": {
    "cpi": "World Bank release of 25 September 2026 (2025 data)",
    "fatf": "FATF Plenary, 28 to 30 October 2026",
-   "fto_designations": "2026-10-15",
    "fto_presence_source": "State Department Country Reports on Terrorism 2024 (published 2026)",
-   "sanctions": "2026-10-25",
    "fatf_evaluations": "FATF consolidated tables: 2013 Methodology updated 24 August 2026; 2022 Methodology updated 25 September 2026"
   },
   "counts": {
    "countries": 211,
    "fatf_black": 3,
    "fatf_grey": 18,
-   "fto_groups": 100
+   "fto_groups": 101
   },
   "page": {
    "_note": "Text and dates shown on the page. 'checked' is the date the layer was last confirmed current against its source; the page marks a layer 'being updated' once checked is older than the page's maximum age for that layer (cpi 400, fatf 150, fto 35, sanc 35 days). Change only through the update procedure; never move 'checked' forward without having checked that layer's sources. 'text' holds the dated phrases in the page's source notes and map key; keep them consistent with 'layers' and 'asof'.",
    "asof": {
     "cpi": "World Bank release of 25 September 2026",
     "fatf": "As of the October 2026 FATF Plenary",
-    "fto": "Designations current through 24 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026)",
+    "fto": "Designations current through 24 November 2026; presence based on the State Department's Country Reports on Terrorism 2024 (published 2026) and later designation statements",
     "sanc": "Checked 24 November 2026"
    },
    "layers": {
@@ -4214,7 +4212,6 @@
   "Afghanistan": "afghanistan",
   "Albania": "albania",
   "Algeria": "algeria",
-  "Argentina": "argentina",
   "Bahrain": "bahrain",
   "Bangladesh": "bangladesh",
   "Benin": "benin",
@@ -4225,8 +4222,6 @@
   "Canada": "canada",
   "Chad": "chad",
   "China": "peoples-republic-of-china",
-  "Colombia": "colombia",
-  "Côte d'Ivoire": "cote-divoire",
   "Norway": "norway",
   "Sweden": "sweden",
   "Dem. Rep. Congo": "democratic-republic-of-the-congo",

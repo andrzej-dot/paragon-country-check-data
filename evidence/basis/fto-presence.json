@@ -1,0 +1,1322 @@
+[
+ {
+  "country": "Afghanistan",
+  "group": "Haqqani Network (HQN)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The Haqqani Network's leader, Sirajuddin Haqqani, served as the Taliban's so-called “Minister of Interior,” and several other Haqqani Network members held high-ranking positions in the Taliban government.",
+  "note": "HQN leadership sits in Afghanistan; profile Location line is Afghanistan."
+ },
+ {
+  "country": "Afghanistan",
+  "group": "Islamic Movement of Uzbekistan (IMU)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Despite IMU’s stated objective to set up an Islamic state in Uzbekistan, the group operates in northern Afghanistan, where it previously fought against international forces.",
+  "note": "Profile says IMU operates in northern Afghanistan; Location line names Afghanistan."
+ },
+ {
+  "country": "Afghanistan",
+  "group": "Islamic State's Khorasan Province (ISIS-K)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-K claimed the largest number of terrorism attacks in Afghanistan.",
+  "note": "ISIS-K carried out multiple claimed attacks in Afghanistan in 2024."
+ },
+ {
+  "country": "Afghanistan",
+  "group": "Tehrik-e Taliban Pakistan (TTP)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "TTP is a Pakistan- and Afghanistan-based terrorist organization",
+  "note": "Profile describes TTP as Afghanistan-based; regional overview also says Afghanistan remained a safe haven to TTP."
+ },
+ {
+  "country": "Afghanistan",
+  "group": "al-Qa'ida (AQ)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "According to a January 2024 U.N. report, al-Qa’ida conducted recruitment from and established training camps in Afghanistan.",
+  "note": "Training camps, ~400 members and safe haven in Afghanistan; the Ch3 note that AQ is not clearly rebuilding operational capability does not negate presence."
+ },
+ {
+  "country": "Afghanistan",
+  "group": "al-Qa'ida in the Indian Subcontinent (AQIS)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "AQIS, which is estimated to have 200 members, is an al- Qa‘ida affiliate based mainly in Afghanistan.",
+  "note": "AQIS is described as based mainly in Afghanistan with a Taliban-granted safe haven."
+ },
+ {
+  "country": "Algeria",
+  "group": "al-Qa'ida in the Islamic Maghreb (AQIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Algeria, Burkina Faso, Côte d’Ivoire, Libya, Mali, and Tunisia.",
+  "note": "AQIM profile Location line names Algeria; Ch1 also describes Algeria dismantling cells of groups like AQIM."
+ },
+ {
+  "country": "Bahrain",
+  "group": "al-Ashtar Brigades",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Bahrain and Iran.",
+  "note": "Profile Location line names Bahrain; Ch2 says Iran supplied AAB in Bahrain, though Ch1 notes designated operatives were based in Iran and no attacks occurred in Bahrain in 2024."
+ },
+ {
+  "country": "Bangladesh",
+  "group": "Harakat ul-Jihad-i-Islami/Bangladesh (HUJI-B)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Bangladesh and India.",
+  "note": "Profile Location line names Bangladesh; no 2024 activity is described."
+ },
+ {
+  "country": "Bangladesh",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS and al-Qa'ida (AQ) continued to plan and stockpile weapons and explosives in preparation for attacks against the government and civilians.",
+  "note": "Kept under standing decision 12 (an ISIS branch counts for core ISIS where operations are described), 3 Nov 2026. The chapter says 'ISIS' was planning and stockpiling weapons in Bangladesh, which points to organized activity. The open question is whether this means core ISIS or the separately design"
+ },
+ {
+  "country": "Bangladesh",
+  "group": "ISIS-Bangladesh",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Bangladesh.",
+  "note": "Profile Location line names Bangladesh (several dozen members; no 2024 attacks claimed)."
+ },
+ {
+  "country": "Benin",
+  "group": "ISIS in the Greater Sahara (ISIS-GS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-GS and al-Qa'ida-affiliated JNIM both operated in Benin’s four northernmost departments, Atacora, Alibori, Borgou, and Donga.",
+  "note": "Ch1 says ISIS-GS operated in four northern departments; Ch4 location line also names Benin ('to a lesser extent')."
+ },
+ {
+  "country": "Benin",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-GS and al-Qa'ida-affiliated JNIM both operated in Benin’s four northernmost departments, Atacora, Alibori, Borgou, and Donga.",
+  "note": "Ch1 says JNIM operated in northern Benin; Ch4 location line says it conducted attacks in Benin."
+ },
+ {
+  "country": "Brazil",
+  "group": "Comando Vermelho",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/05/terrorist-designation-of-comando-vermelho-and-primeiro-comando-da-capital",
+  "quote": "CV and PCC are two of the most violent criminal organizations in Brazil.",
+  "note": "Report does not mention this group anywhere (not even in the 2025-designations disclaimer); no CRT 2024 basis, and its FTO designation status should be confirmed separately."
+ },
+ {
+  "country": "Brazil",
+  "group": "Primeiro Comando da Capital",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/05/terrorist-designation-of-comando-vermelho-and-primeiro-comando-da-capital",
+  "quote": "CV and PCC are two of the most violent criminal organizations in Brazil.",
+  "note": "Report does not mention this group anywhere (not even in the 2025-designations disclaimer); no CRT 2024 basis, and its FTO designation status should be confirmed separately."
+ },
+ {
+  "country": "Burkina Faso",
+  "group": "ISIS in the Greater Sahara (ISIS-GS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-GS and al-Qa’ida-affiliated JNIM operated freely across large portions of Burkina Faso.",
+  "note": "Ch1 says ISIS-GS operated freely across large portions of the country; Ch4 location line names Burkina Faso."
+ },
+ {
+  "country": "Burkina Faso",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "JNIM expanded attacks along the southern border and into the Hauts- Bassins, Center-West, Center-East, and Center-South regions.",
+  "note": "Ch1 and Ch4 describe JNIM attacks across Burkina Faso, including the Barsalogho attack."
+ },
+ {
+  "country": "Cameroon",
+  "group": "Boko Haram",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "BH and ISIS-WA remained active in both the Far North and Northwest/Southwest Regions of Cameroon (NOSO), with the terrorist threat there increasingly targeting civilians and critical infrastructure.",
+  "note": "Ch1 says BH remained active in Cameroon; Ch4 location line names Cameroon."
+ },
+ {
+  "country": "Cameroon",
+  "group": "ISIS-West Africa",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "BH and ISIS-WA remained active in both the Far North and Northwest/Southwest Regions of Cameroon (NOSO), with the terrorist threat there increasingly targeting civilians and critical infrastructure.",
+  "note": "Ch1 says ISIS-WA remained active in Cameroon (Ch4 location line says only 'greater Lake Chad region')."
+ },
+ {
+  "country": "Chad",
+  "group": "Boko Haram",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "BH and ISIS-WA maintained a minimal presence in Chad, with BH being the more active group.",
+  "note": "Ch1 calls BH the more active group in Chad and notes IED use and raids; Ch4 location line names Chad."
+ },
+ {
+  "country": "Chad",
+  "group": "ISIS-West Africa",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "BH and ISIS-WA maintained a minimal presence in Chad, with BH being the more active group.",
+  "note": "Ch1 says ISIS-WA maintained a 'minimal presence' in Chad; Ch3 attributes raids in Chad jointly to ISIS-WA and BH; its Ch4 location is only 'greater Lake Chad region'. Support is thin but explicit."
+ },
+ {
+  "country": "Chile",
+  "group": "Tren de Aragua",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels/",
+  "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile",
+  "note": "From evidence/2026-11-03-fto-not-covered-statements.json (PR #27)."
+ },
+ {
+  "country": "Colombia",
+  "group": "Clan del Golfo",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/12/terrorist-designations-of-clan-del-golfo",
+  "quote": "Based in Colombia, Clan del Golfo is a violent and powerful criminal organization with thousands of members.",
+  "note": "Report never mentions Clan del Golfo (also absent from the 2025-designations disclaimer); no CRT 2024 basis."
+ },
+ {
+  "country": "Colombia",
+  "group": "National Liberation Army (ELN)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ELN committed crimes and acts of terrorism throughout Colombia, including violence against civilian populations both there and in Venezuela.",
+  "note": "Ch4 profile location line is 'Colombia and Venezuela' and the report describes ELN attacks in Colombia."
+ },
+ {
+  "country": "Colombia",
+  "group": "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In October, FARC-EP attacked the town of El Plateado, Colombia, injuring 17 people, according to the Colombian Ombudsman’s Office.",
+  "note": "Ch4 profile describes attacks in Colombia and its location line names Colombia."
+ },
+ {
+  "country": "Colombia",
+  "group": "Segunda Marquetalia",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The ELN, Segunda Marquetalia, and dissidents of FARC-EP continued to operate in Colombian territory and along the Colombia-Venezuela border, according to open-source reporting.",
+  "note": "Ch3 says SM operates in Colombian territory and its ch4 location line is 'Colombia and Venezuela'."
+ },
+ {
+  "country": "Colombia",
+  "group": "Tren de Aragua",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels/",
+  "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile",
+  "note": "From evidence/2026-11-13-tda-colombia-peru.json"
+ },
+ {
+  "country": "Cuba",
+  "group": "National Liberation Army (ELN)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Cuba refused Colombia’s request to extradite 10 ELN leaders living in Havana after that group claimed responsibility for the 2019 bombing of the Bogotá police academy that killed 22 people and injured 87 others.",
+  "note": "Ch2 (State Sponsors) says ELN leaders live in Havana and Cuba refused extradition, i.e. leadership harbored in the country."
+ },
+ {
+  "country": "Côte d'Ivoire",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Mali, Burkina Faso, and Niger; it also conducted attacks in Côte d’Ivoire, Benin, and Togo.",
+  "note": "JNIM's Ch4 location line says it 'also conducted attacks in Côte d’Ivoire'. But Ch1 says there has been no attack on civilians since 2016 and describes only risk spilling over the northern border, so support rests on the Ch4 line alone."
+ },
+ {
+  "country": "Dem. Rep. Congo",
+  "group": "ISIS-DRC",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-DRC, also known as the Allied Democratic Forces (ADF), attacked civilians and security forces in eastern DRC, primarily in North Kivu and Ituri Provinces, killing hundreds.",
+  "note": "Ch1 and Ch4 (location line names the DRC) describe extensive ISIS-DRC attacks in North Kivu and Ituri."
+ },
+ {
+  "country": "Ecuador",
+  "group": "Chone Killers",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/terrorist-designation-of-chone-killers",
+  "quote": "Chone Killers is an Ecuadorian gang that has committed numerous attacks targeting civilians, law enforcement officers, and government officials",
+  "note": "Report never mentions this group (not even in the 2025-designations disclaimer); no CRT 2024 basis."
+ },
+ {
+  "country": "Ecuador",
+  "group": "Los Choneros",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designations-of-los-choneros-and-los-lobos",
+  "quote": "Los Choneros and Los Lobos have attacked and threatened public officials and their families, security personnel, judges, prosecutors, and journalists in Ecuador.",
+  "note": "Report never mentions this group (not even in the 2025-designations disclaimer); no CRT 2024 basis."
+ },
+ {
+  "country": "Ecuador",
+  "group": "Los Lobos",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designations-of-los-choneros-and-los-lobos",
+  "quote": "Los Choneros and Los Lobos have attacked and threatened public officials and their families, security personnel, judges, prosecutors, and journalists in Ecuador.",
+  "note": "Report never mentions this group (not even in the 2025-designations disclaimer); no CRT 2024 basis."
+ },
+ {
+  "country": "Ecuador",
+  "group": "Los Tiguerones",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/09/terrorist-designation-of-los-tiguerones",
+  "quote": "Los Tiguerones is an Ecuador-based gang linked to narcotrafficking and other illicit activity",
+  "note": "Report never mentions this group (not even in the 2025-designations disclaimer); no CRT 2024 basis."
+ },
+ {
+  "country": "Egypt",
+  "group": "Harakat Sawa'd Misr (HASM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Formed in Egypt in 2015 with the goal of overthrowing the Egyptian government, HASM attacks Egyptian security officials and other government-affiliated targets.",
+  "note": "Profile Location line is 'Egypt' and describes attacks on Egyptian officials (no 2024 attacks claimed)."
+ },
+ {
+  "country": "Egypt",
+  "group": "ISIS-Sinai Province",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Egypt.",
+  "note": "ISIS-SP profile Location line names Egypt, although Ch1 says military operations have 'effectively neutralized' it."
+ },
+ {
+  "country": "El Salvador",
+  "group": "Barrio 18",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designation-of-barrio-18",
+  "quote": "Barrio 18 is one of the largest gangs in our hemisphere and has conducted attacks against security personnel, public officials, and civilians in El Salvador, Guatemala, and Honduras.",
+  "note": "Report never mentions Barrio 18; no CRT 2024 basis."
+ },
+ {
+  "country": "El Salvador",
+  "group": "Mara Salvatrucha (MS-13)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "MS-13 actively recruits, organizes, and spreads violence in several countries, primarily in Central America and North America, including El Salvador, Honduras, Guatemala, Mexico, and the United States.",
+  "note": "MS-13 appears only in the 2025-designations disclaimer, with no country named; nothing ties it to El Salvador."
+ },
+ {
+  "country": "Ethiopia",
+  "group": "al-Shabaab",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Primarily Somalia, Kenya, and Ethiopia; also historically, Djibouti and Uganda.",
+  "note": "Al-Shabaab's Ch4 location line names Ethiopia. But Ch1 says there were no verified attacks by international terrorist groups in Ethiopia in 2024 and describes only convictions of al-Shabaab informants, fighters and a commander, so the flag rests on the Ch4 line."
+ },
+ {
+  "country": "Germany",
+  "group": "Antifa Ost (Hammerbande)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/designations-of-antifa-ost-and-three-other-violent-antifa-groups",
+  "quote": "Antifa Ost (also known as Antifa East and Hammerbande) is a Germany-based militant group.",
+  "note": "Designated in 2025, no Ch4 profile; the only German mention is arrests in Germany tied to an attack in Hungary."
+ },
+ {
+  "country": "Greece",
+  "group": "Armed Proletarian Justice",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/designations-of-antifa-ost-and-three-other-violent-antifa-groups",
+  "quote": "Armed Proletarian Justice claimed responsibility for planting a bomb near the Greek riot police headquarters in Goudi, Greece on December 18, 2023.",
+  "note": "Designated in 2025; CRT names it only in the Europe overview note on 2025 designations, with no Greek activity described."
+ },
+ {
+  "country": "Greece",
+  "group": "Revolutionary Class Self-Defense",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/designations-of-antifa-ost-and-three-other-violent-antifa-groups",
+  "quote": "Revolutionary Class Self-Defense claimed responsibility for two IED attacks targeting the Greece Ministry of Labor (February 3, 2024) and the Hellenic Train offices (April 11, 2025).",
+  "note": "Designated in 2025 (no Ch4 profile), but the Greece chapter itself attributes two 2024 IED attacks in Greece to it, so the text would support OPS."
+ },
+ {
+  "country": "Greece",
+  "group": "Revolutionary Struggle (RS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Greece.",
+  "note": "Ch4 profile location line names Greece, though RS claimed no attacks in 2024 and has fewer than two dozen members."
+ },
+ {
+  "country": "Guatemala",
+  "group": "Barrio 18",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designation-of-barrio-18",
+  "quote": "Barrio 18 is one of the largest gangs in our hemisphere and has conducted attacks against security personnel, public officials, and civilians in El Salvador, Guatemala, and Honduras.",
+  "note": "Report never mentions Barrio 18; no CRT 2024 basis."
+ },
+ {
+  "country": "Guatemala",
+  "group": "Los Lorenzanas",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/foreign-terrorist-designations-of-guatemalan-groups/",
+  "quote": "One of Guatemala's most powerful drug trafficking clans, Los Lorenzanas is responsible for numerous acts of violence against civilians, government officials, and military forces in Guatemala.",
+  "note": "From evidence/2026-11-16-fto-los-lorenzanas.json"
+ },
+ {
+  "country": "Guatemala",
+  "group": "Mara Salvatrucha (MS-13)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "MS-13 actively recruits, organizes, and spreads violence in several countries, primarily in Central America and North America, including El Salvador, Honduras, Guatemala, Mexico, and the United States.",
+  "note": "MS-13 appears only in the 2025-designations disclaimer, with no country named; nothing ties it to Guatemala."
+ },
+ {
+  "country": "Haiti",
+  "group": "Gran Grif",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/05/terrorist-designations-of-viv-ansanm-and-gran-grif/",
+  "quote": "Haitian gangs, including the Viv Ansanm coalition and Gran Grif, are the primary source of instability and violence in Haiti.",
+  "note": "Designated 2025; only CRT text is the regional disclaimer naming its designation for actions in Haiti."
+ },
+ {
+  "country": "Haiti",
+  "group": "Viv Ansanm",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/05/terrorist-designations-of-viv-ansanm-and-gran-grif/",
+  "quote": "Haitian gangs, including the Viv Ansanm coalition and Gran Grif, are the primary source of instability and violence in Haiti.",
+  "note": "Designated 2025; only CRT text is the regional disclaimer naming its designation for actions in Haiti."
+ },
+ {
+  "country": "Honduras",
+  "group": "Barrio 18",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designation-of-barrio-18",
+  "quote": "Barrio 18 is one of the largest gangs in our hemisphere and has conducted attacks against security personnel, public officials, and civilians in El Salvador, Guatemala, and Honduras.",
+  "note": "Report never mentions Barrio 18; no CRT 2024 basis."
+ },
+ {
+  "country": "Honduras",
+  "group": "Mara Salvatrucha (MS-13)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "MS-13 actively recruits, organizes, and spreads violence in several countries, primarily in Central America and North America, including El Salvador, Honduras, Guatemala, Mexico, and the United States.",
+  "note": "MS-13 appears only in the 2025-designations disclaimer, with no country named; nothing ties it to Honduras."
+ },
+ {
+  "country": "India",
+  "group": "Harakat ul-Jihad-i-Islami (HUJI)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, India, and Pakistan.",
+  "note": "The HUJI profile Location line names India; no 2024 activity is described."
+ },
+ {
+  "country": "India",
+  "group": "Harakat ul-Mujahidin (HUM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, India, and Pakistan.",
+  "note": "The HUM profile Location line names India; no 2024 activity is described."
+ },
+ {
+  "country": "India",
+  "group": "Hizbul Mujahideen (HM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In December 2024, two Indian security officials were injured in a clash with HM fighters.",
+  "note": "HM fighters clashed with Indian security forces in 2024; the Location line names India."
+ },
+ {
+  "country": "India",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Terrorist groups active in India include ISIS, Lashkar-e- Tayyiba (LeT), Jaish-e-Mohammed (JeM), Hizbul Mujahideen, AQIS, the Communist Party of India-Maoist, Jamaat-ul-Mujahideen Bangladesh, and Hizb ut-Tahrir.",
+  "note": "The chapter lists ISIS among groups active in India. The rest of the evidence is weaker: the Bengaluru IED was by 'suspected ISIS sympathizers' and the 11 arrests were for 'suspected links', and the ISIS profile does not name India. Borderline OPS."
+ },
+ {
+  "country": "India",
+  "group": "Indian Mujahedeen (IM)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The India-based terrorist group has been responsible for dozens of bomb attacks throughout India since 2005 and has caused the deaths of hundreds of civilians.",
+  "note": "IM is described as India-based and its Location line is India. It claimed no attacks in 2024 and its networks are 'significantly degraded'."
+ },
+ {
+  "country": "India",
+  "group": "Jaish-e-Mohammed (JEM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In September 2024, four JeM members opened fire on Indian security and police personnel during an Indian security operation in Jammu and Kashmir.",
+  "note": "JeM members carried out an armed attack in Jammu and Kashmir in 2024; the Location line names India."
+ },
+ {
+  "country": "India",
+  "group": "Lashkar-e-Tayyiba (LeT)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: India and Pakistan.",
+  "note": "The chapter names LeT as active in India and the profile Location line names India; the June Reasi attack is attributed only to a gunman 'suspected to be linked to LeT'."
+ },
+ {
+  "country": "India",
+  "group": "al-Qa'ida in the Indian Subcontinent (AQIS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operations: Afghanistan, Bangladesh, India, and Pakistan.",
+  "note": "The profile Location line names India and the chapter lists AQIS as active in India."
+ },
+ {
+  "country": "Indonesia",
+  "group": "Jemaah Anshorut Tauhid (JAT)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Indonesia.",
+  "note": "Location line names Indonesia (Indonesia-based). Caveat: JAT has claimed no attacks since 2014 and membership has 'significantly declined'."
+ },
+ {
+  "country": "Iran",
+  "group": "Islamic Revolutionary Guard Corps (IRGC)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "With its base in Iran, components of the IRGC have operated throughout the Middle East region.",
+  "note": "Profile states the IRGC is based in Iran."
+ },
+ {
+  "country": "Iran",
+  "group": "Jaysh al-Adl (formerly Jundallah)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In April 2024, Jaysh al-Adl claimed responsibility for a gunfight in Sistan and Balochistan Province that killed 10 Iranian security officers and injured 44 people.",
+  "note": "Claimed 2024 attacks in Sistan and Balochistan; Location line names Iran."
+ },
+ {
+  "country": "Iraq",
+  "group": "Ansar al-Islam (AAI)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Iraq and Syria.",
+  "note": "Profile Location line names Iraq (no 2024 attacks claimed); not mentioned in Iraq Ch1."
+ },
+ {
+  "country": "Iraq",
+  "group": "Asa'ib Ahl al-Haq (AAH)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "AAH continued to be active in 2024, including through indirect fire attacks on U.S.",
+  "note": "Profile describes 2024 indirect-fire attacks on U.S. facilities in Iraq; Location line 'Iraq and Syria'."
+ },
+ {
+  "country": "Iraq",
+  "group": "Harakat Ansar Allah al-Awfiya (HAAA)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "These include U.S.-designated groups such as Kata’ib Hizballah (KH), Asa’ib Ahl al-Haq, Kata’ib Sayyid al-Shuhada, Harakat Ansar Allah al-Awfiya, and Harakat al-Nujaba.",
+  "note": "Ch1 names HAAA among Iraq's IAMGs conducting attacks from and within Iraq; no Ch4 profile (FTO designation postdates the report)."
+ },
+ {
+  "country": "Iraq",
+  "group": "Harakat al-Nujaba (HAN)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "These include U.S.-designated groups such as Kata’ib Hizballah (KH), Asa’ib Ahl al-Haq, Kata’ib Sayyid al-Shuhada, Harakat Ansar Allah al-Awfiya, and Harakat al-Nujaba.",
+  "note": "Ch1 names HAN among the IAMGs that are the primary terrorist threats in Iraq, which conducted attacks from and within Iraq; no Ch4 profile (FTO designation postdates the report)."
+ },
+ {
+  "country": "Iraq",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, ISF pressure prevented ISIS from controlling Iraqi territory, forcing ISIS to launch periodic attacks in al-Anbar, Diyala, Kirkuk, Ninewa, and Salah al-Din.",
+  "note": "Ch1 describes ISIS attacks across Iraqi provinces."
+ },
+ {
+  "country": "Iraq",
+  "group": "Jaysh Rijal al-Tariq al Naqshabandi (JRTN)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Iraq.",
+  "note": "Profile Location line names Iraq only, though JRTN claimed no attacks in 2024 and Ch1 does not mention it."
+ },
+ {
+  "country": "Iraq",
+  "group": "Kata'ib Hizballah (KH)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In January, KH conducted an attack against U.S. forces at Al Asad Air Base in western Iraq.",
+  "note": "Profile describes a 2024 KH attack in Iraq; Location line names Iraq."
+ },
+ {
+  "country": "Iraq",
+  "group": "Kata'ib Sayyid al-Shuhada (KSS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "These include U.S.-designated groups such as Kata’ib Hizballah (KH), Asa’ib Ahl al-Haq, Kata’ib Sayyid al-Shuhada, Harakat Ansar Allah al-Awfiya, and Harakat al-Nujaba.",
+  "note": "Ch1 names KSS among Iraq's IAMGs conducting attacks from and within Iraq; no Ch4 profile (FTO designation postdates the report)."
+ },
+ {
+  "country": "Iraq",
+  "group": "Kata'ib al-Imam Ali (KIA)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/09/terrorist-designations-of-iran-aligned-militia-groups",
+  "quote": "KIA has also facilitated kinetic operations against U.S. forces in Iraq",
+  "note": "KIA is not mentioned anywhere in CRT 2024 and has no Ch4 profile; designated after the reporting year."
+ },
+ {
+  "country": "Iraq",
+  "group": "Kurdistan Workers Party (PKK)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "designated PKK is headquartered in the mountains of northern Iraq.",
+  "note": "Ch1 says PKK is headquartered in northern Iraq; profile Location also names Iraq."
+ },
+ {
+  "country": "Ireland",
+  "group": "Continuity Irish Republican Army (CIRA)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: United Kingdom and the Republic of Ireland.",
+  "note": "Ch4 profile location line names the Republic of Ireland (no Ireland chapter exists; no 2024 activity in Ireland described)."
+ },
+ {
+  "country": "Ireland",
+  "group": "New Irish Republican Army",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: United Kingdom and the Republic of Ireland.",
+  "note": "Ch4 profile location line names the Republic of Ireland; the 2024 activity cited (Derry pipe bomb) was in Northern Ireland, i.e. the UK."
+ },
+ {
+  "country": "Israel",
+  "group": "Al-Aqsa Martyrs Brigade (AAMB)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Israel, Gaza, and the West Bank.",
+  "note": "AAMB profile Location line names Israel (2024 activity described was in Gaza)."
+ },
+ {
+  "country": "Israel",
+  "group": "Army of Islam (AOI)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Egypt, Gaza, and Israel.",
+  "note": "AOI profile Location line names Israel, though it is described as Gaza-based and claimed no 2024 attacks."
+ },
+ {
+  "country": "Israel",
+  "group": "HAMAS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, Hamas claimed responsibility for a bombing near Tel Aviv.",
+  "note": "Hamas claimed 2024 attacks inside Israel (Tel Aviv bombing; Jaffa light rail attack in Ch1), though its Location line lists only Gaza, the West Bank and Lebanon."
+ },
+ {
+  "country": "Israel",
+  "group": "Palestine Islamic Jihad (PIJ)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Israel, Gaza, and the West Bank.",
+  "note": "PIJ profile Location line names Israel."
+ },
+ {
+  "country": "Israel",
+  "group": "Popular Front for the Liberation of Palestine (PFLP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Gaza, Israel, Lebanon, Syria, and the West Bank.",
+  "note": "PFLP profile Location line names Israel."
+ },
+ {
+  "country": "Italy",
+  "group": "Informal Anarchist Federation/International Revolutionary Front (FAI/FRI)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/designations-of-antifa-ost-and-three-other-violent-antifa-groups",
+  "quote": "FAI/FRI is a militant anarchist group that primarily operates in Italy",
+  "note": "Designated in 2025; named only in the Europe overview designation note; Italy chapter mentions 'anarchists' generically, not FAI/FRI."
+ },
+ {
+  "country": "Kenya",
+  "group": "al-Shabaab",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, Kenya confirmed 36 terrorism incidents, primarily al-Shabaab attacks, as the group maintained elevated operations along the border.",
+  "note": "Ch1 documents al-Shabaab attacks in Lamu and Mandera, the regional overview notes its expansion into northeast Kenya, and the Ch4 location line names Kenya."
+ },
+ {
+  "country": "Lebanon",
+  "group": "Asbat al-Ansar (AAA)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: AAA’s primary base of operations was the Ain al-Hilweh Palestinian refugee camp in southern Lebanon.",
+  "note": "Profile places AAA's base in Ain al-Hilweh camp, Lebanon."
+ },
+ {
+  "country": "Lebanon",
+  "group": "HAMAS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Other terrorist groups, including Hamas, the Palestinian Islamic Jihad, and the Popular Front for the Liberation of Palestine, continued to operate inside Lebanon's Palestinian refugee camps, over which there was limited government control.",
+  "note": "Ch1 and Ch3 say Hamas operates in Lebanon; profile Location names Lebanon."
+ },
+ {
+  "country": "Lebanon",
+  "group": "Hizballah",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Terrorist groups operating in Lebanon included U.S.-designated FTOs such as Hizballah, Hamas, the Palestinian Islamic Jihad, and ISIS.",
+  "note": "Ch1 says Hizballah operates in Lebanon; profile calls it Lebanon-based and Ch3 describes safe haven, recruitment and fundraising there."
+ },
+ {
+  "country": "Lebanon",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Terrorist groups operating in Lebanon included U.S.-designated FTOs such as Hizballah, Hamas, the Palestinian Islamic Jihad, and ISIS.",
+  "note": "Ch1 explicitly lists ISIS among terrorist groups operating in Lebanon, recruiting Lebanese; LAF arrested eight ISIS-linked individuals."
+ },
+ {
+  "country": "Lebanon",
+  "group": "Lebanese Muslim Brotherhood",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/terrorist-designations-of-muslim-brotherhood-chapters/",
+  "quote": "The Department of State is designating the Lebanese Muslim Brotherhood as a Foreign Terrorist Organization",
+  "note": "No mention in CRT 2024; designated after the reporting year."
+ },
+ {
+  "country": "Lebanon",
+  "group": "Palestine Islamic Jihad (PIJ)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Other terrorist groups, including Hamas, the Palestinian Islamic Jihad, and the Popular Front for the Liberation of Palestine, continued to operate inside Lebanon's Palestinian refugee camps, over which there was limited government control.",
+  "note": "Ch1 and Ch3 say PIJ operates in Lebanon; profile adds Hizballah provides PIJ leaders safe harbor in Lebanon."
+ },
+ {
+  "country": "Lebanon",
+  "group": "Popular Front for the Liberation of Palestine (PFLP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Other terrorist groups, including Hamas, the Palestinian Islamic Jihad, and the Popular Front for the Liberation of Palestine, continued to operate inside Lebanon's Palestinian refugee camps, over which there was limited government control.",
+  "note": "Ch3 says PFLP operates in Lebanon's refugee camps; profile Location names Lebanon."
+ },
+ {
+  "country": "Libya",
+  "group": "Ansar al-Shari'a in Benghazi",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Benghazi, Libya.",
+  "note": "Profile Location line names Benghazi, Libya (no 2024 attacks)."
+ },
+ {
+  "country": "Libya",
+  "group": "Ansar al-Shari'a in Darnah",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Darnah, Libya.",
+  "note": "Profile Location line names Darnah, Libya (no 2024 attacks)."
+ },
+ {
+  "country": "Libya",
+  "group": "ISIS-Libya",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Libya.",
+  "note": "ISIS-L profile Location line names Libya (50 to 150 members; no 2024 attacks)."
+ },
+ {
+  "country": "Libya",
+  "group": "al-Qa'ida in the Islamic Maghreb (AQIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Algeria, Burkina Faso, Côte d’Ivoire, Libya, Mali, and Tunisia.",
+  "note": "AQIM profile Location line names Libya; Ch1 says AQIM was unable to regroup in Libya."
+ },
+ {
+  "country": "Mali",
+  "group": "Ansar al-Dine (AAD)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Mali.",
+  "note": "AAD's Ch4 location line names Mali. But the profile says AAD is now a JNIM component and 'did not separately claim responsibility for any attacks in 2024', and the Mali chapter does not name AAD."
+ },
+ {
+  "country": "Mali",
+  "group": "ISIS in the Greater Sahara (ISIS-GS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "JNIM and ISIS-GS continued to conduct terrorist attacks targeting Malian security forces, self-defense militias, civilians, critical infrastructure, and facilitators of economic development.",
+  "note": "Ch1 says ISIS-GS conducted attacks in Mali; Ch4 location line names Mali."
+ },
+ {
+  "country": "Mali",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "JNIM then launched several offensives, including coordinated attacks on Bamako that targeted a gendarmerie camp and the international airport.",
+  "note": "Ch1 and Ch4 (location line names Mali; Bamako attacks) describe extensive JNIM operations."
+ },
+ {
+  "country": "Mexico",
+  "group": "Cartel de Jalisco Nueva Generacion (CJNG)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "CJNG is a transnational organization with a presence in nearly every part of Mexico.",
+  "note": "Designated 2025 (per disclaimer); Mexico ch1 describes the Jalisco New Generation Cartel's IED and armed-drone use in Sonora."
+ },
+ {
+  "country": "Mexico",
+  "group": "Cartel de Sinaloa",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "Cártel de Sinaloa is a transnational organization based in Sinaloa, Mexico.",
+  "note": "Designated 2025 (per disclaimer); Mexico ch1 describes the Sinaloa Cartel's IED and armed-drone use in Sonora."
+ },
+ {
+  "country": "Mexico",
+  "group": "Cartel del Golfo (Gulf Cartel)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "CDG is a violent transnational organization based in northeast Mexico",
+  "note": "Named only in the 2025-designations disclaimer, which does not mention Mexico; Mexico ch1 refers only to TCOs generically."
+ },
+ {
+  "country": "Mexico",
+  "group": "Cartel del Noreste",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "CDN, formerly known as Los Zetas, is a transnational organization based in northeastern Mexico",
+  "note": "Named only in the 2025-designations disclaimer, which does not mention Mexico; Mexico ch1 refers only to TCOs generically."
+ },
+ {
+  "country": "Mexico",
+  "group": "Carteles Unidos",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "CU is a violent transnational organization that formed from an alliance of multiple cartels and other groups in Michoacán, Mexico.",
+  "note": "Named only in the 2025-designations disclaimer, which does not mention Mexico; Mexico ch1 refers only to TCOs generically."
+ },
+ {
+  "country": "Mexico",
+  "group": "Juarez Cartel (La Linea)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/terrorist-designations-of-the-juarez-cartel-and-los-viagras",
+  "quote": "The Juárez Cartel and Los Viagras are violent narco-terrorist cartels that have committed numerous attacks against Americans, Mexican security forces, and civilians",
+  "note": "Report never mentions this group (absent even from the 2025-designations disclaimer); no CRT 2024 basis, and designation status should be confirmed separately."
+ },
+ {
+  "country": "Mexico",
+  "group": "La Nueva Familia Michoacana",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "a violent transnational organization based in the Pacific coast state of Michoacan with operations in the Mexican states Guerrero, Morelos, and Mexico.",
+  "note": "Named only in the 2025-designations disclaimer, which does not mention Mexico; Mexico ch1 refers only to TCOs generically."
+ },
+ {
+  "country": "Mexico",
+  "group": "Los Viagras",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/terrorist-designations-of-the-juarez-cartel-and-los-viagras",
+  "quote": "The Juárez Cartel and Los Viagras are violent narco-terrorist cartels that have committed numerous attacks against Americans, Mexican security forces, and civilians",
+  "note": "Report never mentions this group (absent even from the 2025-designations disclaimer); no CRT 2024 basis, and designation status should be confirmed separately."
+ },
+ {
+  "country": "Mexico",
+  "group": "Mara Salvatrucha (MS-13)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "MS-13 actively recruits, organizes, and spreads violence in several countries, primarily in Central America and North America, including El Salvador, Honduras, Guatemala, Mexico, and the United States.",
+  "note": "MS-13 appears only in the 2025-designations disclaimer, with no country named; nothing ties it to Mexico."
+ },
+ {
+  "country": "Mozambique",
+  "group": "ISIS-Mozambique",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, ISIS-Mozambique (ISIS-M) expanded into areas previously considered safe for internally displaced persons, increasing violence in Cabo Delgado Province districts and spreading into Nampula Province’s Erati and Memba districts.",
+  "note": "Ch1, Ch3 and Ch4 describe extensive ISIS-M attacks in Cabo Delgado and Nampula."
+ },
+ {
+  "country": "Niger",
+  "group": "Boko Haram",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS- GS and JNIM attacked in the Southwest and Northwest, while ISIS-WA and BH attacked in the Southeast.",
+  "note": "Ch1 attributes attacks in southeast Niger to BH; Ch4 location line names Niger."
+ },
+ {
+  "country": "Niger",
+  "group": "ISIS in the Greater Sahara (ISIS-GS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS- GS and JNIM attacked in the Southwest and Northwest, while ISIS-WA and BH attacked in the Southeast.",
+  "note": "Ch1 attributes attacks in southwest and northwest Niger to ISIS-GS; Ch4 location line names Niger."
+ },
+ {
+  "country": "Niger",
+  "group": "ISIS-West Africa",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS- GS and JNIM attacked in the Southwest and Northwest, while ISIS-WA and BH attacked in the Southeast.",
+  "note": "Ch1 attributes attacks in southeast Niger to ISIS-WA."
+ },
+ {
+  "country": "Niger",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS- GS and JNIM attacked in the Southwest and Northwest, while ISIS-WA and BH attacked in the Southeast.",
+  "note": "Ch1 attributes attacks in Niger to JNIM; Ch4 location line names Niger."
+ },
+ {
+  "country": "Nigeria",
+  "group": "Ansaru",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-WA, BH, and Ansaru continued attacking Nigerian government and security forces and civilians, including Christians, across northern and central regions.",
+  "note": "Ch1 says Ansaru continued attacking in Nigeria and the Ch4 location line is 'Nigeria.', although the profile says Ansaru claimed no attacks in 2024."
+ },
+ {
+  "country": "Nigeria",
+  "group": "Boko Haram",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-WA and BH carried out hundreds of attacks targeting military and civilians using small arms, captured military equipment, IEDs, suicide bombings, ambushes, and hostage-takings.",
+  "note": "Ch1 describes hundreds of BH attacks; Ch4 profile calls BH Nigeria-based."
+ },
+ {
+  "country": "Nigeria",
+  "group": "ISIS-West Africa",
+  "basis": "OPS",
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2024/nigeria/",
+  "quote": "ISIS-WA maintained its geographic presence in the northeast and remained Nigeria’s most active and capable terrorist group.",
+  "note": "Ch1 calls ISIS-WA Nigeria's most active group; Ch4 location line names Nigeria."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Balochistan Liberation Army (BLA)",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/08/terrorist-designation-of-the-majeed-brigade",
+  "quote": "In 2024, BLA claimed it had committed suicide attacks near the airport in Karachi and the Gwadar Port Authority Complex.",
+  "note": "BLA has no CRT 2024 Chapter 4 FTO profile and is not in the FTO list; it was designated after the reporting year. The CRT nonetheless describes extensive BLA attacks in Pakistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Harakat ul-Mujahidin (HUM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, India, and Pakistan.",
+  "note": "The Location line names Pakistan, and HUM also collected donations from wealthy donors in Pakistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Islamic State's Khorasan Province (ISIS-K)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-K claimed responsibility for the November 14 assassination of the regional head of the Jamiat-e-Islami party in Khyber Pakhtunkhwa’s Bajaur tribal district.",
+  "note": "ISIS-K claimed attacks in Pakistan in 2024; its Location line names Pakistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Jaish-e-Mohammed (JEM)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Pakistan-based JeM was designated as an FTO on December 26, 2001.",
+  "note": "JeM is described as Pakistan-based; its Location line names Pakistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Jaysh al-Adl (formerly Jundallah)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, Iran, and Pakistan.",
+  "note": "The Location line names Pakistan, but all of Jaysh al-Adl's described 2024 attacks were in Iran's Sistan and Balochistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Lashkar i Jhangvi (LJ)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "LJ carries out anti-Shia and other sectarian attacks in Pakistan.",
+  "note": "LJ's Location line is Pakistan and the profile describes sectarian attacks there, though LJ claimed none in 2024."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Lashkar-e-Tayyiba (LeT)",
+  "basis": "FIN",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "LeT also raised funds in Pakistan through charities, legitimate businesses, and farming.",
+  "note": "LeT raises funds in Pakistan; its Location line also names Pakistan, which is enough for OPS."
+ },
+ {
+  "country": "Pakistan",
+  "group": "Tehrik-e Taliban Pakistan (TTP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, TTP conducted more than 300 attacks in Pakistan.",
+  "note": "TTP carried out more than 300 attacks in Pakistan in 2024."
+ },
+ {
+  "country": "Pakistan",
+  "group": "al-Qa'ida (AQ)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Al-Qa’ida was estimated to have about 400 members in Afghanistan in 2024, with core members in Afghanistan, Iran, and Pakistan.",
+  "note": "AQ has core members in Pakistan; its Location line names Pakistan."
+ },
+ {
+  "country": "Pakistan",
+  "group": "al-Qa'ida in the Indian Subcontinent (AQIS)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operations: Afghanistan, Bangladesh, India, and Pakistan.",
+  "note": "The AQIS profile Location line names Pakistan; the Pakistan chapter does not mention AQIS."
+ },
+ {
+  "country": "Palestine",
+  "group": "Al-Aqsa Martyrs Brigade (AAMB)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In February, AAMB announced a joint operation with al-Quds Brigades fighters, in which the two groups fired rockets targeting Israeli soldiers in Gaza.",
+  "note": "2024 operation in Gaza; Location line names Gaza and the West Bank."
+ },
+ {
+  "country": "Palestine",
+  "group": "Army of Islam (AOI)",
+  "basis": "BASE",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Founded in 2005, AOI was a Gaza-based terrorist organization responsible for numerous terrorist acts against the Israeli and Egyptian governments and British, New Zealand, and U.S. citizens.",
+  "note": "Profile describes AOI as Gaza-based and Location line names Gaza (no 2024 attacks)."
+ },
+ {
+  "country": "Palestine",
+  "group": "HAMAS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Gaza, the West Bank, and Lebanon.",
+  "note": "Hamas profile Location line names Gaza and the West Bank; it also manages a 'mostly Gaza-based' network."
+ },
+ {
+  "country": "Palestine",
+  "group": "PFLP-General Command (PFLP-GC)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, the PFLP-GC claimed responsibility for attacks on Israeli settlers in the West Bank and Israeli forces north of Nuseirat refugee camp in Gaza.",
+  "note": "Claimed 2024 attacks in the West Bank and Gaza."
+ },
+ {
+  "country": "Palestine",
+  "group": "Palestine Islamic Jihad (PIJ)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Israel, Gaza, and the West Bank.",
+  "note": "PIJ profile Location line names Gaza and the West Bank."
+ },
+ {
+  "country": "Palestine",
+  "group": "Popular Front for the Liberation of Palestine (PFLP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Gaza, Israel, Lebanon, Syria, and the West Bank.",
+  "note": "PFLP profile Location line names Gaza and the West Bank."
+ },
+ {
+  "country": "Peru",
+  "group": "Shining Path (Sendero Luminoso, SL)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "SL remnants continued to operate in the Apurímac, Ene, and Mantaro River Valley region.",
+  "note": "Ch1 describes SL operating and attacking in Peru; ch4 location line is 'Peru'."
+ },
+ {
+  "country": "Peru",
+  "group": "Tren de Aragua",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels/",
+  "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile",
+  "note": "From evidence/2026-11-13-tda-colombia-peru.json"
+ },
+ {
+  "country": "Philippines",
+  "group": "Abu Sayyaf Group (ASG)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "On April 24, 2024, Abu Sayyaf militants engaged in a brief shootout with police officers in Hadji Mohammad Ajul, Basilan, which resulted in the death of at least one militant.",
+  "note": "ASG militants were in armed clashes in Basilan in 2024; the Location line is the Philippines."
+ },
+ {
+  "country": "Philippines",
+  "group": "Communist Party of the Philippines/New People's Army (CPP/NPA)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Meanwhile, the New People’s Army (NPA), the armed wing of the Communist Party of the Philippines, carried out most terrorist attacks in 2024.",
+  "note": "The NPA carried out most attacks in the Philippines in 2024; the Location line is the Philippines."
+ },
+ {
+  "country": "Philippines",
+  "group": "ISIS-Philippines",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In March, ISIS-Philippines claimed it killed four Philippine soldiers in an ambush.",
+  "note": "ISIS-P claimed an attack in 2024; the Location line is the Philippines."
+ },
+ {
+  "country": "Somalia",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-Somalia operated largely from mountain ranges in Puntland, using difficult terrain and caves for concealment.",
+  "note": "Kept under standing decision 12 (an ISIS branch counts for core ISIS where operations are described), 3 Nov 2026. The report describes ISIS-Somalia (a branch with no separate Ch4 profile) operating, raising funds and having its leader in Puntland. Whether that supports the core 'ISIS' entry depends "
+ },
+ {
+  "country": "Somalia",
+  "group": "al-Shabaab",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Somalia suffered continual conflict between government-aligned forces and terrorists as al- Shabaab carried out hundreds of attacks throughout the country, including numerous attacks and ambushes on SNA and local defense force positions in Hirshabelle and Jubaland.",
+  "note": "Ch1, Ch3 and the Ch4 location line all describe al-Shabaab operating and holding territory in Somalia."
+ },
+ {
+  "country": "South Africa",
+  "group": "ISIS",
+  "basis": "FIN",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS continued operating urban cells in South Africa, providing logistical and financial support to ISIS branches in Africa.",
+  "note": "Ch1 says ISIS operates urban cells in South Africa that provide logistical and financial support (a support network, also BASE-level cells)."
+ },
+ {
+  "country": "Sudan",
+  "group": "Sudanese Muslim Brotherhood",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/03/terrorist-designation-of-the-sudanese-muslim-brotherhood",
+  "quote": "The Sudanese Muslim Brotherhood uses unrestrained violence against civilians to undermine efforts to resolve the conflict in Sudan",
+  "note": "No Ch4 profile and no mention anywhere in CRT 2024; designated after the reporting year."
+ },
+ {
+  "country": "Syria",
+  "group": "Ansar al-Islam (AAI)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Iraq and Syria.",
+  "note": "AAI profile Location line names Syria (no 2024 attacks)."
+ },
+ {
+  "country": "Syria",
+  "group": "Asa'ib Ahl al-Haq (AAH)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Iraq and Syria.",
+  "note": "AAH profile Location line names Syria (its 2024 activity described is in Iraq)."
+ },
+ {
+  "country": "Syria",
+  "group": "Hizballah",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Lebanon and Syria.",
+  "note": "Profile Location line names Syria; Ch2 says Iran armed and funded groups operating throughout Syria, including Hizballah (before Assad's fall)."
+ },
+ {
+  "country": "Syria",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, ISIS conducted numerous attacks, including 153 claimed attacks in Iraq and Syria in just the first six months of the year.",
+  "note": "Profile describes claimed attacks in Syria; Location line 'Iraq and Syria'."
+ },
+ {
+  "country": "Syria",
+  "group": "Kata'ib Hizballah (KH)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In 2024, KH remained active in Iraq and Syria",
+  "note": "Profile says KH remained active in Syria; Location line 'Iraq and Syria'."
+ },
+ {
+  "country": "Syria",
+  "group": "al-Qa'ida (AQ)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, Iran, North Africa, West Africa, Pakistan, Somalia, Syria, and Yemen.",
+  "note": "AQ profile Location line names Syria; Ch2 also cites an Iran pipeline moving AQ funds and fighters to Syria."
+ },
+ {
+  "country": "Tajikistan",
+  "group": "Islamic State's Khorasan Province (ISIS-K)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "ISIS-K claimed responsibility for the attack.",
+  "note": "ISIS-K claimed the January 5 car bombing in Kulob, inside Tajikistan, and 30 ISIS-K-associated individuals were arrested in Tajikistan for a Nowruz plot. This is in-country activity, separate from Tajik nationals' attacks abroad, which are excluded."
+ },
+ {
+  "country": "Tanzania",
+  "group": "ISIS-DRC",
+  "basis": "FIN",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Youth disappearances linked to recruitment by ISIS-Somalia, ISIS-DRC, and al-Shabaab continued but at a slower rate than in previous years.",
+  "note": "Ch1 describes ISIS-DRC recruitment inside Tanzania (a recruitment network). Tanzanians filling roles in the DRC branch is fighting abroad and does not count on its own."
+ },
+ {
+  "country": "Tanzania",
+  "group": "ISIS-Mozambique",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Primarily Mozambique; also conducted attacks in Tanzania.",
+  "note": "The Ch4 location line names Tanzania, and Ch1 describes ISIS recruitment in southern Tanzania for the Mozambique branch. But Ch1 says Tanzania had no terrorist attacks in 2024 and the Mozambique chapter says spillover was prevented."
+ },
+ {
+  "country": "Tanzania",
+  "group": "al-Shabaab",
+  "basis": "FIN",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Youth disappearances linked to recruitment by ISIS-Somalia, ISIS-DRC, and al-Shabaab continued but at a slower rate than in previous years.",
+  "note": "Ch1 describes al-Shabaab recruitment in Tanzania and use of its borders to move money and people; the movement alone would be transit, so the code rests on recruitment."
+ },
+ {
+  "country": "Togo",
+  "group": "Jama'at Nusrat al-Islam wal-Muslimin (JNIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "JNIM militants carried out dozens of attacks against Togo’s military and civilians.",
+  "note": "Ch1 reports dozens of JNIM attacks, Ch4 cites the July 2024 barracks attack, and the location line names Togo. The 'near the northern border' framing does not reduce this, given the in-country attacks."
+ },
+ {
+  "country": "Tunisia",
+  "group": "Ansar al-Shari'a in Tunisia",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Libya and Tunisia.",
+  "note": "AAS-T profile Location line names Tunisia (no 2024 attacks)."
+ },
+ {
+  "country": "Tunisia",
+  "group": "al-Qa'ida in the Islamic Maghreb (AQIM)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Algeria, Burkina Faso, Côte d’Ivoire, Libya, Mali, and Tunisia.",
+  "note": "AQIM profile Location line names Tunisia (no 2024 attacks)."
+ },
+ {
+  "country": "Turkey",
+  "group": "ISIS",
+  "basis": "FIN",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "police arrested 11 ISIS suspects using currency exchange offices and trade companies for money laundering, while authorities analyzed cryptocurrency accounts tied to ISIS facilitators",
+  "note": "Report describes ISIS finance and facilitation activity in Türkiye (terror-finance detentions, ISIS-linked smuggling network, an ISIS member who supplied weapons for the Istanbul church attack)."
+ },
+ {
+  "country": "Turkey",
+  "group": "Kurdistan Workers Party (PKK)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The PKK continued terrorist attacks in Türkiye and against Turkish interests outside the country.",
+  "note": "PKK conducts attacks in Türkiye (e.g. the October attack near Ankara); profile location names Türkiye."
+ },
+ {
+  "country": "Turkey",
+  "group": "Revolutionary People's Liberation Party/Front (DHKP/C)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "In February, Turkish officials blamed DHKP/C for an attack on a courthouse in Istanbul that killed one person and injured five others.",
+  "note": "DHKP/C attack in Istanbul, leader arrested there, profile location names Türkiye."
+ },
+ {
+  "country": "Uganda",
+  "group": "ISIS-DRC",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Democratic Republic of the Congo, Uganda.",
+  "note": "The Ch4 location line names Uganda and Ch1 describes arrests of an ADF commander and raids on 'terrorist strongholds'. But there were no incidents in 2024, and much of the Ch1 material is arrests and foiled plots."
+ },
+ {
+  "country": "United Kingdom",
+  "group": "Continuity Irish Republican Army (CIRA)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: United Kingdom and the Republic of Ireland.",
+  "note": "Ch4 profile location line names the United Kingdom."
+ },
+ {
+  "country": "United Kingdom",
+  "group": "New Irish Republican Army",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Activities: In November, the New IRA was blamed for a pipe bomb attack on the home of an elderly couple in Derry, Northern Ireland, that police believe was intended for a different target.",
+  "note": "New IRA blamed for a 2024 attack in Northern Ireland; profile location also names the UK."
+ },
+ {
+  "country": "Uzbekistan",
+  "group": "Islamic Jihad Union (IJU)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Location/Area of Operation: Afghanistan, Syria, Türkiye, Uzbekistan, and Europe.",
+  "note": "This is OPS only because the Location line names Uzbekistan. The same profile says IJU 'in 2024 ... was primarily active in Afghanistan', and the chapter records no incidents in Uzbekistan, so this is a weak flag."
+ },
+ {
+  "country": "Venezuela",
+  "group": "Cartel de los Soles",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/11/terrorist-designations-of-cartel-de-los-soles/",
+  "quote": "Based in Venezuela, the Cartel de los Soles is headed by Nicolás Maduro",
+  "note": "Designated 2025; Venezuela ch1 says CdlS operated freely in Venezuela."
+ },
+ {
+  "country": "Venezuela",
+  "group": "National Liberation Army (ELN)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "As of the end of 2024, the ELN had presence in multiple municipalities across the Venezuelan states of Amazonas, Anzoátegui, Apure, Barinas, Bolívar, Guárico, Táchira, and Zulia.",
+  "note": "Ch3 places ELN presence across eight Venezuelan states and its ch4 location line is 'Colombia and Venezuela'."
+ },
+ {
+  "country": "Venezuela",
+  "group": "Revolutionary Armed Forces of Colombia - People's Army (FARC-EP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "FARC dissident groups also maintained a presence in several states, consolidating their influence in Apure, Amazonas, Bolívar, and Zulia.",
+  "note": "Ch3 places FARC dissident presence in Venezuelan states and the FARC-EP ch4 location line is 'Colombia and Venezuela'."
+ },
+ {
+  "country": "Venezuela",
+  "group": "Segunda Marquetalia",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The Maduro regime provided a permissive environment for U.S.-designated FTOs such as the ELN, FARC-EP, and Segunda Marquetalia to operate in ill-governed areas along Venezuela's border with Colombia.",
+  "note": "SM's ch4 location line is 'Colombia and Venezuela' and ch3 describes it operating in Venezuelan border areas (border-area wording, but the profile line names Venezuela)."
+ },
+ {
+  "country": "Venezuela",
+  "group": "Tren de Aragua",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-international-cartels",
+  "quote": "TdA is a transnational organization that originated in Venezuela with cells in Colombia, Peru, and Chile",
+  "note": "Designated 2025; Venezuela ch1 describes TdA originating and operating in Venezuela."
+ },
+ {
+  "country": "Yemen",
+  "group": "Ansarallah",
+  "basis": "POST_REPORT",
+  "url": "https://www.state.gov/designation-of-ansarallah-as-a-foreign-terrorist-organization",
+  "quote": "designation of Ansarallah, commonly referred to as the Houthis, as a Foreign Terrorist Organization",
+  "note": "Houthis are described extensively in Yemen but only as an SDGT in CRT 2024; no Ch4 FTO profile (FTO designation postdates the reporting year). The CRT 2024 Yemen chapter describes the Houthis in Yemen."
+ },
+ {
+  "country": "Yemen",
+  "group": "ISIS",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "Yemen continued to maintain areas of influence and conduct operations in government-",
+  "note": "ISIS-Yemen conducts operations in Yemen and has no separate FTO profile, so it falls under the core ISIS designation; Ch3 also cites the 'presence of ... ISIS' in Yemen."
+ },
+ {
+  "country": "Yemen",
+  "group": "Islamic Revolutionary Guard Corps (IRGC)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "The Houthis, AQAP, ISIS-Yemen, the IRGC-QF, and Iranian-backed terrorist groups continued to exploit the political and security vacuum in Yemen",
+  "note": "Ch1 places the IRGC-QF among actors operating in Yemen's security vacuum and (per media reports) supporting the Houthis there."
+ },
+ {
+  "country": "Yemen",
+  "group": "al-Qa'ida in the Arabian Peninsula (AQAP)",
+  "basis": "OPS",
+  "url": "https://www.state.gov/wp-content/uploads/2026/06/Country-Reports-on-Terrorism-2024-v6.pdf",
+  "quote": "AQAP remained active in Abyan, al-Bayda, Ma’rib, Shabwah, and Ta’iz Governorates.",
+  "note": "Ch1 and profile describe AQAP attacks and activity across Yemen."
+ }
+]

@@ -89,6 +89,46 @@ for k in ("cpi", "fatf", "fto", "sanc"):
     w = l.get("when")
     if not isinstance(w, str) or not w or len(w) > 120 or "<" in w: err(f"meta.page.layers.{k}.when: missing or invalid")
 
+# --- Added 24 Nov 2026 (audit SE-94): rules so the page cannot drift from its evidence or its sources ---
+
+# 1. Summary counts must match the data (the FTO count was left at 100 after the 101st group was added).
+if cnt.get("fto_groups") != len(L): err(f"meta.counts.fto_groups is {cnt.get('fto_groups')} but fto_listings has {len(L)}")
+if cnt.get("countries") != len(C): err(f"meta.counts.countries is {cnt.get('countries')} but countries has {len(C)}")
+# The page's dates live only in meta.page; the old duplicate dates in meta.as_of went stale unnoticed.
+for k in ("fto_designations", "sanctions"):
+    if k in (m.get("as_of") or {}): err(f"meta.as_of.{k}: no longer used (dates live in meta.page.layers); remove it")
+
+# 2. Every country and group pair shown as FTO presence has its basis on record (evidence/basis/fto-presence.json):
+#    an official source URL and the quoted passage it rests on. Code checks the quotes word for word weekly
+#    (checks/check_basis.py). A pair without a basis row, or a basis row for a pair no longer shown, fails here.
+import os
+BP = "evidence/basis/fto-presence.json"
+try: basis = json.load(open(BP, encoding="utf-8"))
+except Exception as e: basis = None; err(f"{BP}: missing or not valid JSON ({e})")
+if basis is not None:
+    pairs = {(k, g) for k, o in C.items() for g in o.get("ftog", [])}
+    have = {}
+    for b in basis:
+        key = (b.get("country"), b.get("group"))
+        if key not in pairs: err(f"{BP}: basis for {key[0]} / {key[1]}, which the page does not show; remove the row in the same pull request that removed the group")
+        if b.get("basis") not in ("OPS", "BASE", "FIN", "POST_REPORT"): err(f"{BP}: {key}: basis must be OPS, BASE, FIN or POST_REPORT (standing decision 12)")
+        if not URL.match(b.get("url") or "") or len((b.get("quote") or "").strip()) < 15: err(f"{BP}: {key}: needs an https url and a quote of at least 15 characters")
+        have[key] = b
+    for key in sorted(pairs - set(have)): err(f"{BP}: no basis for {key[0]} / {key[1]}; add the official source and quote for this pair")
+
+# 3. The FTO as-of line must name both bases of presence (standing decisions 2 and 12).
+if "designation statements" not in ((pg.get("asof") or {}).get("fto") or ""): err("meta.page.asof.fto must say presence rests on Country Reports on Terrorism and later designation statements")
+
+# 4. A view's "checked" date may move only with a read log showing every required source for that view was read that
+#    day (checks/read_log.py). Applies to dates from 2026-11-25; earlier dates predate the rule.
+sys.path.insert(0, "checks")
+from read_log import REQUIRED, covered, load as load_reads
+for k in ("cpi", "fatf", "fto", "sanc"):
+    c = ((pg.get("layers") or {}).get(k) or {}).get("checked", "")
+    if c >= "2026-11-25":
+        miss = covered(load_reads(c), k)
+        if miss: err(f"meta.page.layers.{k}.checked is {c} but evidence/reads/{c}.json does not show these sources read that day: {', '.join(miss)}")
+
 for w in WARN: print("note:", w)
 if ERR:
     print("INVALID:\n- " + "\n- ".join(ERR)); sys.exit(1)

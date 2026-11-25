@@ -99,6 +99,11 @@ def main():
     errors = []
     if mode == "proposer":
         files = subprocess.check_output(["git", "diff", "--name-only", "--diff-filter=AM", f"{base}...HEAD", "--", "evidence/"]).decode().split()
+        # Read logs and the FTO presence basis have their own formats and checks (validate.py, check_basis.py).
+        files = [f for f in files if not f.startswith(("evidence/reads/", "evidence/basis/"))]
+        # A change to a data value must also move meta.updated forward (it was left at 16 Nov after the 17 Nov merges).
+        if load_base(base).get("meta", {}).get("updated", "") >= new.get("meta", {}).get("updated", ""):
+            errors.append("proposer: data values changed but meta.updated did not move forward; set it to today")
         entries = []
         for f in files:
             try: entries += json.load(open(f, encoding="utf-8"))

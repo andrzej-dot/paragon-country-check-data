@@ -6,12 +6,51 @@ on:
     branches: [main]
   schedule:
     - cron: "17 14 * * 1"   # weekly drift check on the published file (Monday, about 7am Pacific)
+    - cron: "43 16 * * *"   # daily: the live page serves the file on main (check_live.py), about 8:43am Pacific
   workflow_dispatch:
 permissions:
   contents: read
   issues: write
   pull-requests: read
 jobs:
+  live:
+    # Daily: the public page serves the data on main (added 24 Nov 2026, audit SE-94).
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '43 16 * * *')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python checks/check_live.py
+      - if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+              title: "Live page out of step with the approved data",
+              body: "checks/check_live.py found the public page serving data that differs from main for more than 12 hours, or no data at all. This needs Andrzej (WordPress). Run: " + context.serverUrl + "/" + context.repo.owner + "/" + context.repo.repo + "/actions/runs/" + context.runId,
+              labels: ["held"]});
+  basis:
+    # Every FTO presence pair still rests on its recorded source and quote (added 24 Nov 2026, audit SE-94).
+    # Runs on every pull request and weekly.
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '17 14 * * 1')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: PDF text and a headless browser for sites that refuse plain requests
+        run: sudo apt-get install -y -q poppler-utils && pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - run: python checks/check_basis.py
+      - if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+              title: "Weekly source check found errors: FTO presence basis",
+              body: "checks/check_basis.py could not find a recorded quote in its official source. The State Department may have changed or removed the passage a country's FTO presence rests on. Run: " + context.serverUrl + "/" + context.repo.owner + "/" + context.repo.repo + "/actions/runs/" + context.runId,
+              labels: ["held"]});
   schema:
     runs-on: ubuntu-latest
     steps:
@@ -22,6 +61,7 @@ jobs:
   sources:
     # Code checks against the official lists themselves (UK, Canada, Australia, UN, EU, Federal Register,
     # EU Sanctions Map, World Bank, OpenSanctions, links). Errors block the merge.
+    if: github.event_name != 'schedule' || github.event.schedule == '17 14 * * 1'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

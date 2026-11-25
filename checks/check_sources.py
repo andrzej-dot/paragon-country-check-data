@@ -114,13 +114,20 @@ def chk(u):
         time.sleep(8); code, err = chk1(u)
     return u, code, err
 # state.gov answers some automated requests with 404 even when the page exists (seen 26 Oct 2026 from GitHub's servers),
-# so a 404 there is a warning for the verifier to confirm in a browser, not an error.
+# so a 404 there is re-tried in a headless browser; only a page that is missing there too is an error.
 SOFT404 = ("www.state.gov",)
 if "--no-links" not in sys.argv:
     with ThreadPoolExecutor(6) as ex:
         for u, code, err in ex.map(chk, sorted(urls)):
             if err: R["unreachable"].append(f"Link {u}: {err}")
-            elif code in (404, 410) and any(h in u for h in SOFT404): W(f"Link {u}: HTTP {code} from the server; verifier to open it in a browser to confirm whether it was removed")
+            elif code in (404, 410) and any(h in u for h in SOFT404):
+                # Confirm in a real browser (24 Nov 2026, audit SE-94): a page visitors cannot open is an error, never a
+                # standing warning. If the browser also gets no page, the link must come out of the data file.
+                sys.path.insert(0, "checks")
+                from fetch import _browser_text
+                bt = _browser_text(u) or ""
+                if len(bt) < 2000 or "page not found" in bt.lower(): E_(f"Link {u}: HTTP {code} and no page in a real browser; visitors get an error page. Remove the link (data pull request) until the source republishes it.")
+                else: W(f"Link {u}: HTTP {code} to plain requests but the page opens in a browser")
             elif code in (404, 410): E_(f"Link {u}: HTTP {code} (page removed)")
             elif code >= 400: R["unreachable"].append(f"Link {u}: HTTP {code}")
     print("links checked", file=sys.stderr)

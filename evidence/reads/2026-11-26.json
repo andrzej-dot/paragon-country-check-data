@@ -1,0 +1,106 @@
+[
+ {
+  "url": "https://api.worldbank.org/v2/sources?format=json&per_page=200",
+  "ok": true,
+  "bytes": 13048,
+  "sha256": "65403190ec1471b51a153c2b05ca4fe2ffcf372a2c90e924900d7b3a2980eb58",
+  "via": "live",
+  "at": "2026-11-26T16:02:45+00:00"
+ },
+ {
+  "url": "https://www.fatf-gafi.org/en/countries/black-and-grey-lists.html",
+  "ok": false,
+  "bytes": 0,
+  "sha256": "",
+  "via": "FAILED",
+  "at": "2026-11-26T16:02:59+00:00"
+ },
+ {
+  "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=20&conditions%5Bterm%5D=%22Foreign+Terrorist+Organization%22&conditions%5Bagencies%5D%5B%5D=state-department&order=newest",
+  "ok": true,
+  "bytes": 23963,
+  "sha256": "5d3e677b33011030b0c779c4b5e46ad60c5af11634b724d185e6b206c105fe94",
+  "via": "live",
+  "at": "2026-11-26T16:02:59+00:00"
+ },
+ {
+  "url": "https://www.federalregister.gov/api/v1/public-inspection-documents/current.json",
+  "ok": true,
+  "bytes": 225899,
+  "sha256": "61a8d98fe64d1086d37a8d5855f02bb4c65b963a460c3248b70e3fc665370836",
+  "via": "live",
+  "at": "2026-11-26T16:02:59+00:00"
+ },
+ {
+  "url": "https://www.state.gov/foreign-terrorist-organizations",
+  "ok": true,
+  "bytes": 40633,
+  "sha256": "2be64f855dcd3f7c6781ba58e7511cca73048d0e123939b4d77164b7b0ffce3d",
+  "via": "live",
+  "at": "2026-11-26T16:02:59+00:00"
+ },
+ {
+  "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+  "ok": true,
+  "bytes": 23006,
+  "sha256": "7f544916a90374a9d8c3efbe405598d111cff01eceae13d3befaec4ff170f86f",
+  "via": "live",
+  "at": "2026-11-26T16:03:00+00:00"
+ },
+ {
+  "url": "https://www.sanctionsmap.eu/api/v1/regime",
+  "ok": true,
+  "bytes": 392161,
+  "sha256": "9baf902c0abb2c1a0f0aac720ec1a5137126cf1456871b45895d9a4dcefe912f",
+  "via": "live",
+  "at": "2026-11-26T16:03:01+00:00"
+ },
+ {
+  "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+  "ok": true,
+  "bytes": 49190,
+  "sha256": "4f8d44185da11443a2621fc413fb0e2084d91b71085e4e973a845842e06d9006",
+  "via": "live",
+  "at": "2026-11-26T16:03:01+00:00"
+ },
+ {
+  "url": "https://www.gov.uk/government/collections/uk-sanctions-regimes-under-the-sanctions-act",
+  "ok": true,
+  "bytes": 35739,
+  "sha256": "a3beab931af19db8d019a7fd7d7bd208b720b5acbafa2a785fd42fd267ff4eb3",
+  "via": "live",
+  "at": "2026-11-26T16:03:01+00:00"
+ },
+ {
+  "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/current-actuelles.aspx?lang=eng",
+  "ok": true,
+  "bytes": 6189,
+  "sha256": "57332fc72226fd9f5a31a0b0116827fb334ed4b471e8957f59fd70814de4f27b",
+  "via": "live",
+  "at": "2026-11-26T16:03:02+00:00"
+ },
+ {
+  "url": "https://www.seco.admin.ch/de/sanktionsverordnungen",
+  "ok": true,
+  "bytes": 4752,
+  "sha256": "ef69b281be6db9b67dd1d30613b7a867ea31744312bec385e2320c52c261e564",
+  "via": "live",
+  "at": "2026-11-26T16:03:03+00:00"
+ },
+ {
+  "url": "https://www.legislation.gov.au/F2011L02673/latest/versions",
+  "ok": true,
+  "bytes": 6636,
+  "sha256": "3c2031d8346d2dc61775143c4dd469ae8257bd55402046d6da8432ace339cc90",
+  "via": "live",
+  "at": "2026-11-26T16:03:04+00:00"
+ },
+ {
+  "url": "https://www.fatf-gafi.org/en/countries/black-and-grey-lists.html",
+  "ok": true,
+  "bytes": 2689,
+  "sha256": "6b705d620cafe3ffbdc5ccc352db024a418185e706cbc6351df948739902aafc",
+  "via": "Fetch sources run 45855071459",
+  "at": "2026-11-26T16:05:16+00:00"
+ }
+]

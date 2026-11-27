@@ -33,8 +33,14 @@ def embedded(html):
 
 def main():
     want = json.load(open("country-check-data.json", encoding="utf-8"))
-    html = urllib.request.urlopen(urllib.request.Request(f"{PAGE}?v={random.randint(1, 10**9)}", headers={"User-Agent": UA}), timeout=60).read().decode("utf-8", "ignore")
-    got = embedded(html)
+    # Read up to three times a minute apart: while the site is saving a fresh copy of the data, a single request can
+    # briefly see none (observed 25 Nov 2026 during a manual refresh). Only a page that stays without data is an error.
+    import time
+    for attempt in range(3):
+        html = urllib.request.urlopen(urllib.request.Request(f"{PAGE}?v={random.randint(1, 10**9)}", headers={"User-Agent": UA}), timeout=60).read().decode("utf-8", "ignore")
+        got = embedded(html)
+        if got is not None and got.get("meta", {}).get("page") == want.get("meta", {}).get("page"): break
+        if attempt < 2: time.sleep(60)
     if got is None:
         print("ERROR: the live page carries no Country Check data (window.PPCC_DATA missing); visitors see only the built-in fallback."); return 1
     diffs = [p for p in PARTS if got.get(p) != want.get(p)]
